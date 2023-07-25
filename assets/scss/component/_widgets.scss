@@ -1,0 +1,140 @@
+.tf-box-row {
+    box-shadow: $shadow-1;
+    border-radius: 16px;
+    padding: 8px;
+    display: flex;
+    gap: 12px;
+    .img-box {
+        border-radius: 14px;
+        overflow: hidden;
+        max-width: 106px;
+        height: 79px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content-box {
+        flex-grow: 1;
+        .review {
+            display: flex;
+            align-items: center;
+            margin: 4px 0px;
+            li {
+                .icon-star {
+                    color: $yellow;
+                    font-size: 14px;
+                    margin-right: 4px;
+                }
+                span {
+                    color: #343434;
+                    font-weight: 700;
+                    @include fh-normal;
+                }
+            }
+            .dot-icon {
+                width: 3px;
+                height: 3px;
+                background-color: #c4c4c4;
+                border-radius: 50%;
+                margin: 0px 6px;
+            }
+        }
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .accent {
+                font-size: 16px;
+                font-weight: 600;
+                @include fh-normal;
+                color: $primary;
+            }
+            .del {
+                text-decoration: line-through;
+            }
+        }
+        .box-price {
+            @include flex(center, space-between);
+        }
+    }
+}
+
+.tf-box-column {
+    box-shadow: $shadow-1;
+    border-radius: 16px;
+    &.xl {
+        .img-box {
+            border-radius: 14px;
+            overflow: hidden;
+            max-width: 209px;
+            min-height: 156px;
+            padding: 6px 6px 0px;
+            img {
+                width: 100%;
+                min-height: 100%;
+            }
+        }
+        .content-box {
+            padding: 16px;
+
+            .review {
+                display: flex;
+                align-items: center;
+                margin: 8px 0px;
+                li {
+                    .icon-star {
+                        color: $yellow;
+                        font-size: 14px;
+                        margin-right: 4px;
+                    }
+                    span {
+                        color: #343434;
+                        font-weight: 700;
+                        @include fh-normal;
+                    }
+                }
+                .dot-icon {
+                    width: 3px;
+                    height: 3px;
+                    background-color: #c4c4c4;
+                    border-radius: 50%;
+                    margin: 0px 10px;
+                }
+            }
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .accent {
+                    font-size: 16px;
+                    font-weight: 600;
+                    @include fh-normal;
+                    color: $primary;
+                }
+                .del {
+                    text-decoration: line-through;
+                }
+            }
+            .box-price {
+                @include flex(center, space-between);
+            }
+        }
+    }
+}
+
+.btn-add {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: $primary;
+    padding-top: 2px;
+    color: #fff1d0;
+    font-size: 20px;
+    border-radius: 50%;
+    &:hover,
+    &:active {
+        color: #fff1d0;
+    }
+}

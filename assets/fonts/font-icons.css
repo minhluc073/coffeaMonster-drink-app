@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?pbnob4');
+  src: url('../fonts/icomoon.eot?pbnob4#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pbnob4') format('truetype'),
+    url('../fonts/icomoon.woff?pbnob4') format('woff'),
+    url('../fonts/icomoon.svg?pbnob4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-store:before {
+  content: "\e900";
+  color: #cfcfcf;
+}
+
+.icon-time:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-phone:before {
+  content: "\e903";
+  color: #cfcfcf;
+}
+
+.icon-profile:before {
+  content: "\e904";
+  color: #d3d9d8;
+}
+
+.icon-search:before {
+  content: "\e905";
+  color: #cfcfcf;
+}
+
+.icon-star:before {
+  content: "\e906";
+}
+
+.icon-pen-edit:before {
+  content: "\e907";
+  color: #fff;
+}
+
+.icon-message:before {
+  content: "\e908";
+  color: #cfcfcf;
+}
+
+.icon-menu-2:before {
+  content: "\e909";
+  color: #cfcfcf;
+}
+
+.icon-menu:before {
+  content: "\e90a";
+  color: #cfcfcf;
+}
+
+.icon-location:before {
+  content: "\e90b";
+  color: #cfcfcf;
+}
+
+.icon-lock:before {
+  content: "\e90d";
+  color: #cfcfcf;
+}
+
+.icon-load:before {
+  content: "\e90e";
+}
+
+.icon-lo2:before {
+  content: "\e90f";
+  color: #fff;
+}
+
+.icon-icon-left:before {
+  content: "\e910";
+}
+
+.icon-icon-down:before {
+  content: "\e911";
+  color: #033f38;
+}
+
+.icon-home:before {
+  content: "\e912";
+  color: #d3d9d8;
+}
+
+.icon-heart:before {
+  content: "\e914";
+  color: #d3d9d8;
+}
+
+.icon-filter-2:before {
+  content: "\e915";
+  color: #cfcfcf;
+}
+
+.icon-eye-show:before {
+  content: "\e916";
+  color: #cfcfcf;
+}
+
+.icon-eye-hide:before {
+  content: "\e917";
+  color: #cfcfcf;
+}
+
+.icon-discovery:before {
+  content: "\e918";
+  color: #d3d9d8;
+}
+
+.icon-card-num:before {
+  content: "\e919";
+  color: #cfcfcf;
+}
+
+.icon-check .path1:before {
+  content: "\e91a";
+  color: rgb(101, 220, 65);
+}
+
+.icon-check .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-close:before {
+  content: "\e91c";
+  color: #cfcfcf;
+}
+
+.icon-dir .path1:before {
+  content: "\e91d";
+  color: rgb(255, 199, 0);
+}
+
+.icon-dir .path2:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+
+.icon-dir .path3:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+
+.icon-dir .path4:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+
+.icon-buy:before {
+  content: "\e921";
+  color: #d3d9d8;
+}
+
+.icon-bookmark:before {
+  content: "\e922";
+  color: #033f38;
+}
+
+.icon-arr-right:before {
+  content: "\e923";
+  color: #fff;
+}
