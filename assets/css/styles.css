@@ -713,6 +713,14 @@ input[type=color],
   padding-top: 12px;
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
 .pt-24 {
   padding-top: 24px;
 }
@@ -735,6 +743,10 @@ input[type=color],
 
 .pb8 {
   padding: 8px;
+}
+
+.bg-primary {
+  background: #033f38;
 }
 
 .tf-btn {
@@ -964,7 +976,7 @@ input[type=color],
 .tf-box-column.xl .img-box img {
   border-radius: 16px;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 .tf-box-column.xl .content-box {
   padding: 16px;
@@ -980,7 +992,7 @@ input[type=color],
 .tf-box-column.md .img-box img {
   border-radius: 14px;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 .tf-box-column.md .content-box {
   margin-top: 8px;
@@ -1110,6 +1122,37 @@ input[type=color],
   color: #ffffff;
 }
 
+.recomand-box {
+  box-shadow: 0px 8px 30px 0px rgba(3, 63, 56, 0.3);
+  border-radius: 16px;
+}
+.recomand-box .img-box {
+  position: relative;
+}
+.recomand-box .img-box a {
+  display: block;
+  width: 335px;
+  height: 148px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.recomand-box .img-box a img {
+  width: 100%;
+  height: 100%;
+}
+.recomand-box .img-box .logo {
+  max-width: 100px;
+  height: 123px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.recomand-box .img-box .logo img {
+  width: 100%;
+  height: 100%;
+}
+
 #app h1 {
   padding-right: 70px;
 }
@@ -1137,6 +1180,12 @@ input[type=color],
   font-style: normal;
   line-height: normal;
   gap: 2px;
+}
+
+.home-2 .bg-primary h1,
+.home-3 .bg-primary h1,
+.home-4 .bg-primary h1 {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

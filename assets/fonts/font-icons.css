@@ -26,9 +26,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-right:before {
+.icon-icon-right:before {
   content: "\e900";
-  font-size: 16px;
 }
 
 .icon-store:before {
@@ -110,7 +109,9 @@
   content: "\e914";
 }
 
-.icon-filter-2:before {}
+.icon-filter-2:before {
+  content: "\e915";
+}
 
 .icon-eye-show:before {
   content: "\e916";
