@@ -238,7 +238,6 @@ body {
     line-height: normal;
     background-color: $white;
     color: $text;
-    overflow: hidden;
     min-height: 100vh;
     width: 100%;
     margin: 0 auto;
@@ -505,11 +504,17 @@ input[type="color"],
 .mt-19 {
     margin-top: 19px;
 }
-.mt-21 {
-    margin-top: 21px;
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
 }
 .mt-24 {
     margin-top: 24px;
+}
+.mb-24 {
+    margin-bottom: 24px;
 }
 .mt-25 {
     margin-top: 25px;

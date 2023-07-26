@@ -43,7 +43,6 @@
 
 .icon-profile:before {
   content: "\e904";
-  color: #d3d9d8;
 }
 
 .icon-search:before {
@@ -105,17 +104,14 @@
 
 .icon-home:before {
   content: "\e912";
-  color: #d3d9d8;
 }
 
 .icon-heart:before {
   content: "\e914";
-  color: #d3d9d8;
 }
 
 .icon-filter-2:before {
   content: "\e915";
-  color: #cfcfcf;
 }
 
 .icon-eye-show:before {
@@ -130,7 +126,6 @@
 
 .icon-discovery:before {
   content: "\e918";
-  color: #d3d9d8;
 }
 
 .icon-card-num:before {
@@ -179,7 +174,6 @@
 
 .icon-buy:before {
   content: "\e921";
-  color: #d3d9d8;
 }
 
 .icon-bookmark:before {

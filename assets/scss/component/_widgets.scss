@@ -65,12 +65,12 @@
     border-radius: 16px;
     &.xl {
         .img-box {
-            border-radius: 14px;
             overflow: hidden;
-            max-width: 209px;
-            min-height: 156px;
+            // max-width: 209px;
+            // min-height: 156px;
             padding: 6px 6px 0px;
             img {
+                border-radius: 16px;
                 width: 100%;
                 min-height: 100%;
             }
@@ -103,18 +103,10 @@
                 }
             }
             .price {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                .accent {
-                    font-size: 16px;
-                    font-weight: 600;
-                    @include fh-normal;
-                    color: $primary;
-                }
-                .del {
-                    text-decoration: line-through;
-                }
+                font-size: 16px;
+                font-weight: 600;
+                @include fh-normal;
+                color: $primary;
             }
             .box-price {
                 @include flex(center, space-between);
@@ -136,5 +128,53 @@
     &:hover,
     &:active {
         color: #fff1d0;
+    }
+}
+
+// search box
+.search-box {
+    position: relative;
+    .icon-search {
+        position: absolute;
+        left: 14px;
+        top: 18px;
+        font-size: 20px;
+    }
+    .icon-filter-2 {
+        position: absolute;
+        right: 14px;
+        top: 18px;
+        font-size: 20px;
+        color: #343434;
+    }
+    input {
+        padding-right: 42px;
+        padding-left: 42px;
+    }
+}
+
+.box-categories {
+    @include flex(center, center);
+    padding: 10px;
+
+    gap: 8px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.1);
+    .images {
+        max-width: 35px;
+        height: 33px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    span {
+        font-size: 14px;
+        @include fh-normal;
+        font-weight: 700;
+        color: $primary;
     }
 }

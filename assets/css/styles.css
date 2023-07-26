@@ -240,7 +240,6 @@ body {
   line-height: normal;
   background-color: #ffffff;
   color: #a1a1a1;
-  overflow: hidden;
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
@@ -542,12 +541,20 @@ input[type=color],
   margin-top: 19px;
 }
 
-.mt-21 {
-  margin-top: 21px;
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
 
 .mt-25 {
@@ -772,6 +779,46 @@ input[type=color],
   opacity: 0.5;
 }
 
+.menubar-footer {
+  padding: 14px 15px 15px;
+}
+.menubar-footer.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.menubar-footer .inner {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+.menubar-footer .inner li {
+  padding: 0 0;
+  width: 20%;
+}
+.menubar-footer .inner li.active a {
+  color: #033f38;
+  font-weight: 700;
+}
+.menubar-footer .inner li a {
+  color: #a1a1a1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.menubar-footer .inner li a span {
+  font-size: 24px;
+}
+
 .tf-box-row {
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
   border-radius: 16px;
@@ -841,13 +888,11 @@ input[type=color],
   border-radius: 16px;
 }
 .tf-box-column.xl .img-box {
-  border-radius: 14px;
   overflow: hidden;
-  max-width: 209px;
-  min-height: 156px;
   padding: 6px 6px 0px;
 }
 .tf-box-column.xl .img-box img {
+  border-radius: 16px;
   width: 100%;
   min-height: 100%;
 }
@@ -878,19 +923,11 @@ input[type=color],
   margin: 0px 10px;
 }
 .tf-box-column.xl .content-box .price {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.tf-box-column.xl .content-box .price .accent {
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
   line-height: normal;
   color: #033f38;
-}
-.tf-box-column.xl .content-box .price .del {
-  text-decoration: line-through;
 }
 .tf-box-column.xl .content-box .box-price {
   display: flex;
@@ -911,6 +948,58 @@ input[type=color],
 }
 .btn-add:hover, .btn-add:active {
   color: #fff1d0;
+}
+
+.search-box {
+  position: relative;
+}
+.search-box .icon-search {
+  position: absolute;
+  left: 14px;
+  top: 18px;
+  font-size: 20px;
+}
+.search-box .icon-filter-2 {
+  position: absolute;
+  right: 14px;
+  top: 18px;
+  font-size: 20px;
+  color: #343434;
+}
+.search-box input {
+  padding-right: 42px;
+  padding-left: 42px;
+}
+
+.box-categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 8px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.1);
+}
+.box-categories .images {
+  max-width: 35px;
+  height: 33px;
+}
+.box-categories .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box-categories span {
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  color: #033f38;
+}
+
+#app h1 {
+  padding-right: 70px;
 }
 
 /*# sourceMappingURL=styles.css.map */
