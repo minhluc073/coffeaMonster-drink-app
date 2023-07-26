@@ -309,7 +309,7 @@ h6 {
     color: $primary;
 
     a {
-        color: $text-black;
+        color: $primary;
         &:hover {
             color: $primary;
         }
@@ -419,7 +419,6 @@ input:-ms-input-placeholder {
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
     color: $text;
-    // opacity: 1;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -636,6 +635,18 @@ input[type="color"],
 }
 .pt-24 {
     padding-top: 24px;
+}
+.pb-24 {
+    padding-bottom: 24px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-70 {
+    padding-bottom: 70px;
 }
 .pb8 {
     padding: 8px;

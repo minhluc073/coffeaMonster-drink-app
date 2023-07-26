@@ -63,11 +63,47 @@
 .tf-box-column {
     box-shadow: $shadow-1;
     border-radius: 16px;
+
+    .content-box {
+        .review {
+            display: flex;
+            align-items: center;
+            margin: 8px 0px;
+            li {
+                .icon-star {
+                    color: $yellow;
+                    font-size: 14px;
+                    margin-right: 4px;
+                }
+                span {
+                    color: #343434;
+                    font-weight: 700;
+                    @include fh-normal;
+                }
+            }
+            .dot-icon {
+                width: 3px;
+                height: 3px;
+                background-color: #c4c4c4;
+                border-radius: 50%;
+                margin: 0px 10px;
+            }
+        }
+        .price {
+            font-size: 16px;
+            font-weight: 600;
+            @include fh-normal;
+            color: $primary;
+        }
+        .box-price {
+            @include flex(center, space-between);
+        }
+    }
     &.xl {
         .img-box {
             overflow: hidden;
-            // max-width: 209px;
-            // min-height: 156px;
+            max-width: 209px;
+            min-height: 156px;
             padding: 6px 6px 0px;
             img {
                 border-radius: 16px;
@@ -77,36 +113,43 @@
         }
         .content-box {
             padding: 16px;
-
+        }
+    }
+    &.md {
+        padding: 8px;
+        .img-box {
+            overflow: hidden;
+            width: 140px;
+            height: 105px;
+            img {
+                border-radius: 14px;
+                width: 100%;
+                min-height: 100%;
+            }
+        }
+        .content-box {
+            margin-top: 8px;
             .review {
-                display: flex;
-                align-items: center;
-                margin: 8px 0px;
-                li {
-                    .icon-star {
-                        color: $yellow;
-                        font-size: 14px;
-                        margin-right: 4px;
-                    }
-                    span {
-                        color: #343434;
-                        font-weight: 700;
-                        @include fh-normal;
-                    }
-                }
                 .dot-icon {
-                    width: 3px;
-                    height: 3px;
-                    background-color: #c4c4c4;
-                    border-radius: 50%;
-                    margin: 0px 10px;
+                    margin: 0px 6px;
                 }
             }
             .price {
-                font-size: 16px;
-                font-weight: 600;
-                @include fh-normal;
-                color: $primary;
+                display: flex;
+                flex-direction: column;
+                .accent {
+                    font-size: 15px;
+                    font-weight: 600;
+                    @include fh-normal;
+                    color: $primary;
+                }
+                .del {
+                    text-decoration: line-through;
+                    color: $text;
+                    font-size: 12px;
+                    font-weight: 400;
+                    @include fh-normal;
+                }
             }
             .box-price {
                 @include flex(center, space-between);
@@ -160,7 +203,8 @@
     gap: 8px;
     border-radius: 100px;
     background: #fff;
-    box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid $line-2;
+
     .images {
         max-width: 35px;
         height: 33px;
@@ -176,5 +220,35 @@
         @include fh-normal;
         font-weight: 700;
         color: $primary;
+    }
+}
+
+.box-collections {
+    position: relative;
+    .images {
+        border-radius: 16px;
+        max-width: 156px;
+        height: 210px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition3;
+        }
+    }
+    .content {
+        position: absolute;
+        padding: 10px;
+        bottom: 4px;
+        left: 4px;
+        right: 4px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+        a,
+        p {
+            color: $white;
+        }
     }
 }

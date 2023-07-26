@@ -2,6 +2,28 @@
     h1 {
         padding-right: 70px;
     }
+
+    .wrap-swiper {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .section {
+        .title-bar {
+            @include flex(center, space-between);
+            h2 {
+                @include flex(center, space-between);
+                gap: 8px;
+            }
+            a {
+                @include flex(center, center);
+                font-size: 14px;
+                font-weight: 400;
+                @include fh-normal;
+                gap: 2px;
+            }
+        }
+    }
 }
 .home-1 {
 }
