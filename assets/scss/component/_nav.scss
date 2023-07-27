@@ -1,0 +1,43 @@
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+#navtabs-drink1 {
+    background: $white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    padding: 4px;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+    .nav-item {
+        a {
+            background-color: $bg-input;
+
+            display: block;
+            padding: 6px 10px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 4px;
+
+            @include fh-normal;
+            color: $primary;
+            &.active {
+                background-color: $primary;
+                color: $text-2;
+                font-weight: 700;
+            }
+        }
+    }
+}

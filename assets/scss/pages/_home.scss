@@ -1,6 +1,25 @@
 #app {
-    h1 {
+    & > h1 {
         padding-right: 70px;
+    }
+    .header-location {
+        p {
+            color: $white;
+            font-size: 14px;
+            font-weight: 400;
+            @include fh-normal;
+            opacity: 0.4000000059604645;
+        }
+        span {
+            margin-top: 6px;
+            color: $white;
+            font-size: 16px;
+            font-weight: 700;
+            @include fh-normal;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
     }
 
     .wrap-swiper {
@@ -28,9 +47,77 @@
 .home-2,
 .home-3,
 .home-4 {
-    .bg-primary {
-        h1 {
-            color: $white;
+    h1 {
+        color: $white;
+    }
+}
+.home-2 {
+    position: relative;
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        content: "";
+        z-index: -1;
+        display: block;
+        height: 260px;
+        background: $primary;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .recomand-sec {
+        // position: relative;
+        // &::before {
+        //     position: absolute;
+        //     left: 0;
+        //     right: 0;
+        //     top: 0;
+        //     content: "";
+        //     display: block;
+        //     height: 95px;
+        //     background: $primary;
+        //     border-bottom-left-radius: 30px;
+        //     border-bottom-right-radius: 30px;
+        // }
+    }
+
+    .section {
+        .wrap-box-sm {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+    }
+}
+.home-3 {
+    position: relative;
+    overflow-x: hidden;
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        content: "";
+        z-index: -1;
+        display: block;
+        height: 390px;
+        background: $primary;
+        border-bottom-left-radius: 55px;
+        border-bottom-right-radius: 55px;
+        margin: 0px -20px;
+    }
+    .section {
+        .wrap-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 11px;
+            .box-collections {
+                .images {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
 }

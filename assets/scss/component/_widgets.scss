@@ -62,7 +62,7 @@
 .tf-box-column {
     box-shadow: $shadow-1;
     border-radius: 16px;
-
+    background: $white;
     .content-box {
         .review {
             display: flex;
@@ -99,6 +99,27 @@
         }
     }
     &.xl {
+        padding: 8px;
+        .img-box {
+            overflow: hidden;
+            border-radius: 16px;
+            img {
+                @include wh-full;
+            }
+        }
+        .content-box {
+            padding: 16px 8px 8px;
+
+            .price {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 28px;
+                color: $primary;
+            }
+        }
+    }
+    &.lg {
         .img-box {
             overflow: hidden;
             max-width: 209px;
@@ -126,6 +147,46 @@
         }
         .content-box {
             margin-top: 8px;
+            .review {
+                .dot-icon {
+                    margin: 0px 6px;
+                }
+            }
+            .price {
+                display: flex;
+                flex-direction: column;
+                .accent {
+                    font-size: 15px;
+                    font-weight: 600;
+                    @include fh-normal;
+                    color: $primary;
+                }
+                .del {
+                    text-decoration: line-through;
+                    color: $text;
+                    font-size: 12px;
+                    font-weight: 400;
+                    @include fh-normal;
+                }
+            }
+            .box-price {
+                @include flex(center, space-between);
+            }
+        }
+    }
+    &.sm {
+        .img-box {
+            overflow: hidden;
+            // width: 150px;
+            // height: 110px;
+            padding: 6px 6px 0px;
+            img {
+                border-radius: 14px;
+                @include wh-full;
+            }
+        }
+        .content-box {
+            padding: 12px 16px 16px;
             .review {
                 .dot-icon {
                     margin: 0px 6px;
@@ -204,7 +265,9 @@
 
     .images {
         max-width: 35px;
-        height: 33px;
+        height: auto;
+        border-radius: 50%;
+        overflow: hidden;
 
         img {
             @include wh-full;
@@ -217,6 +280,14 @@
         @include fh-normal;
         font-weight: 700;
         color: $primary;
+    }
+    &.primary {
+        border: 1px solid $rgba-1;
+        background: $rgba-1;
+
+        span {
+            color: $white;
+        }
     }
 }
 
@@ -250,15 +321,27 @@
     }
 }
 .recomand-box {
-    box-shadow: 0px 8px 30px 0px rgba(3, 63, 56, 0.3);
     border-radius: 16px;
+    // max-width: 335px;
+    position: relative;
 
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 16px;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $liner-garden;
+    }
     .img-box {
         position: relative;
 
-        a {
+        .bg {
             display: block;
-            width: 335px;
+            width: auto;
             height: 148px;
             overflow: hidden;
             border-radius: 16px;
@@ -271,11 +354,41 @@
             max-width: 100px;
             height: 123px;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include center;
+            z-index: 3;
             img {
                 @include wh-full;
+            }
+        }
+    }
+}
+
+.wrap-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    .categories-item {
+        .box-img {
+            border-radius: 16px;
+            box-shadow: $shadow-4;
+            overflow: hidden;
+            img {
+                @include wh-full;
+            }
+        }
+        .content {
+            padding: 12px 14px 0px;
+            text-align: center;
+            p {
+                color: $primary;
+                font-weight: 700;
+                font-size: 14px;
+                @include fh-normal;
+            }
+            span {
+                font-weight: 400;
+                color: $text;
+                @include fh-normal;
             }
         }
     }
