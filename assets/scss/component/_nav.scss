@@ -15,11 +15,9 @@
 
 #navtabs-drink1 {
     background: $white;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4px;
+    @include grid(4, 1fr, 0px, 4px);
     padding: 4px;
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: $shadow-1;
     .nav-item {
         a {
             background-color: $bg-input;

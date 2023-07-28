@@ -45,14 +45,7 @@ if ($(".drink-swiper-2").length > 0) {
     slidesPerView: 1.2,
     spaceBetween: 10,
     loop: true,
-    navigation: {
-      nextEl: ".swiper-btn-next",
-      prevEl: ".swiper-btn-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+
     breakpoints: {
       1024: {
         slidesPerView: 3,
@@ -62,6 +55,30 @@ if ($(".drink-swiper-2").length > 0) {
       },
       576: {
         slidesPerView: 1.5,
+      },
+    },
+  });
+}
+if ($(".drink-swiper-3").length > 0) {
+  var swiperRecomandSwiper = new Swiper(".drink-swiper-3", {
+    speed: 500,
+    parallax: true,
+    slidesPerView: 2,
+    spaceBetween: 12,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 2.5,
       },
     },
   });

@@ -42,5 +42,26 @@
         &.ml-1 {
             margin-left: 4px;
         }
+        &.ml-2 {
+            margin-left: 6px;
+        }
+    }
+}
+.drink-swiper-3 {
+    padding: 0px 12px;
+}
+.dots-tes {
+    position: unset;
+    span {
+        width: 8px;
+        height: 8px;
+        background-color: $primary;
+        opacity: 0.2;
+    }
+    .swiper-pagination-bullet-active {
+        background: $primary;
+        opacity: 1;
+        width: 16px;
+        border-radius: 100px;
     }
 }

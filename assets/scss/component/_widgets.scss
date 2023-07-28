@@ -44,7 +44,7 @@
             align-items: center;
             gap: 8px;
             .accent {
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 600;
                 @include fh-normal;
                 color: $primary;
@@ -55,6 +55,68 @@
         }
         .box-price {
             @include flex(center, space-between);
+        }
+    }
+    &.style-2 {
+        align-items: center;
+        position: relative;
+        .img-box {
+            // border-radius: 14px;
+            overflow: unset;
+            width: 106px;
+            height: 106px;
+            img {
+                @include wh-full;
+                box-shadow: $shadow-5;
+                border-radius: 50%;
+            }
+        }
+        .btn-add {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+        }
+    }
+    &.r-center {
+        flex-direction: column;
+        gap: 20px;
+        // align-items: center;
+        padding-bottom: 26px;
+        position: relative;
+        .img-box {
+            border-radius: unset;
+            overflow: unset;
+            max-width: unset;
+            height: auto;
+            padding: 8px 8px 0px;
+            img {
+                box-shadow: $shadow-5;
+                border-radius: 50%;
+            }
+        }
+        .content-box {
+            h4 {
+                text-align: center;
+            }
+            .price {
+                font-size: 15px;
+                font-weight: 600;
+                @include fh-normal;
+                color: $primary;
+                justify-content: center;
+            }
+            .review {
+                margin: 4px 0px 8px;
+                .dot-icon {
+                    margin: 0px 10px;
+                }
+            }
+        }
+        .btn-add {
+            position: absolute;
+            bottom: -14px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
@@ -364,9 +426,7 @@
 }
 
 .wrap-categories {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    @include grid(4, 1fr, 15px, 15px);
     .categories-item {
         .box-img {
             border-radius: 16px;
@@ -390,6 +450,49 @@
                 color: $text;
                 @include fh-normal;
             }
+        }
+    }
+}
+
+.box-noti-cart {
+    padding: 8px;
+    background: $primary;
+    border-radius: 16px;
+    @include flex(center, space-between);
+    gap: 10px;
+    .box-icon {
+        width: 40px;
+        height: 40px;
+        @include flex(center, center);
+        border-radius: 50%;
+        background-color: $white;
+        i {
+            font-size: 20px;
+        }
+    }
+    .content {
+        flex-grow: 1;
+        p {
+            font-weight: 500;
+            margin-bottom: 2px;
+            @include fh-normal;
+            color: $white;
+            opacity: 0.4;
+        }
+        span {
+            font-size: 15px;
+            font-weight: 500;
+            @include fh-normal;
+            color: $white;
+        }
+    }
+    .btn-right {
+        width: 30px;
+        height: 30px;
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        @include flex(center, flex-end);
+        i {
+            font-size: 20px;
         }
     }
 }

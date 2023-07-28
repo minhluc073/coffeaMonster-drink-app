@@ -40,3 +40,14 @@
         background: #e6ecec;
     }
 }
+.back-btn {
+    width: 26px;
+    height: 26px;
+    @include flex(center, center);
+    border-radius: 50%;
+    border: 1px solid rgba(3, 63, 56, 0.3);
+    i {
+        font-size: 16px;
+        color: $primary;
+    }
+}

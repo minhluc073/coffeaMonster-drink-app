@@ -26,7 +26,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon-right:before {
+.icon-right:before {
   content: "\e900";
 }
 
@@ -70,7 +70,6 @@
 
 .icon-menu-2:before {
   content: "\e90a";
-  color: #cfcfcf;
 }
 
 .icon-location:before {
