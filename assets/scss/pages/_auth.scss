@@ -36,7 +36,7 @@
         background-color: $white;
         left: 20px;
         right: 20px;
-        bottom: 20px;
+        bottom: 34px;
         border-radius: 24px;
         padding: 30px;
 
@@ -90,4 +90,8 @@
             height: 26px;
         }
     }
+}
+
+.group-btn-social {
+    @include grid(2, 1fr, 0, 15px);
 }

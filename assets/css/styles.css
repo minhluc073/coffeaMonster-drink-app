@@ -617,8 +617,12 @@ input[type=color],
   margin-top: 53px;
 }
 
-.mt-61 {
-  margin-top: 61px;
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
 }
 
 .mt-67 {
@@ -893,6 +897,167 @@ input[type=color],
 .tf-form.primary input:focus, .tf-form.primary input::placeholder {
   color: #ffffff;
   opacity: 0.5;
+}
+
+.group-input {
+  position: relative;
+  display: flex;
+}
+.group-input .icon {
+  position: absolute;
+  left: 14px;
+  top: 16px;
+  font-size: 20px;
+}
+.group-input input {
+  padding-left: 42px;
+  height: 56px;
+}
+.group-input.group-ip-password .password-field:valid {
+  padding-right: 94px;
+}
+.group-input.group-ip-password .box-auth-show {
+  display: none;
+  position: absolute;
+  top: 14px;
+  font-size: 18px;
+  right: 14px;
+}
+.group-input.group-ip-password .box-auth-show .forgot-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  color: #033f38;
+}
+.group-input.group-ip-password .box-auth-show .show-pass {
+  margin-top: 3px;
+}
+.group-input.group-ip-password .box-auth-show .show-pass i {
+  font-size: 20px;
+}
+.group-input.group-ip-password .box-auth-show .show-pass .icon-eye-show {
+  display: none;
+}
+.group-input.group-ip-password .box-auth-show .show-pass.active .icon-eye-hide {
+  display: none;
+}
+.group-input.group-ip-password .box-auth-show .show-pass.active .icon-eye-show {
+  display: inline-block;
+}
+.group-input.group-ip-password .password-field:valid ~ .box-auth-show {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.group-input.custom-select .inner-group-ip {
+  position: relative;
+}
+.group-input.custom-select .inner-group-ip::before {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: #e6e6e6;
+  z-index: 1;
+}
+.group-input.custom-select img {
+  width: 20px;
+  min-width: 20px;
+  margin-right: 10px;
+  height: 20px;
+  border-radius: 50%;
+}
+.group-input.custom-select button {
+  border: 1px solid transparent;
+  background-color: #f8f8f8;
+  padding: 16px 14px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.group-input.custom-select .bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+}
+.group-input.custom-select .dropdown-toggle:after {
+  content: "\e911";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: 0;
+  font-family: "icomoon";
+  border: 0 !important;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.group-input.custom-select .bootstrap-select {
+  width: auto !important;
+}
+.group-input.custom-select .bootstrap-select > .dropdown-menu {
+  margin-top: -12px !important;
+  min-width: 30%;
+  text-align: left;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+  display: none;
+}
+.group-input.custom-select .bootstrap-select > .dropdown-menu .dropdown-item {
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+}
+.group-input.custom-select .bootstrap-select > .dropdown-menu .dropdown-item.active {
+  background-color: #033f38;
+}
+.group-input.custom-select .bootstrap-select > .dropdown-menu.show {
+  display: block;
+  z-index: 1;
+}
+.group-input.custom-select:focus-within .inner-group-ip, .group-input.custom-select:focus-within .form-control {
+  border: 1px solid #033f38;
+}
+.group-input.custom-select .form-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: unset;
+  padding-left: 14px;
+}
+.group-input.custom-select:focus-within .inner-group-ip {
+  border-right: 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.group-input.custom-select:focus-within .form-control {
+  border-left: 0;
+}
+
+.form-signup .group-ip-password .password-field:valid {
+  padding-right: 40px;
+}
+.form-signup .group-ip-password .box-auth-show {
+  display: flex;
+}
+.form-signup .group-ip-password .box-auth-show .show-pass2 {
+  margin-top: 3px;
+}
+.form-signup .group-ip-password .box-auth-show .show-pass2 i {
+  font-size: 20px;
+}
+.form-signup .group-ip-password .box-auth-show .show-pass2 .icon-eye-show {
+  display: none;
+}
+.form-signup .group-ip-password .box-auth-show .show-pass2.active .icon-eye-show {
+  display: block;
+}
+.form-signup .group-ip-password .box-auth-show .show-pass2.active .icon-eye-hide {
+  display: none;
 }
 
 .menubar-footer {
@@ -1542,7 +1707,7 @@ input[type=color],
   background-color: #ffffff;
   left: 20px;
   right: 20px;
-  bottom: 20px;
+  bottom: 34px;
   border-radius: 24px;
   padding: 30px;
 }
@@ -1594,6 +1759,12 @@ input[type=color],
 .tf-btn.social img {
   width: 26px;
   height: 26px;
+}
+
+.group-btn-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 15px;
 }
 
 .app h1 {

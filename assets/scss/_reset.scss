@@ -375,6 +375,10 @@ input[type="color"] {
     gap: 8px;
     @include transition3;
 }
+input[type="password"] {
+    // font-size: 18px;
+    // -webkit-text-security: square;
+}
 
 textarea:focus,
 input[type="text"]:focus,
@@ -560,8 +564,11 @@ input[type="color"],
 .mt-53 {
     margin-top: 53px;
 }
-.mt-61 {
-    margin-top: 61px;
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-70 {
+    margin-top: 70px;
 }
 .mt-67 {
     margin-top: 67px;
