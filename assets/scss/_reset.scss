@@ -688,6 +688,12 @@ input[type="color"],
 .pb8 {
     padding: 8px;
 }
+.text-white {
+    color: $white;
+}
+.text-center {
+    text-align: center;
+}
 
 .bg-primary {
     background: $primary;

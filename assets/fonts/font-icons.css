@@ -60,7 +60,6 @@
 
 .icon-pen-edit:before {
   content: "\e908";
-  color: #fff;
 }
 
 .icon-message:before {
@@ -91,7 +90,7 @@
   color: #fff;
 }
 
-.icon-icon-left:before {
+.icon-left:before {
   content: "\e910";
 }
 

@@ -26,6 +26,10 @@
     &.white {
         border: 1px solid transparent;
         background-color: $white;
+        // &:hover {
+        //     background-color: $primary;
+        //     color: $white;
+        // }
     }
     &.outline {
         border: 1px solid $line;
@@ -49,5 +53,11 @@
     i {
         font-size: 16px;
         color: $primary;
+    }
+    &.primary {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        i {
+            color: $white;
+        }
     }
 }

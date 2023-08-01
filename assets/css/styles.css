@@ -781,6 +781,14 @@ input[type=color],
   padding: 8px;
 }
 
+.text-white {
+  color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .bg-primary {
   background: #033f38;
 }
@@ -888,6 +896,12 @@ input[type=color],
 .back-btn i {
   font-size: 16px;
   color: #033f38;
+}
+.back-btn.primary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.back-btn.primary i {
+  color: #ffffff;
 }
 
 .tf-form.primary input {
@@ -1100,6 +1114,14 @@ input[type=color],
 }
 .menubar-footer .inner li a span {
   font-size: 24px;
+}
+
+.footer.is-fixed {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  position: fixed;
 }
 
 .drink-swiper .swiper-slide {
@@ -1680,15 +1702,6 @@ input[type=color],
   position: relative;
   height: 100vh;
 }
-.account-area .logo {
-  width: 109px;
-  height: auto;
-  margin: 0 auto;
-}
-.account-area .logo img {
-  width: 100%;
-  height: 100%;
-}
 .account-area .tf-title h1 {
   color: #ffffff;
   text-align: center;
@@ -1767,6 +1780,63 @@ input[type=color],
   gap: 0 15px;
 }
 
+.auth-section .content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.5;
+  color: #ffffff;
+  padding: 2px 30px 0px;
+}
+.auth-section .content .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 14px;
+  color: #ffffff;
+}
+.auth-section .content .num i {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.digit-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.digit-group input {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.digit-group input:focus {
+  border: 1px solid #ffffff;
+}
+
+.logo-app {
+  width: 109px;
+  height: auto;
+  margin: 0 auto;
+}
+.logo-app img {
+  width: 100%;
+  height: 100%;
+}
+
 .app h1 {
   padding-right: 70px;
 }
@@ -1814,44 +1884,44 @@ input[type=color],
   line-height: normal;
   gap: 2px;
 }
-.app .header {
+.app .header-home {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.app .header .left {
+.app .header-home .left {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.app .header .left .avt {
+.app .header-home .left .avt {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
 }
-.app .header .left .avt img {
+.app .header-home .left .avt img {
   width: 100%;
   height: 100%;
 }
-.app .header .left .content p {
+.app .header-home .left .content p {
   color: #a1a1a1;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
 }
-.app .header .left .content h4 {
+.app .header-home .left .content h4 {
   margin-top: 3px;
 }
-.app .header .left .content h4 a {
+.app .header-home .left .content h4 a {
   color: #262626;
 }
-.app .header .right {
+.app .header-home .right {
   padding: 6px 0px;
   padding-left: 15px;
 }
-.app .header .right .icon-menu-2 {
+.app .header-home .right .icon-menu-2 {
   font-size: 20px;
   color: #cfcfcf;
 }
