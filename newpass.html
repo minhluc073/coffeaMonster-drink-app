@@ -28,10 +28,10 @@
                 <h1 class="mt-16 text-white text-center">Creat New password</h1>
                 <p class="text-white text-center">your new password must be different from previous used passwords</p>
             </div>
-            <form method="post" action="sign-in.html" class="mt-52">
+            <form action="sign-in.html" class="mt-52 newpass">
                 <div class="group-input mb-15 group-ip-password pd1">
                     <i class="icon icon-lock"></i>
-                    <input class="password-field primary" type="password" placeholder="New password">
+                    <input class="password-field" type="password" placeholder="New password">
                     <div class="box-auth-show">
                         <span class="show-pass">
                             <i class="icon-eye-hide"></i>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="group-input ip-password2 mb-20 group-ip-password pd1">
                     <i class="icon icon-lock"></i>
-                    <input class="password-field2 primary" type="password" placeholder="Confirm password">
+                    <input class="password-field2" type="password" placeholder="Confirm password">
                     <div class="box-auth-show">
                         <span class="show-pass2">
                             <i class="icon-eye-hide"></i>
@@ -49,8 +49,10 @@
                         </span>
                     </div>
                 </div>
-                <div>
-                    <button type="submit">Continue</button>              
+                <div class="bottom-fixed">
+                    <div class="inner mb-20">
+                        <button type="submit" class="tf-btn large white">Update & Login</button>              
+                    </div>
                 </div>
             </form>
         </div>

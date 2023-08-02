@@ -83,10 +83,51 @@
         });
     }
   };
+  /* check
+  ------------------------------------------------------------------------------------- */
+  var checkRadio = function () {
+    $(".form-check-input:checked").parent().addClass("check");
+    $(".form-check-input").on("click", function () {
+      $(".form-check-input:not(:checked)").parent().removeClass("check");
+      $(".form-check-input:checked").parent().addClass("check");
+    });
+  };
+  /* range slider
+  ------------------------------------------------------------------------------------- */
+  var rangeSlider = function () {
+    if ($("#range-two-val").length > 0) {
+      var rangeTwoSlider = document.getElementById("range-two-val");
+      noUiSlider.create(rangeTwoSlider, {
+        start: [17, 128],
+        connect: true,
+        tooltips: [true, true],
+        range: {
+          min: 0,
+          max: 160,
+        },
+        format: {
+          to: (v) => v | 0,
+          from: (v) => v | 0,
+        },
+      });
+    }
+  };
+
+  /* back Page
+  ------------------------------------------------------------------------------------- */
+  var backPage = function () {
+    $(".back-btn").on("click", function (e) {
+      e.preventDefault();
+      window.history.back();
+    });
+  };
 
   $(function () {
     showPass();
     selectImages();
     otpInput();
+    checkRadio();
+    rangeSlider();
+    backPage();
   });
 })(jQuery);

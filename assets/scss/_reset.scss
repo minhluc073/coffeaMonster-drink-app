@@ -570,6 +570,9 @@ input[type="color"],
 .mt-70 {
     margin-top: 70px;
 }
+.mt-78 {
+    margin-top: 70px;
+}
 .mt-67 {
     margin-top: 67px;
 }
@@ -688,6 +691,7 @@ input[type="color"],
 .pb8 {
     padding: 8px;
 }
+
 .text-white {
     color: $white;
 }
@@ -697,4 +701,50 @@ input[type="color"],
 
 .bg-primary {
     background: $primary;
+}
+
+// custom input radio
+
+.form-check-input {
+    display: none;
+}
+.form-check-label {
+    cursor: pointer;
+    position: relative;
+    &::before {
+        font-family: "icomoon";
+        content: "\e902";
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        @include flex(center, center);
+        z-index: 3;
+        opacity: 0;
+        color: $white;
+    }
+    &::after {
+        position: absolute;
+        left: 1px;
+        top: 2px;
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: $white;
+        border-radius: 100px;
+        border: 1px solid $white;
+    }
+}
+.form-check-input[type="radio"] {
+    border-radius: 50%;
+}
+
+.form-check-input:checked ~ .form-check-label:after {
+    background-color: $primary;
+    border-color: $primary;
+}
+.form-check-input:checked ~ .form-check-label:before {
+    opacity: 1;
 }
