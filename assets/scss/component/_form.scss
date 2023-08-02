@@ -52,6 +52,7 @@
                 margin-top: 3px;
                 i {
                     font-size: 20px;
+                    color: $color-icon1;
                 }
                 .icon-eye-show {
                     display: none;
@@ -171,9 +172,10 @@
     }
 }
 
-.form-signup {
-    .group-ip-password {
-        .password-field:valid {
+.group-ip-password {
+    &.pd1 {
+        .password-field:valid,
+        .password-field2:valid {
             padding-right: 40px;
         }
         .box-auth-show {
@@ -182,6 +184,7 @@
                 margin-top: 3px;
                 i {
                     font-size: 20px;
+                    color: $color-icon1;
                 }
                 .icon-eye-show {
                     display: none;

@@ -948,6 +948,7 @@ input[type=color],
 }
 .group-input.group-ip-password .box-auth-show .show-pass i {
   font-size: 20px;
+  color: #CFCFCF;
 }
 .group-input.group-ip-password .box-auth-show .show-pass .icon-eye-show {
   display: none;
@@ -1052,25 +1053,27 @@ input[type=color],
   border-left: 0;
 }
 
-.form-signup .group-ip-password .password-field:valid {
+.group-ip-password.pd1 .password-field:valid,
+.group-ip-password.pd1 .password-field2:valid {
   padding-right: 40px;
 }
-.form-signup .group-ip-password .box-auth-show {
+.group-ip-password.pd1 .box-auth-show {
   display: flex;
 }
-.form-signup .group-ip-password .box-auth-show .show-pass2 {
+.group-ip-password.pd1 .box-auth-show .show-pass2 {
   margin-top: 3px;
 }
-.form-signup .group-ip-password .box-auth-show .show-pass2 i {
+.group-ip-password.pd1 .box-auth-show .show-pass2 i {
   font-size: 20px;
+  color: #CFCFCF;
 }
-.form-signup .group-ip-password .box-auth-show .show-pass2 .icon-eye-show {
+.group-ip-password.pd1 .box-auth-show .show-pass2 .icon-eye-show {
   display: none;
 }
-.form-signup .group-ip-password .box-auth-show .show-pass2.active .icon-eye-show {
+.group-ip-password.pd1 .box-auth-show .show-pass2.active .icon-eye-show {
   display: block;
 }
-.form-signup .group-ip-password .box-auth-show .show-pass2.active .icon-eye-hide {
+.group-ip-password.pd1 .box-auth-show .show-pass2.active .icon-eye-hide {
   display: none;
 }
 
@@ -1116,7 +1119,7 @@ input[type=color],
   font-size: 24px;
 }
 
-.footer.is-fixed {
+.bottom-fixed {
   width: 100%;
   left: 0;
   bottom: 0;

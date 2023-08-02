@@ -112,12 +112,10 @@
 
 .icon-eye-show:before {
   content: "\e916";
-  color: #cfcfcf;
 }
 
 .icon-eye-hide:before {
   content: "\e917";
-  color: #cfcfcf;
 }
 
 .icon-discovery:before {
