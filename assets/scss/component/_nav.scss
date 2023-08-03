@@ -38,4 +38,7 @@
             }
         }
     }
+    &.grid-3 {
+        @include grid(3, 1fr, 0px, 4px);
+    }
 }

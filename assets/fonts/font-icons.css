@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?er06gz');
-  src: url('../fonts/icomoon.eot?er06gz#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?er06gz') format('truetype'),
-    url('../fonts/icomoon.woff?er06gz') format('woff'),
-    url('../fonts/icomoon.svg?er06gz#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?o4koes');
+  src: url('../fonts/icomoon.eot?o4koes#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?o4koes') format('truetype'),
+    url('../fonts/icomoon.woff?o4koes') format('woff'),
+    url('../fonts/icomoon.svg?o4koes#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,14 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e925";
+}
+
+.icon-minus:before {
+  content: "\e926";
 }
 
 .icon-ip-check:before {
@@ -166,14 +174,20 @@
 
 .icon-bookmark:before {
   content: "\e922";
-  color: #033f38;
 }
 
 .icon-arr-right:before {
   content: "\e923";
-  color: #fff;
 }
 
 .icon-location-2:before {
   content: "\e90c";
+}
+
+.icon-heart2:before {
+  content: "\e924";
+}
+
+.icon-heart1:before {
+  content: "\e913";
 }

@@ -1,8 +1,6 @@
 /*
  * show pass
-
  */
-
 (function ($) {
   "use strict";
 
@@ -86,10 +84,10 @@
   /* check
   ------------------------------------------------------------------------------------- */
   var checkRadio = function () {
-    $(".form-check-input:checked").parent().addClass("check");
-    $(".form-check-input").on("click", function () {
-      $(".form-check-input:not(:checked)").parent().removeClass("check");
-      $(".form-check-input:checked").parent().addClass("check");
+    $(".check-ip-bg:checked").parent().addClass("check");
+    $(".check-ip-bg").on("click", function () {
+      $(".check-ip-bg:not(:checked)").parent().removeClass("check");
+      $(".check-ip-bg:checked").parent().addClass("check");
     });
   };
   /* range slider
@@ -112,6 +110,41 @@
       });
     }
   };
+  /* btnQuantity
+  ------------------------------------------------------------------------------------- */
+  var btnQuantity = function () {
+    $(".minus-btn").on("click", function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest("div").find("input");
+      var value = parseInt($input.val());
+
+      if (value > 1) {
+        value = value - 1;
+      }
+
+      $input.val(value);
+    });
+    $(".plus-btn").on("click", function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest("div").find("input");
+      var value = parseInt($input.val());
+
+      if (value > 0) {
+        value = value + 1;
+      }
+
+      $input.val(value);
+    });
+  };
+  /* press heart
+  ------------------------------------------------------------------------------------- */
+  var pressHeart = function () {
+    $(".heart").on("click", function () {
+      $(this).toggleClass("active");
+    });
+  };
 
   /* back Page
   ------------------------------------------------------------------------------------- */
@@ -128,6 +161,8 @@
     otpInput();
     checkRadio();
     rangeSlider();
+    btnQuantity();
+    pressHeart();
     backPage();
   });
 })(jQuery);

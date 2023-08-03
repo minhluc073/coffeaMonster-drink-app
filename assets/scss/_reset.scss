@@ -293,6 +293,12 @@ h3 {
     line-height: normal;
 }
 h4 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+h5 {
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -471,11 +477,17 @@ input[type="color"],
 .mr-0 {
     margin-right: 0;
 }
+.ml--15 {
+    margin-left: -15px;
+}
 .pt-128 {
     padding-top: 128px;
 }
 .mt--16 {
     margin-top: -16px;
+}
+.mt-10 {
+    margin-top: 10px;
 }
 .mt-15 {
     margin-top: 15px;
@@ -540,6 +552,7 @@ input[type="color"],
 .mt-30 {
     margin-top: 30px;
 }
+
 .mt-37 {
     margin-top: 37px;
 }
@@ -627,6 +640,9 @@ input[type="color"],
 .mb-31 {
     margin-bottom: 31px;
 }
+.mb--30 {
+    margin-bottom: -30px;
+}
 .mb-33 {
     margin-bottom: 33px;
 }
@@ -661,6 +677,9 @@ input[type="color"],
 .pt-12 {
     padding-top: 12px;
 }
+.pb-12 {
+    padding-bottom: 12px;
+}
 .pt-16 {
     padding-top: 16px;
 }
@@ -682,6 +701,9 @@ input[type="color"],
 .pb-30 {
     padding-bottom: 30px;
 }
+.pb-50 {
+    padding-bottom: 50px;
+}
 .pb-70 {
     padding-bottom: 70px;
 }
@@ -693,32 +715,48 @@ input[type="color"],
 }
 
 .text-white {
-    color: $white;
+    color: $white !important;
+}
+.text-primary {
+    color: $primary !important;
+}
+.text {
+    color: $text !important;
 }
 .text-center {
     text-align: center;
 }
-
+.relative {
+    position: relative;
+}
 .bg-primary {
     background: $primary;
 }
-
+.bg-white {
+    background: $white;
+}
+.lr-top-radius {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 // custom input radio
-
 .form-check-input {
     display: none;
 }
 .form-check-label {
     cursor: pointer;
     position: relative;
+    width: 20px;
+    height: 20px;
+
     &::before {
         font-family: "icomoon";
         content: "\e902";
         width: 22px;
         height: 22px;
         position: absolute;
-        left: 0;
-        top: 0px;
+        left: 0px;
+        top: 1px;
         @include flex(center, center);
         z-index: 3;
         opacity: 0;
@@ -735,6 +773,21 @@ input[type="color"],
         background: $white;
         border-radius: 100px;
         border: 1px solid $white;
+    }
+    &.st2 {
+        &::after {
+            border: 1px solid #e1e1e1;
+        }
+    }
+    &.st3 {
+        &::after {
+            background: $primary;
+        }
+        &::before {
+            background: $white;
+            color: $primary;
+            border-radius: 100px;
+        }
     }
 }
 .form-check-input[type="radio"] {
