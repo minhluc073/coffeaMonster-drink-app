@@ -60,6 +60,7 @@ if ($(".drink-swiper-2").length > 0) {
   });
 }
 if ($(".drink-swiper-3").length > 0) {
+
   var swiperRecomandSwiper = new Swiper(".drink-swiper-3", {
     speed: 500,
     parallax: true,

@@ -18,6 +18,9 @@
         &:hover {
             background-color: $white;
             color: $primary;
+            i {
+                color: $primary;
+            }
         }
     }
     &.rga-border {

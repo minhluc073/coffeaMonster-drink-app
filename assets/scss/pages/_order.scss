@@ -1,0 +1,23 @@
+.scan-section {
+    .wrapper-scan {
+        .bg-scan {
+            border-radius: 16px;
+        }
+    }
+    .bg-success {
+        padding: 120px 45px 55px;
+    }
+    .title-success {
+        padding: 0px 40px;
+        color: $text-black;
+        text-align: center;
+    }
+}
+
+.icon-scan-bg {
+    width: 58px;
+    height: 58px;
+    @include flex(center, center);
+    background-color: $primary;
+    border-radius: 50%;
+}

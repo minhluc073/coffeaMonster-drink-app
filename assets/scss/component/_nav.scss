@@ -42,3 +42,33 @@
         @include grid(3, 1fr, 0px, 4px);
     }
 }
+.tab-product-detail {
+    @include grid(3, 1fr, 0px, 8px);
+    .nav-item {
+        a {
+            display: block;
+            padding: 10px 14px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 100px;
+            border: 1px solid $line-2;
+            @include fh-normal;
+            color: $primary;
+        }
+    }
+    &.st1 {
+        .nav-item {
+            a {
+                background-color: $rgba-2;
+                border: 1px solid $rgba-3;
+                @include fh-normal;
+                color: $white;
+                &.active {
+                    background-color: $white;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

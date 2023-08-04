@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?o4koes');
-  src: url('../fonts/icomoon.eot?o4koes#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?o4koes') format('truetype'),
-    url('../fonts/icomoon.woff?o4koes') format('woff'),
-    url('../fonts/icomoon.svg?o4koes#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?wyezrr');
+  src: url('../fonts/icomoon.eot?wyezrr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?wyezrr') format('truetype'),
+    url('../fonts/icomoon.woff?wyezrr') format('woff'),
+    url('../fonts/icomoon.svg?wyezrr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,26 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logout:before {
+  content: "\e927";
+}
+
+.icon-voice:before {
+  content: "\e928";
+}
+
+.icon-user:before {
+  content: "\e929";
+}
+
+.icon-notification:before {
+  content: "\e92a";
+}
+
+.icon-setting:before {
+  content: "\e92b";
 }
 
 .icon-plus:before {
@@ -98,7 +118,7 @@
   content: "\e910";
 }
 
-.icon-icon-down:before {
+.icon-down:before {
   content: "\e911";
 }
 

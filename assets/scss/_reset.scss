@@ -543,6 +543,9 @@ input[type="color"],
 .mt-25 {
     margin-top: 25px;
 }
+.mt-26 {
+    margin-top: 26px;
+}
 .mt-27 {
     margin-top: 27px;
 }
@@ -698,6 +701,9 @@ input[type="color"],
 .pt-30 {
     padding-top: 30px;
 }
+.pt-120 {
+    padding-top: 120px;
+}
 .pb-30 {
     padding-bottom: 30px;
 }
@@ -723,8 +729,17 @@ input[type="color"],
 .text {
     color: $text !important;
 }
+.t-black {
+    color: $t-black !important;
+}
 .text-center {
     text-align: center;
+}
+.d-flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center !important;
 }
 .relative {
     position: relative;
@@ -735,6 +750,9 @@ input[type="color"],
 .bg-white {
     background: $white;
 }
+// .bg-white-2 {
+//     background: #dfdcd5;
+// }
 .lr-top-radius {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
