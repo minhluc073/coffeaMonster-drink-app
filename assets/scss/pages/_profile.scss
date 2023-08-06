@@ -10,8 +10,42 @@
         font-weight: 700;
         line-height: 28px;
     }
+    &.col {
+        flex-direction: column;
+        .img {
+            width: 115px;
+            height: 115px;
+            margin-top: -55px;
+            border: 6px solid $white;
+        }
+    }
 }
 .list-view {
-    
+    @include flex(center, space-between);
+    gap: 10px;
+    span {
+        flex-grow: 1;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .icon {
+        font-size: 20px;
+        color: $color-icon1;
+    }
+    .icon-right {
+        font-size: 18px;
+        color: $color-icon1;
+    }
+    &.line {
+        border-bottom: 1px solid $line-2;
+    }
+    &.outline {
+        border-radius: 16px;
+        border: 1px solid $line-2;
+    }
+    &.padding {
+        padding: 14px;
+    }
 }
-

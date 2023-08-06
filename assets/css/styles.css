@@ -608,6 +608,10 @@ input[type=color],
   margin-top: 37px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mt-42 {
   margin-top: 42px;
 }
@@ -776,6 +780,10 @@ input[type=color],
   padding-top: 16px;
 }
 
+.pb-16 {
+  padding-bottom: 16px;
+}
+
 .pt-20 {
   padding-top: 20px;
 }
@@ -794,6 +802,10 @@ input[type=color],
 
 .pt-30 {
   padding-top: 30px;
+}
+
+.pt-50 {
+  padding-top: 50px;
 }
 
 .pt-120 {
@@ -2611,6 +2623,47 @@ input[type=color],
 .box-profile h3 {
   font-weight: 700;
   line-height: 28px;
+}
+.box-profile.col {
+  flex-direction: column;
+}
+.box-profile.col .img {
+  width: 115px;
+  height: 115px;
+  margin-top: -55px;
+  border: 6px solid #ffffff;
+}
+
+.list-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.list-view span {
+  flex-grow: 1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.list-view .icon {
+  font-size: 20px;
+  color: #cfcfcf;
+}
+.list-view .icon-right {
+  font-size: 18px;
+  color: #cfcfcf;
+}
+.list-view.line {
+  border-bottom: 1px solid #f1f1f1;
+}
+.list-view.outline {
+  border-radius: 16px;
+  border: 1px solid #f1f1f1;
+}
+.list-view.padding {
+  padding: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */
