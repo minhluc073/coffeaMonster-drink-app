@@ -21,3 +21,41 @@
     background-color: $primary;
     border-radius: 50%;
 }
+
+.list-view-card {
+    @include flex(center, space-between);
+    gap: 14px;
+    background: $white;
+    box-shadow: $shadow-1;
+    border-radius: 16px;
+    padding: 10px;
+    .img {
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+        @include flex(center, center);
+        img {
+            width: auto;
+        }
+    }
+    .content {
+        flex-grow: 1;
+        h5 {
+            color: $text-black;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            @include fh-normal;
+        }
+    }
+    .icon-right {
+        font-size: 24px;
+        color: $color-icon1;
+    }
+}
+.tf-form-payment {
+
+    
+}

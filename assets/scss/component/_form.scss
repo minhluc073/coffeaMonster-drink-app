@@ -172,6 +172,21 @@
             border-left: 0;
         }
     }
+    &.group-ip-2 {
+        .required-field:valid {
+            padding-right: 42px;
+        }
+        .show {
+            display: none;
+            position: absolute;
+            top: 16px;
+            font-size: 18px;
+            right: 14px;
+        }
+        .required-field:valid ~ .show {
+            display: block;
+        }
+    }
 }
 
 .group-ip-password {
@@ -201,5 +216,16 @@
                 }
             }
         }
+    }
+}
+.group-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        @include fh-normal;
+        color: $text-black-2;
     }
 }
