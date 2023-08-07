@@ -804,6 +804,14 @@ input[type=color],
   padding-bottom: 20px;
 }
 
+.pt-22 {
+  padding-top: 22px;
+}
+
+.pb-22 {
+  padding-bottom: 22px;
+}
+
 .pt-24 {
   padding-top: 24px;
 }
@@ -2865,6 +2873,29 @@ input[type=color],
   font-weight: 400;
   line-height: 24px;
   color: #343434;
+}
+
+.list-noti {
+  display: flex;
+  gap: 14px;
+}
+.list-noti .box-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.list-noti .content p {
+  padding: 12px 0px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #a1a1a1;
+}
+.list-noti.line {
+  border-bottom: 1px solid #f1f1f1;
 }
 
 /*# sourceMappingURL=styles.css.map */

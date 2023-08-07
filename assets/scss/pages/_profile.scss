@@ -89,3 +89,26 @@
         color: $text-black-2;
     }
 }
+.list-noti {
+    display: flex;
+    gap: 14px;
+    .box-img {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .content {
+        p {
+            padding: 12px 0px 8px;
+            font-size: 14px;
+            font-weight: 400;
+            @include fh-normal;
+            color: $text;
+        }
+    }
+    &.line {
+        border-bottom: 1px solid $line-2;
+    }
+}
