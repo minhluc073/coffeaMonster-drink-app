@@ -1191,6 +1191,7 @@ input[type=color],
   left: 14px;
   top: 16px;
   font-size: 20px;
+  color: #cfcfcf;
 }
 .group-input input {
   padding-left: 42px;
@@ -1407,6 +1408,9 @@ input[type=color],
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+.bottom-fixed.btn-fixed {
+  bottom: 95px;
 }
 
 .drink-swiper .swiper-slide {
@@ -2632,6 +2636,28 @@ input[type=color],
   height: 115px;
   margin-top: -55px;
   border: 6px solid #ffffff;
+}
+.box-profile.scan .img {
+  margin: 0;
+  border: none;
+  position: relative;
+}
+.box-profile.scan .img svg {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.box-profile.scan .img::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 33px;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: #000;
 }
 
 .list-view {
