@@ -48,7 +48,8 @@
         background: #e6ecec;
     }
 }
-.back-btn {
+.back-btn,
+.btn-close-modal {
     width: 26px;
     height: 26px;
     @include flex(center, center);
