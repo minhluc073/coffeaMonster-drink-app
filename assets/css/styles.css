@@ -732,6 +732,10 @@ input[type=color],
   margin-bottom: 29px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-31 {
   margin-bottom: 31px;
 }
@@ -846,6 +850,10 @@ input[type=color],
 
 .pb-90 {
   padding-bottom: 90px;
+}
+
+.pb-160 {
+  padding-bottom: 160px;
 }
 
 .pb8 {
@@ -1129,6 +1137,7 @@ input[type=color],
 .tf-btn.outline-dashed {
   border: 1px dashed rgba(3, 63, 56, 0.5);
   background: #e6ecec;
+  color: #033f38;
 }
 
 .back-btn,
@@ -1244,6 +1253,9 @@ input[type=color],
   padding-left: 42px;
   height: 56px;
 }
+.group-input input:focus {
+  background-color: #f8f8f8;
+}
 .group-input.group-ip-password .password-field:valid {
   padding-right: 94px;
 }
@@ -1283,6 +1295,7 @@ input[type=color],
 }
 .group-input.custom-select .inner-group-ip {
   position: relative;
+  margin-right: -1px;
 }
 .group-input.custom-select .inner-group-ip::before {
   position: absolute;
@@ -1306,7 +1319,7 @@ input[type=color],
 .group-input.custom-select button {
   border: 1px solid transparent;
   background-color: #f8f8f8;
-  padding: 16px 14px;
+  padding: 14px 14px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-top-left-radius: 16px;
@@ -1483,7 +1496,11 @@ input[type=color],
   box-sizing: border-box;
 }
 .bottom-fixed.btn-fixed {
-  bottom: 95px;
+  bottom: 70px;
+}
+.bottom-fixed.pb {
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
 
 .drink-swiper .swiper-slide {
@@ -1690,6 +1707,21 @@ input[type=color],
   right: 15px;
   color: #033f38;
 }
+.tf-box-row.style-2 span.price {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  color: #033f38;
+}
+.tf-box-row.style-2 .review {
+  margin: 4px 0 8px;
+}
+.tf-box-row.style-2 .total-qty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .tf-box-row.r-center {
   flex-direction: column;
   gap: 20px;
@@ -1750,6 +1782,20 @@ input[type=color],
   position: absolute;
   top: 8px;
   right: 8px;
+}
+.tf-box-row.qty .sec-qty {
+  max-width: 90px;
+  gap: 2px;
+}
+.tf-box-row.qty .sec-qty .btn-quantity {
+  width: 30px;
+  height: 30px;
+  background: #f8f8f8;
+  border-width: 1px;
+}
+.tf-box-row.qty .sec-qty input {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .tf-box-column {
@@ -2358,18 +2404,18 @@ input[type=color],
   margin-left: -20px;
   margin-right: -20px;
 }
-.app .section .title-bar {
+.app .title-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.app .section .title-bar h2 {
+.app .title-bar h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
-.app .section .title-bar a {
+.app .title-bar a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2443,7 +2489,7 @@ input[type=color],
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-.home-2 .section .wrap-box-sm {
+.wrap-box-sm {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px 12px;
@@ -2756,7 +2802,7 @@ input[type=color],
 .scan-section .wrapper-scan .bg-scan {
   border-radius: 16px;
 }
-.scan-section .bg-success {
+.scan-section .b-success {
   padding: 120px 45px 55px;
 }
 .scan-section .title-success {
@@ -2812,6 +2858,50 @@ input[type=color],
 .list-view-card .icon-right {
   font-size: 24px;
   color: #cfcfcf;
+}
+
+.list-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 400;
+  color: #a1a1a1;
+  padding-bottom: 15px;
+}
+.list-order span {
+  color: #262626;
+  font-weight: 500;
+}
+.list-order.line {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.list-order-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #033f38;
+}
+
+.box-total-order {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  bottom: 70px;
+  background: #ffffff;
+}
+.box-total-order.st1 {
+  bottom: 0;
 }
 
 .box-profile {

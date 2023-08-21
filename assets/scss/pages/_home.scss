@@ -35,21 +35,20 @@
         margin-right: -20px;
     }
 
-    .section {
-        .title-bar {
+    .title-bar {
+        @include flex(center, space-between);
+        h2 {
             @include flex(center, space-between);
-            h2 {
-                @include flex(center, space-between);
-                gap: 8px;
-            }
-            a {
-                @include flex(center, center);
-                font-size: 14px;
-                font-weight: 400;
-                @include fh-normal;
-                gap: 2px;
-            }
+            gap: 8px;
         }
+        a {
+            @include flex(center, center);
+            font-size: 14px;
+            font-weight: 400;
+            @include fh-normal;
+            gap: 2px;
+        }
+        
     }
 
     .header-home {
@@ -116,10 +115,10 @@
     }
 
     .section {
-        .wrap-box-sm {
-            @include grid(2, 1fr, 12px, 12px);
-        }
     }
+}
+.wrap-box-sm {
+    @include grid(2, 1fr, 12px, 12px);
 }
 .home-3 {
     position: relative;

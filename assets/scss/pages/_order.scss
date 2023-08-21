@@ -4,7 +4,7 @@
             border-radius: 16px;
         }
     }
-    .bg-success {
+    .b-success {
         padding: 120px 45px 55px;
     }
     .title-success {
@@ -56,6 +56,41 @@
     }
 }
 .tf-form-payment {
-
-    
+}
+.list-order {
+    @include flex(center, space-between);
+    gap: 15px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: 400;
+    color: $text;
+    padding-bottom: 15px;
+    span {
+        color: $text-black;
+        font-weight: 500;
+    }
+    &.line {
+        border-bottom: 1px solid $line;
+    }
+}
+.list-order-total {
+    @include flex(center, space-between);
+    gap: 15px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    color: $primary;
+}
+.box-total-order {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    bottom: 70px;
+    background: $white;
+    &.st1 {
+        bottom: 0;
+    }
 }

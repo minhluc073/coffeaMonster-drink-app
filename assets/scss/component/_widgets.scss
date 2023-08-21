@@ -84,6 +84,19 @@
             right: 15px;
             color: $primary;
         }
+        span.price {
+            font-size: 15px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: normal;
+            color: $primary;
+        }
+        .review {
+            margin: 4px 0 8px;
+        }
+        .total-qty {
+            @include flex(center, space-between);
+        }
     }
     &.r-center {
         flex-direction: column;
@@ -147,6 +160,22 @@
                 position: absolute;
                 top: 8px;
                 right: 8px;
+            }
+        }
+    }
+    &.qty {
+        .sec-qty {
+            max-width: 90px;
+            gap: 2px;
+            .btn-quantity {
+                width: 30px;
+                height: 30px;
+                background: $bg-input;
+                border-width: 1px;
+            }
+            input {
+                font-size: 15px;
+                font-weight: 600;
             }
         }
     }
