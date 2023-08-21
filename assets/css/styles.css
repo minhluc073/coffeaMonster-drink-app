@@ -1605,6 +1605,7 @@ input[type=color],
   padding: 8px;
   display: flex;
   gap: 12px;
+  background: #ffffff;
 }
 .tf-box-row .img-box {
   border-radius: 14px;
@@ -1681,6 +1682,13 @@ input[type=color],
   position: absolute;
   bottom: 8px;
   right: 8px;
+}
+.tf-box-row.style-2 .btn-bookmark {
+  position: absolute;
+  font-size: 16px;
+  top: 27px;
+  right: 15px;
+  color: #033f38;
 }
 .tf-box-row.r-center {
   flex-direction: column;
@@ -1899,7 +1907,7 @@ input[type=color],
 .search-box {
   position: relative;
 }
-.search-box .icon-search {
+.search-box .icon {
   position: absolute;
   left: 14px;
   top: 18px;
