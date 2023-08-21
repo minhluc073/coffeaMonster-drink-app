@@ -127,6 +127,29 @@
             transform: translateX(-50%);
         }
     }
+    &.style-3 {
+        position: relative;
+        .content-box {
+            .review {
+                margin: 0;
+            }
+            .location {
+                margin: 4px 0 10px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                i {
+                    font-size: 14px;
+                    color: $color-icon1;
+                }
+            }
+            .btn-bookmark {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+            }
+        }
+    }
 }
 
 .tf-box-column {

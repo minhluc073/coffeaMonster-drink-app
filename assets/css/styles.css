@@ -1730,6 +1730,27 @@ input[type=color],
   left: 50%;
   transform: translateX(-50%);
 }
+.tf-box-row.style-3 {
+  position: relative;
+}
+.tf-box-row.style-3 .content-box .review {
+  margin: 0;
+}
+.tf-box-row.style-3 .content-box .location {
+  margin: 4px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.tf-box-row.style-3 .content-box .location i {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+.tf-box-row.style-3 .content-box .btn-bookmark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
 
 .tf-box-column {
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
