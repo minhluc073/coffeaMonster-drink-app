@@ -145,7 +145,21 @@
       $(this).toggleClass("active");
     });
   };
-
+  /* Clear all
+  ------------------------------------------------------------------------------------- */
+  var clearAll = function () {
+    $(".clear-all").on("click", function () {
+      $(".history").css("display", "none");
+    });
+  };
+  /* Suggestions
+  ------------------------------------------------------------------------------------- */
+  const Suggest = function () {
+    $(".suggest").on("click", function () {
+      var val = $(this).text();
+      $(".suggest_value").val(val);
+    });
+  };
   /* back Page
   ------------------------------------------------------------------------------------- */
   var backPage = function () {
@@ -164,6 +178,8 @@
     rangeSlider();
     btnQuantity();
     pressHeart();
+    clearAll();
+    Suggest();
     backPage();
   });
 })(jQuery);
