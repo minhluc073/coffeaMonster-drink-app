@@ -209,7 +209,7 @@ input::-moz-focus-inner {
     padding: 0;
 }
 label {
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
 }
 
 *,
@@ -463,7 +463,9 @@ input[type="color"],
     -o-box-shadow: none;
     box-shadow: none;
 }
-
+textarea {
+    height: 106px;
+}
 .tf-container {
     max-width: 1024px;
     margin-left: auto;
@@ -472,6 +474,9 @@ input[type="color"],
     padding-right: 20px;
     box-sizing: border-box;
     // background-color: #033f38;
+}
+.fw-5 {
+    font-weight: 500;
 }
 .fw-7 {
     font-weight: 700;
@@ -567,10 +572,13 @@ input[type="color"],
 .mt-30 {
     margin-top: 30px;
 }
-
+.mt-36 {
+    margin-top: 36px;
+}
 .mt-37 {
     margin-top: 37px;
 }
+
 .mt-40 {
     margin-top: 40px;
 }

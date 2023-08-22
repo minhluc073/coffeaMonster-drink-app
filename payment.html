@@ -26,10 +26,32 @@
     </div>
    <div class="app">
         <div class="tf-container">
-            <div class="title-bar st1">
+            <div class="title-bar st1 mt-20">
                 <h3>Category</h3>
                 <a href="#">Change</a>
             </div>
+            <div class="list-view-card mt-17">
+                <a href="#" class="map">
+                    <img src="assets/images/cards/pay1.png" alt="img">
+                </a>
+                <div class="content">
+                    <h5><a href="#">My home</a></h5>
+                    <p>6391 Elgin St. Celina, Delaware 10299</p>
+                </div>
+            </div>
+            <h3 class="mt-25 fw-7">Payment method</h3>
+
+            <a href="#" class="list-view-card mt-12" data-bs-toggle="modal" data-bs-target="#addCardActionSheet2">
+                <div class="img bg-card">
+                    <img src="assets/images/cards/card-1.jpg" alt="image">
+                </div>
+                <div class="content">
+                    <h5>MasterCard</h5>
+                    <p>*****6872</p>
+                </div>
+                <i class="icon-right"></i>
+            </a>
+
             <div class="box-total-order st1">
                 <ul>
                     <li class="list-order">
@@ -59,12 +81,39 @@
                           </clipPath>
                         </defs>
                     </svg>
-                    Add Vocher
+                    Add Voucher
                 </a>              
                 <a href="payment.html" class="tf-btn large primary mb-20">Checkout</a>              
             </div>
         </div>
    </div>
+
+   <div class="modal fade action-sheet" id="addCardActionSheet2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           <h2>Add payment methods</h2>
+           <form action="profile.html" class="mt-20 tf-form-payment">
+                <div class="group-input mb-20 group-ip-2">
+                    <i class="icon icon-card-num"></i>
+                    <input required class="required-field" type="text" placeholder="Card number">
+                    <div class="show">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" fill="#65DC41"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3537 7.64639C13.4474 7.74016 13.5001 7.86731 13.5001 7.99989C13.5001 8.13248 13.4474 8.25963 13.3537 8.35339L9.3537 12.3534C9.25994 12.4471 9.13279 12.4998 9.0002 12.4998C8.86762 12.4998 8.74047 12.4471 8.6467 12.3534L6.6467 10.3534C6.55562 10.2591 6.50523 10.1328 6.50637 10.0017C6.50751 9.87059 6.56009 9.74519 6.65279 9.65248C6.7455 9.55978 6.8709 9.5072 7.002 9.50606C7.1331 9.50492 7.2594 9.55531 7.3537 9.64639L9.0002 11.2929L12.6467 7.64639C12.7405 7.55266 12.8676 7.5 13.0002 7.5C13.1328 7.5 13.2599 7.55266 13.3537 7.64639Z" fill="white"/>
+                        </svg>     
+                    </div>
+                </div>
+                <div class="grid-2 mb-40">
+                    <input type="text" required placeholder="Expiry date">
+                    <input type="text" required placeholder="3-digit CVV">
+                </div>
+                <a href="#" class="tf-btn primary large">Place oder</a>
+                <a href="scan-card.html" class="tf-btn large outline mt-15">Scan Card</a>
+
+           </form>
+        </div>
+    </div>
+   </div> 
 
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

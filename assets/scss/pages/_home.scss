@@ -48,7 +48,16 @@
             @include fh-normal;
             gap: 2px;
         }
-        
+        &.st1 {
+            h3 {
+                font-weight: 700;
+                line-height: 28px;
+            }
+            a {
+                font-weight: 500;
+                color: $primary;
+            }
+        }
     }
 
     .header-home {

@@ -240,6 +240,14 @@
                 color: $primary;
             }
         }
+        &.rate {
+            .review {
+                gap: 10px;
+                .dot-icon {
+                    margin: 0;
+                }
+            }
+        }
     }
     &.lg {
         .img-box {
@@ -554,6 +562,101 @@
         @include flex(center, flex-end);
         i {
             font-size: 20px;
+        }
+    }
+}
+
+//rating
+.list-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.list-rating:not(:checked) > input {
+    position: absolute;
+    opacity: 0;
+}
+
+.list-rating:not(:checked) label {
+    cursor: pointer;
+    white-space: nowrap;
+    color: $color-icon1;
+}
+
+.list-rating:not(:checked) > label:before {
+    font-family: "icomoon";
+    content: "\e907";
+    font-size: 28px;
+}
+
+.list-rating > input:checked ~ label {
+    color: $yellow;
+}
+
+// .list-rating:not(:checked) > label:hover,
+// .list-rating:not(:checked) > label:hover ~ label {
+//     color: #ffb321;
+// }
+
+.list-rating > input:checked + label:hover,
+.list-rating > input:checked + label:hover ~ label,
+.list-rating > input:checked ~ label:hover,
+.list-rating > input:checked ~ label:hover ~ label,
+.list-rating > label:hover ~ input:checked ~ label {
+    color: $yellow;
+}
+
+//rating driver
+.rating-driver label {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    border-radius: 16px;
+    background: $white;
+    box-shadow: $shadow-1;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    &:first-child {
+        margin-right: 0;
+    }
+    &.last {
+        margin-right: 0;
+    }
+}
+.rating-driver > input:checked ~ label {
+    color: $primary !important;
+}
+.rating-driver > input:checked ~ label::before {
+    color: $yellow;
+}
+
+.rating-driver > input:checked + label:hover::before,
+.rating-driver > input:checked + label:hover ~ label::before,
+.rating-driver > input:checked ~ label::before:hover,
+.rating-driver > input:checked ~ label:hover ~ label::before,
+.rating-driver > label:hover ~ input:checked ~ label::before {
+    color: $yellow;
+}
+
+.tf-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    li {
+        padding: 10px 14px;
+        border: 1px solid $line-2;
+        border-radius: 100px;
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
         }
     }
 }

@@ -109,6 +109,9 @@
             border-bottom-right-radius: 0;
             border-top-left-radius: 16px;
             border-bottom-left-radius: 16px;
+            &:focus {
+                box-shadow: unset;
+            }
         }
         .bootstrap-select {
             .dropdown-toggle {

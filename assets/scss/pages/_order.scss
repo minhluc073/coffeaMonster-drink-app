@@ -54,6 +54,9 @@
         font-size: 24px;
         color: $color-icon1;
     }
+    // .map {
+
+    // }
 }
 .tf-form-payment {
 }
@@ -92,5 +95,41 @@
     background: $white;
     &.st1 {
         bottom: 0;
+    }
+}
+.box-driver {
+    padding: 20px 15px 20px 20px;
+    border-radius: 16px;
+    @include flex(center, space-between);
+    .inner {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .img {
+            width: 42px;
+            height: 42px;
+            border-radius: 100px;
+            overflow: hidden;
+        }
+    }
+    .info {
+        h3 {
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+    .icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        @include flex(center, center);
+        background-color: $primary;
+        i {
+            font-size: 20px;
+            color: $white;
+        }
+    }
+    &.line {
+        border: 1px solid $line-2;
     }
 }

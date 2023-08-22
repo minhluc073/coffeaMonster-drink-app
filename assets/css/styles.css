@@ -210,10 +210,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-label {
-  margin-bottom: 5px;
-}
-
 *,
 *:before,
 *:after {
@@ -487,6 +483,10 @@ input[type=color],
   box-shadow: none;
 }
 
+textarea {
+  height: 106px;
+}
+
 .tf-container {
   max-width: 1024px;
   margin-left: auto;
@@ -494,6 +494,10 @@ input[type=color],
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+
+.fw-5 {
+  font-weight: 500;
 }
 
 .fw-7 {
@@ -618,6 +622,10 @@ input[type=color],
 
 .mt-30 {
   margin-top: 30px;
+}
+
+.mt-36 {
+  margin-top: 36px;
 }
 
 .mt-37 {
@@ -1325,6 +1333,9 @@ input[type=color],
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
 }
+.group-input.custom-select button:focus {
+  box-shadow: unset;
+}
 .group-input.custom-select .bootstrap-select .dropdown-toggle:focus {
   outline: none !important;
 }
@@ -1859,6 +1870,12 @@ input[type=color],
   line-height: 28px;
   color: #033f38;
 }
+.tf-box-column.xl.rate .review {
+  gap: 10px;
+}
+.tf-box-column.xl.rate .review .dot-icon {
+  margin: 0;
+}
 .tf-box-column.lg .img-box {
   overflow: hidden;
   max-width: 209px;
@@ -2188,6 +2205,95 @@ input[type=color],
   font-size: 20px;
 }
 
+.list-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.list-rating:not(:checked) > input {
+  position: absolute;
+  opacity: 0;
+}
+
+.list-rating:not(:checked) label {
+  cursor: pointer;
+  white-space: nowrap;
+  color: #cfcfcf;
+}
+
+.list-rating:not(:checked) > label:before {
+  font-family: "icomoon";
+  content: "\e907";
+  font-size: 28px;
+}
+
+.list-rating > input:checked ~ label {
+  color: #ffc700;
+}
+
+.list-rating > input:checked + label:hover,
+.list-rating > input:checked + label:hover ~ label,
+.list-rating > input:checked ~ label:hover,
+.list-rating > input:checked ~ label:hover ~ label,
+.list-rating > label:hover ~ input:checked ~ label {
+  color: #ffc700;
+}
+
+.rating-driver label {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.rating-driver label:first-child {
+  margin-right: 0;
+}
+.rating-driver label.last {
+  margin-right: 0;
+}
+
+.rating-driver > input:checked ~ label {
+  color: #033f38 !important;
+}
+
+.rating-driver > input:checked ~ label::before {
+  color: #ffc700;
+}
+
+.rating-driver > input:checked + label:hover::before,
+.rating-driver > input:checked + label:hover ~ label::before,
+.rating-driver > input:checked ~ label::before:hover,
+.rating-driver > input:checked ~ label:hover ~ label::before,
+.rating-driver > label:hover ~ input:checked ~ label::before {
+  color: #ffc700;
+}
+
+.tf-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tf-list li {
+  padding: 10px 14px;
+  border: 1px solid #f1f1f1;
+  border-radius: 100px;
+}
+.tf-list li a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .account-area {
   background-image: url("../../../assets/images/background/bg-1.png");
   background-repeat: no-repeat;
@@ -2424,6 +2530,14 @@ input[type=color],
   font-style: normal;
   line-height: normal;
   gap: 2px;
+}
+.app .title-bar.st1 h3 {
+  font-weight: 700;
+  line-height: 28px;
+}
+.app .title-bar.st1 a {
+  font-weight: 500;
+  color: #033f38;
 }
 .app .header-home {
   display: flex;
@@ -2902,6 +3016,45 @@ input[type=color],
 }
 .box-total-order.st1 {
   bottom: 0;
+}
+
+.box-driver {
+  padding: 20px 15px 20px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-driver .inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.box-driver .inner .img {
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.box-driver .info h3 {
+  font-weight: 700;
+  line-height: 28px;
+}
+.box-driver .icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #033f38;
+}
+.box-driver .icon i {
+  font-size: 20px;
+  color: #ffffff;
+}
+.box-driver.line {
+  border: 1px solid #f1f1f1;
 }
 
 .box-profile {
