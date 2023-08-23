@@ -152,6 +152,17 @@
       $(".history").css("display", "none");
     });
   };
+  /* Clear Item History
+  ------------------------------------------------------------------------------------- */
+  var clearItem = function () {
+    $(".item-history").each(function (e) {
+      var el = this.querySelector(".clear-item");
+      el.addEventListener("click", function () {
+        el.closest(".item-history").style.display = "none";
+      });
+    });
+  };
+
   /* Suggestions
   ------------------------------------------------------------------------------------- */
   const Suggest = function () {
@@ -179,6 +190,7 @@
     btnQuantity();
     pressHeart();
     clearAll();
+    clearItem();
     Suggest();
     backPage();
   });

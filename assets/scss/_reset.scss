@@ -508,6 +508,9 @@ textarea {
 .mb-17 {
     margin-bottom: 17px;
 }
+.mt-18 {
+    margin-top: 18px;
+}
 .mt--23 {
     margin-top: -23px;
 }
@@ -784,7 +787,7 @@ textarea {
     position: relative;
 }
 .bg-primary {
-    background: $primary;
+    background: $primary !important;
 }
 .bg-white {
     background: $white;

@@ -19,5 +19,26 @@
         .search-box {
             flex-grow: 1;
         }
+        &.st1 {
+            gap: 12px;
+            justify-content: space-between;
+            .inner-title-header {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                flex-grow: 1;
+            }
+            .icon-box {
+                width: 56px;
+                height: 56px;
+                border-radius: 16px;
+                border: 1px solid $line-2;
+                @include flex(center, center);
+                i {
+                    font-size: 20px;
+                    color: $primary;
+                }
+            }
+        }
     }
 }

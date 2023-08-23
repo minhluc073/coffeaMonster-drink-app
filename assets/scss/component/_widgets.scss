@@ -382,6 +382,7 @@
     input {
         padding-right: 42px;
         padding-left: 42px;
+        height: 56px;
     }
 }
 
@@ -656,6 +657,53 @@
         font-size: 14px;
         font-weight: 400;
         line-height: normal;
-        
     }
+}
+.tf-list-v2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    li {
+        padding: 8px;
+        border-radius: 16px;
+        background: $white;
+        box-shadow: $shadow-1;
+        a {
+            .img-box {
+                max-width: 50px;
+                height: 50px;
+            }
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+.form-select {
+    width: auto;
+    border: 0;
+    background-color: $bg-input;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 18px 14px;
+    padding-right: 47px;
+    border-radius: 14px;
+    background-size: 38px 10px;
+    &:focus {
+        box-shadow: unset;
+    }
+}
+.suggest-item-sw {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 100px;
+    border: 1px solid $line-2;
+    color: $text-black;
 }

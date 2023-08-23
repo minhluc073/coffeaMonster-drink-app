@@ -35,31 +35,6 @@
         margin-right: -20px;
     }
 
-    .title-bar {
-        @include flex(center, space-between);
-        h2 {
-            @include flex(center, space-between);
-            gap: 8px;
-        }
-        a {
-            @include flex(center, center);
-            font-size: 14px;
-            font-weight: 400;
-            @include fh-normal;
-            gap: 2px;
-        }
-        &.st1 {
-            h3 {
-                font-weight: 700;
-                line-height: 28px;
-            }
-            a {
-                font-weight: 500;
-                color: $primary;
-            }
-        }
-    }
-
     .header-home {
         @include flex(center, space-between);
         .left {
@@ -100,6 +75,31 @@
         }
     }
 }
+.title-bar {
+    @include flex(center, space-between);
+    h2 {
+        @include flex(center, space-between);
+        gap: 8px;
+    }
+    a {
+        @include flex(center, center);
+        font-size: 14px;
+        font-weight: 400;
+        @include fh-normal;
+        gap: 2px;
+    }
+    &.st1 {
+        h3 {
+            font-weight: 700;
+            line-height: 28px;
+        }
+        a {
+            font-weight: 500;
+            color: $primary;
+        }
+    }
+}
+
 .home-2,
 .home-3,
 .home-4 {
