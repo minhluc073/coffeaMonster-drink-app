@@ -223,10 +223,10 @@
                 }
             }
         }
-        .wrap-box-layout {
-            @include grid(2, 1fr, 20px, 11px);
-        }
     }
+}
+.wrap-box-layout {
+    @include grid(2, 1fr, 20px, 11px);
 }
 .home-6 {
     .box-noti-cart {

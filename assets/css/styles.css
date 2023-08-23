@@ -576,6 +576,10 @@ textarea {
   margin-top: 16px;
 }
 
+.mt-17 {
+  margin-top: 17px;
+}
+
 .mt-19 {
   margin-top: 19px;
 }
@@ -808,6 +812,10 @@ textarea {
   padding-top: 16px;
 }
 
+.pt-17 {
+  padding-top: 17px;
+}
+
 .pb-16 {
   padding-bottom: 16px;
 }
@@ -922,6 +930,14 @@ textarea {
 
 .bg-card-3 {
   background: rgba(3, 63, 56, 0.05);
+}
+
+.t-paragraph {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #343434;
 }
 
 .lr-top-radius {
@@ -2773,7 +2789,8 @@ textarea {
   color: #fff1d0;
   font-weight: 700;
 }
-.home-5 .section .wrap-box-layout {
+
+.wrap-box-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 11px;
@@ -3153,6 +3170,11 @@ textarea {
 }
 .box-driver.line {
   border: 1px solid #f1f1f1;
+}
+
+.img-location img {
+  width: 58px;
+  height: 58px;
 }
 
 .box-profile {
