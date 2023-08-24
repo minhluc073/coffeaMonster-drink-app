@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="assets/css/boostrap.min.css">
+    <link rel="stylesheet"type="text/css" href="assets/css/nouislider.min.css"/>
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet"type="text/css" href="assets/css/styles.css"/>
     <!-- Icons -->
@@ -24,7 +25,7 @@
                         <h5><a href="#">Cameron Williamson</a></h5>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" data-bs-toggle="modal" data-bs-target="#addCardActionSheet2">
                     <a href="#" class="icon-menu-2"></a>
 
                 </div>
@@ -374,10 +375,145 @@
         </ul>
     </div>
 
+    <div class="modal fade action-sheet" id="addCardActionSheet2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content app">
+                <div class="title-bar st1">
+                    <h2>Filter</h2>
+                    <a href="#" class="clear-checkbox btn-reset">Reset</a>
+                </div>
+                <h4 class="mt-20">Category</h4>
+                <div class="wrap-swiper">
+                    <div class="swiper drink-swiper">
+                        <div class="swiper-wrapper pt-12 pb-30">
+                            <div class="swiper-slide ml-1">
+                                <a href="#" class="box-categories">
+                                    <div class="images">
+                                        <img src="assets/images/food/coffea-sm-1.png" alt="images">
+                                    </div>
+                                    <span>All</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box-categories">
+                                    <div class="images">
+                                        <img src="assets/images/food/coffea-sm-1.png" alt="images">
+                                    </div>
+                                    <span>Popular</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box-categories">
+                                    <div class="images">
+                                        <img src="assets/images/food/coffea-sm-1.png" alt="images">
+                                    </div>
+                                    <span>Milk Tea</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box-categories">
+                                    <div class="images">
+                                        <img src="assets/images/food/coffea-sm-1.png" alt="images">
+                                    </div>
+                                    <span>Popular</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mb-12">Short by</h4>
+                <div class="grid-2-cb">
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb1" checked>
+                        <label class="form-check-label cus-checkbox" for="cb1"></label>
+                        <span>Top rated</span>
+                    </div>
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb2">
+                        <label class="form-check-label cus-checkbox" for="cb2"></label>
+                        <span>Newly listed</span>
+                    </div>
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb3">
+                        <label class="form-check-label cus-checkbox" for="cb3"></label>
+                        <span>Lowest first</span>
+                    </div>
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb4">
+                        <label class="form-check-label cus-checkbox" for="cb4"></label>
+                        <span>Higest first</span>
+                    </div>
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb5" checked>
+                        <label class="form-check-label cus-checkbox" for="cb5"></label>
+                        <span>Nearest first</span>
+                    </div>
+                </div>
+                <h4 class="mb-12 mt-30">Filter</h4>
+                <div class="grid-2-cb">
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb6">
+                        <label class="form-check-label cus-checkbox" for="cb6"></label>
+                        <span>Recomended</span>
+                    </div>
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb7" checked>
+                        <label class="form-check-label cus-checkbox" for="cb7"></label>
+                        <span>Fastest delivery</span>
+                    </div>
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb8">
+                        <label class="form-check-label cus-checkbox" for="cb8"></label>
+                        <span>Credit cards</span>
+                    </div>
+                    <div class="group-checkbox">
+                        <input class="form-check-input" type="checkbox" id="cb9">
+                        <label class="form-check-label cus-checkbox" for="cb9"></label>
+                        <span>Additional filters</span>
+                    </div>
+                    
+                </div>
+                <h4 class="mt-30">Price range</h4>
+
+                <div class="mt-40">
+                    <div id="range-two-val"></div>
+                </div>
+                <div class="wrap-swiper mt-23 mb-30">
+                    <div class="swiper drink-swiper result-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ml-1 ">
+                                <a href="#" class="suggest-item-sw">
+                                    $5 - $10
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="suggest-item-sw">
+                                    $10 - $15
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="suggest-item-sw">
+                                    $15 - $20
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="suggest-item-sw">
+                                    $25 - $30
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <a href="#" class="tf-btn large primary">Apply</a> 
+            </div>
+        </div>
+       </div> 
+
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/nouislider.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

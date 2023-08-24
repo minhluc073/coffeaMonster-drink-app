@@ -139,3 +139,68 @@
         height: 58px;
     }
 }
+.form-check-lo {
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: $shadow-1;
+    background: $white;
+    display: flex;
+    gap: 12px;
+    position: relative;
+    .form-check-label {
+        position: absolute;
+        right: 16px;
+        top: 12px;
+        &::after {
+            border-color: $color-icon1;
+        }
+        &::before {
+            color: $primary;
+        }
+    }
+    .form-check-input:checked ~ .form-check-label:after {
+        background-color: $white;
+        border-color: #033f38;
+    }
+    .content-send {
+        h4 {
+            margin-bottom: 11px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            padding-right: 50px;
+        }
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 16px;
+        background-color: #f2f5f5;
+        flex-shrink: 0;
+        @include flex(center, center);
+        i {
+            font-size: 20px;
+            color: $primary;
+        }
+    }
+    &.check {
+        background: $primary;
+        .content-send {
+            h4 {
+                color: $white;
+            }
+            p {
+                color: $white;
+                opacity: 0.4;
+            }
+        }
+        .icon {
+            background-color: rgb(16, 73, 66);
+            i {
+                color: $white;
+            }
+        }
+    }
+}

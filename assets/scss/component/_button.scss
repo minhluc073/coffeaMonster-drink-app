@@ -67,3 +67,12 @@
         }
     }
 }
+.btn-reset {
+    padding: 8px;
+    border-radius: 10000px;
+    background: rgba(3, 63, 56, 0.1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    @include flex(center, center);
+}

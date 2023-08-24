@@ -90,6 +90,7 @@
       $(".check-ip-bg:checked").parent().addClass("check");
     });
   };
+
   /* range slider
   ------------------------------------------------------------------------------------- */
   var rangeSlider = function () {
@@ -162,6 +163,17 @@
       });
     });
   };
+  /* Clear Checkbox 
+  ------------------------------------------------------------------------------------- */
+  var clearCheckbox = function () {
+    $(".clear-checkbox").on("click", function () {
+      $(".group-checkbox").find("input").prop("checked", false);
+    });
+
+    $(".clear-checkbox").on("click", function (e) {
+      e.preventDefault();
+    });
+  };
 
   /* Suggestions
   ------------------------------------------------------------------------------------- */
@@ -191,6 +203,7 @@
     pressHeart();
     clearAll();
     clearItem();
+    clearCheckbox();
     Suggest();
     backPage();
   });

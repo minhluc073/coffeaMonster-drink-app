@@ -34,10 +34,22 @@
                 border-radius: 16px;
                 border: 1px solid $line-2;
                 @include flex(center, center);
+                position: relative;
                 i {
                     font-size: 20px;
                     color: $primary;
                 }
+                svg {
+                    position: absolute;
+                    top: -2px;
+                    right: 0;
+                }
+            }
+            .t-right {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: normal;
+                color: $primary;
             }
         }
     }

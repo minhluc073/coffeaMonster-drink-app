@@ -707,3 +707,8 @@
     border: 1px solid $line-2;
     color: $text-black;
 }
+.grid-2-cb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}

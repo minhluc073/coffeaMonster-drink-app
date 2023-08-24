@@ -759,6 +759,12 @@ textarea {
 .pb-90 {
     padding-bottom: 90px;
 }
+.pb-120 {
+    padding-bottom: 120px;
+}
+.pb-155 {
+    padding-bottom: 155px;
+}
 .pb-160 {
     padding-bottom: 160px;
 }
@@ -873,7 +879,13 @@ textarea {
     &.cus-checkbox {
         &::after {
             border: 1px solid #e1e1e1;
-            border-radius: 5px;
+            border-radius: 6px;
+            left: 0;
+            top: 0;
+        }
+        &::before {
+            left: -1px;
+            top: -1px;
         }
     }
 }
@@ -892,4 +904,6 @@ textarea {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
-
+.b-line {
+    border-bottom: 1px solid $line-2;
+}

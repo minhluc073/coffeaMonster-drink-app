@@ -872,6 +872,14 @@ textarea {
   padding-bottom: 90px;
 }
 
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.pb-155 {
+  padding-bottom: 155px;
+}
+
 .pb-160 {
   padding-bottom: 160px;
 }
@@ -995,7 +1003,13 @@ textarea {
 }
 .form-check-label.cus-checkbox::after {
   border: 1px solid #e1e1e1;
-  border-radius: 5px;
+  border-radius: 6px;
+  left: 0;
+  top: 0;
+}
+.form-check-label.cus-checkbox::before {
+  left: -1px;
+  top: -1px;
 }
 
 .form-check-input[type=radio] {
@@ -1015,6 +1029,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+
+.b-line {
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .header.absolute {
@@ -1057,9 +1075,21 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .header .title-header-bar.st1 .icon-box i {
   font-size: 20px;
+  color: #033f38;
+}
+.header .title-header-bar.st1 .icon-box svg {
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+.header .title-header-bar.st1 .t-right {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
   color: #033f38;
 }
 
@@ -1216,6 +1246,18 @@ textarea {
 .back-btn.primary i,
 .btn-close-modal.primary i {
   color: #ffffff;
+}
+
+.btn-reset {
+  padding: 8px;
+  border-radius: 10000px;
+  background: rgba(3, 63, 56, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .noUi-horizontal {
@@ -1633,6 +1675,10 @@ textarea {
   opacity: 1;
   width: 16px;
   border-radius: 100px;
+}
+
+.result-swiper .swiper-slide {
+  margin-left: 8px;
 }
 
 .modal.action-sheet {
@@ -2407,6 +2453,12 @@ textarea {
   color: #262626;
 }
 
+.grid-2-cb {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 .account-area {
   background-image: url("../../../assets/images/background/bg-1.png");
   background-repeat: no-repeat;
@@ -3175,6 +3227,70 @@ textarea {
 .img-location img {
   width: 58px;
   height: 58px;
+}
+
+.form-check-lo {
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+.form-check-lo .form-check-label {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+.form-check-lo .form-check-label::after {
+  border-color: #cfcfcf;
+}
+.form-check-lo .form-check-label::before {
+  color: #033f38;
+}
+.form-check-lo .form-check-input:checked ~ .form-check-label:after {
+  background-color: #ffffff;
+  border-color: #033f38;
+}
+.form-check-lo .content-send h4 {
+  margin-bottom: 11px;
+}
+.form-check-lo .content-send p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 50px;
+}
+.form-check-lo .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 16px;
+  background-color: #f2f5f5;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-check-lo .icon i {
+  font-size: 20px;
+  color: #033f38;
+}
+.form-check-lo.check {
+  background: #033f38;
+}
+.form-check-lo.check .content-send h4 {
+  color: #ffffff;
+}
+.form-check-lo.check .content-send p {
+  color: #ffffff;
+  opacity: 0.4;
+}
+.form-check-lo.check .icon {
+  background-color: rgb(16, 73, 66);
+}
+.form-check-lo.check .icon i {
+  color: #ffffff;
 }
 
 .box-profile {
