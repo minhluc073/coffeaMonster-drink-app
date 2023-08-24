@@ -848,6 +848,10 @@ textarea {
   padding-top: 30px;
 }
 
+.pt-40 {
+  padding-top: 40px;
+}
+
 .pt-50 {
   padding-top: 50px;
 }
@@ -2457,6 +2461,16 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+}
+
+.driver-onboarding .boarding-box .img-box {
+  max-width: 289px;
+  height: 319px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .account-area {
