@@ -747,3 +747,37 @@ a.mapboxgl-ctrl-logo,
         font-weight: 700;
     }
 }
+.location-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .icon {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(3, 63, 56, 0.05);
+        border-radius: 16px;
+        @include flex(center, center);
+        i {
+            color: $primary;
+            font-size: 20px;
+        }
+    }
+    h4 {
+        flex-grow: 1;
+        a {
+            font-weight: 400;
+        }
+    }
+    &.last {
+        h4 {
+            a {
+                color: $color-icon1;
+            }
+        }
+    }
+    .lo-check {
+        .form-check-label::after {
+            border: 1px solid #e1e1e1;
+        }
+    }
+}

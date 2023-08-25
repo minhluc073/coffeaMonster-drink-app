@@ -21,6 +21,7 @@
                 <input type="text" placeholder="Search your coffee..." >
                 <span class="icon-filter-2"></span>
             </div>
+            <div id="sidebar"></div>
             <div class="wrap-swiper">
                     <div class="swiper drink-swiper">
                         <div class="swiper-wrapper pt-24 pb-30">
@@ -500,5 +501,10 @@
     <script type="text/javascript" src="assets/js/carousel.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 
+    <script>
+           $(function(){
+      $("#sidebar").load("sidebar.html");
+    });
+    </script>
 </body>
 </html>

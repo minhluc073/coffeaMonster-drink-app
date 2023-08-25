@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet"type="text/css" href="assets/css/styles.css"/>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/fonts/font-icons.css">
+    <title>add location</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="tf-container">
+            <div class="title-header-bar pt-20 st2">
+                <a href="#" class="back-btn"><i class="icon-left"></i></a>    
+            </div>
+        </div>
+    </div>
+    <div class="app">  
+        <div id="map"></div>
+        <div class="m-direction st2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="77" viewBox="0 0 70 77" fill="none">
+                <circle cx="35" cy="35" r="34" fill="#033F38" fill-opacity="0.1"/>
+                <circle cx="35" cy="35" r="34.5" stroke="#033F38" stroke-opacity="0.26"/>
+                <g filter="url(#filter0_d_1_7035)">
+                  <circle cx="35" cy="35" r="10" fill="#033F38"/>
+                  <circle cx="35" cy="35" r="12" stroke="white" stroke-width="4"/>
+                </g>
+                <defs>
+                  <filter id="filter0_d_1_7035" x="1" y="9" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="8"/>
+                    <feGaussianBlur stdDeviation="10"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.0117647 0 0 0 0 0.247059 0 0 0 0 0.219608 0 0 0 0.22 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_7035"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_7035" result="shape"/>
+                  </filter>
+                </defs>
+              </svg>
+        </div>   
+        <div class="bottom-wrapper full">
+            <div class="bt-container">
+                <div class="wrap-box bg-white location">
+                    <div class="title-bar st1">
+                        <h2>Location type</h2>
+                        <a href="#">Save</a>
+                    </div>
+                    <div class="location-list pb-12 b-line mt-20">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.61248 17.311V14.7629C7.61248 14.1124 8.14364 13.5851 8.79886 13.5851H11.194C11.5087 13.5851 11.8104 13.7092 12.0329 13.9301C12.2554 14.1509 12.3804 14.4505 12.3804 14.7629V17.311C12.3784 17.5814 12.4852 17.8414 12.6771 18.0333C12.8691 18.2252 13.1302 18.3332 13.4026 18.3332H15.0367C15.7999 18.3351 16.5325 18.0355 17.0728 17.5005C17.6132 16.9655 17.9168 16.239 17.9168 15.4814V8.22222C17.9168 7.61022 17.6436 7.02971 17.1707 6.63706L11.6118 2.22973C10.6449 1.45697 9.25942 1.48192 8.32132 2.28899L2.88934 6.63706C2.39411 7.01813 2.09812 7.60037 2.0835 8.22222V15.474C2.0835 17.053 3.37298 18.3332 4.96364 18.3332H6.5604C7.12618 18.3332 7.58599 17.88 7.59009 17.3184L7.61248 17.311Z" fill="#033F38"/>
+                              </svg>
+                        </div>
+                        <h4><a href="#">Home</a></h4>
+                        <div class="lo-check">
+                            <input class="form-check-input" type="radio" checked name="radioList" id="radioList1">
+                            <label class="form-check-label" for="radioList1">
+                            </label>
+                        </div>
+                       
+                    </div>
+        
+                    <div class="location-list pt-12 pb-12 b-line">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.92013 2.93232C8.36152 2.93232 7.88628 3.3205 7.75288 3.84371H12.2385C12.1051 3.3205 11.6298 2.93232 11.0712 2.93232H8.92013ZM13.5058 3.84371H15.1566C16.9075 3.84371 18.3332 5.28674 18.3332 7.05888C18.3332 7.05888 18.2831 7.80909 18.2665 8.85381C18.2648 8.93651 18.2248 9.01752 18.1589 9.06647C17.7579 9.36267 17.391 9.60739 17.3577 9.62427C15.9737 10.5525 14.3654 11.2057 12.652 11.5306C12.5403 11.5525 12.4302 11.4943 12.3735 11.3947C11.8933 10.5627 10.9962 10.0209 9.99567 10.0209C9.00184 10.0209 8.09639 10.5568 7.60197 11.3897C7.54444 11.4876 7.43606 11.5441 7.32517 11.523C5.62598 11.1973 4.01768 10.5449 2.64199 9.63271L1.84159 9.07575C1.77489 9.03356 1.7332 8.95761 1.7332 8.87322C1.70819 8.44284 1.6665 7.05888 1.6665 7.05888C1.6665 5.28674 3.09222 3.84371 4.84309 3.84371H6.48558C6.64399 2.62009 7.66951 1.6665 8.92013 1.6665H11.0712C12.3218 1.6665 13.3473 2.62009 13.5058 3.84371ZM18.0497 10.6792L18.0163 10.6961C16.3322 11.8269 14.3062 12.5779 12.1801 12.8902C11.8799 12.9324 11.5798 12.7383 11.4964 12.4345C11.313 11.7425 10.721 11.2868 10.0123 11.2868H10.004H9.98733C9.27864 11.2868 8.68668 11.7425 8.50325 12.4345C8.41988 12.7383 8.11973 12.9324 7.81958 12.8902C5.69352 12.5779 3.6675 11.8269 1.98333 10.6961C1.97499 10.6876 1.89162 10.637 1.82492 10.6792C1.74988 10.7214 1.74988 10.8227 1.74988 10.8227L1.80824 15.1264C1.80824 16.8986 3.22562 18.3332 4.97649 18.3332H15.0148C16.7657 18.3332 18.1831 16.8986 18.1831 15.1264L18.2498 10.8227C18.2498 10.8227 18.2498 10.7214 18.1748 10.6792C18.1331 10.6539 18.083 10.6623 18.0497 10.6792ZM10.621 14.215C10.621 14.5695 10.3458 14.848 9.99567 14.848C9.65383 14.848 9.37036 14.5695 9.37036 14.215V13.1264C9.37036 12.7805 9.65383 12.4935 9.99567 12.4935C10.3458 12.4935 10.621 12.7805 10.621 13.1264V14.215Z" fill="#033F38"/>
+                                </svg>
+                                
+                        </div>
+                        <h4><a href="#">Work</a></h4>
+                        <div class="lo-check">
+                            <input class="form-check-input" type="radio" name="radioList" id="radioList2">
+                            <label class="form-check-label" for="radioList2">
+                            </label>
+                        </div>
+                    </div>
+        
+                    <div class="location-list mt-15 last">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.92013 2.93232C8.36152 2.93232 7.88628 3.3205 7.75288 3.84371H12.2385C12.1051 3.3205 11.6298 2.93232 11.0712 2.93232H8.92013ZM13.5058 3.84371H15.1566C16.9075 3.84371 18.3332 5.28674 18.3332 7.05888C18.3332 7.05888 18.2831 7.80909 18.2665 8.85381C18.2648 8.93651 18.2248 9.01752 18.1589 9.06647C17.7579 9.36267 17.391 9.60739 17.3577 9.62427C15.9737 10.5525 14.3654 11.2057 12.652 11.5306C12.5403 11.5525 12.4302 11.4943 12.3735 11.3947C11.8933 10.5627 10.9962 10.0209 9.99567 10.0209C9.00184 10.0209 8.09639 10.5568 7.60197 11.3897C7.54444 11.4876 7.43606 11.5441 7.32517 11.523C5.62598 11.1973 4.01768 10.5449 2.64199 9.63271L1.84159 9.07575C1.77489 9.03356 1.7332 8.95761 1.7332 8.87322C1.70819 8.44284 1.6665 7.05888 1.6665 7.05888C1.6665 5.28674 3.09222 3.84371 4.84309 3.84371H6.48558C6.64399 2.62009 7.66951 1.6665 8.92013 1.6665H11.0712C12.3218 1.6665 13.3473 2.62009 13.5058 3.84371ZM18.0497 10.6792L18.0163 10.6961C16.3322 11.8269 14.3062 12.5779 12.1801 12.8902C11.8799 12.9324 11.5798 12.7383 11.4964 12.4345C11.313 11.7425 10.721 11.2868 10.0123 11.2868H10.004H9.98733C9.27864 11.2868 8.68668 11.7425 8.50325 12.4345C8.41988 12.7383 8.11973 12.9324 7.81958 12.8902C5.69352 12.5779 3.6675 11.8269 1.98333 10.6961C1.97499 10.6876 1.89162 10.637 1.82492 10.6792C1.74988 10.7214 1.74988 10.8227 1.74988 10.8227L1.80824 15.1264C1.80824 16.8986 3.22562 18.3332 4.97649 18.3332H15.0148C16.7657 18.3332 18.1831 16.8986 18.1831 15.1264L18.2498 10.8227C18.2498 10.8227 18.2498 10.7214 18.1748 10.6792C18.1331 10.6539 18.083 10.6623 18.0497 10.6792ZM10.621 14.215C10.621 14.5695 10.3458 14.848 9.99567 14.848C9.65383 14.848 9.37036 14.5695 9.37036 14.215V13.1264C9.37036 12.7805 9.65383 12.4935 9.99567 12.4935C10.3458 12.4935 10.621 12.7805 10.621 13.1264V14.215Z" fill="#033F38"/>
+                                </svg>                                
+                        </div>
+                        <h4><a href="#">I’d rather type my own</a></h4>
+                        <div class="lo-check">
+                            <input class="form-check-input" type="radio" name="radioList" id="radioList3">
+                            <label class="form-check-label" for="radioList3">
+                            </label>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGhlbWVzZmxhdCIsImEiOiJjbGt3NGxtYncwa2F2M21saHM3M21uM3h2In0.9NbzjykXil1nELxQ1V8rkA';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/light-v11', // style URL
+        center: [-74.405, 40.71], // starting position [lng, lat]
+        zoom: 15 
+        });
+    </script>
+
+</body>
+</html>

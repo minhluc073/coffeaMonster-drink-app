@@ -317,6 +317,9 @@
             border-radius: 0;
             border-top-left-radius: 16px;
             border-top-right-radius: 16px;
+            &.location {
+                padding: 34px 20px;
+            }
         }
     }
 }
@@ -354,6 +357,9 @@
     &.st1 {
         top: 14%;
         left: 30%;
+    }
+    &.st2 {
+        top: 15%;
     }
 }
 .order-track-list {

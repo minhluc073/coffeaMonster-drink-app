@@ -177,10 +177,17 @@
 
   /* Suggestions
   ------------------------------------------------------------------------------------- */
-  const Suggest = function () {
+  var Suggest = function () {
     $(".suggest").on("click", function () {
       var val = $(this).text();
       $(".suggest_value").val(val);
+    });
+  };
+  /* dropdown menu
+  ------------------------------------------------------------------------------------- */
+  var dropDown = function () {
+    $(".hhh").on("click", function () {
+      console.log("hhhh");
     });
   };
   /* back Page
@@ -204,6 +211,7 @@
     clearAll();
     clearItem();
     clearCheckbox();
+    dropDown();
     Suggest();
     backPage();
   });
