@@ -52,5 +52,9 @@
                 color: $primary;
             }
         }
+        &.st2 {
+            position: relative;
+            z-index: 10;
+        }
     }
 }

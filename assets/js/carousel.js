@@ -1,4 +1,3 @@
-
 if ($(".boarding-swiper").length > 0) {
   var swiperBoarding = new Swiper(".boarding-swiper", {
     speed: 1500,

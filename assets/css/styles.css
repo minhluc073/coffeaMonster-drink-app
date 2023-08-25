@@ -813,7 +813,7 @@ textarea {
 }
 
 .pt-16 {
-  padding-top: 16px;
+  padding-top: 16px !important;
 }
 
 .pt-17 {
@@ -1103,6 +1103,10 @@ textarea {
   font-weight: 500;
   line-height: normal;
   color: #033f38;
+}
+.header .title-header-bar.st2 {
+  position: relative;
+  z-index: 10;
 }
 
 .tab-content > .tab-pane {
@@ -2471,6 +2475,29 @@ textarea {
   gap: 10px;
 }
 
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.mapboxgl-ctrl-attrib.mapboxgl-compact,
+a.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.list-star {
+  display: flex;
+  gap: 2px;
+}
+.list-star .icon-star {
+  color: #ffc700;
+}
+.list-star .icon-star:nth-last-child(2) {
+  color: #cfcfcf;
+}
+
 .driver-onboarding .boarding-box .img-box {
   max-width: 289px;
   height: 319px;
@@ -3217,7 +3244,7 @@ textarea {
 }
 
 .box-driver {
-  padding: 20px 15px 20px 20px;
+  padding: 20px 20px 20px 15px;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -3253,6 +3280,20 @@ textarea {
 }
 .box-driver.line {
   border: 1px solid #f1f1f1;
+}
+.box-driver.st1 {
+  padding: 0;
+}
+.box-driver.st1 .inner .img {
+  width: 50px;
+  height: 50px;
+}
+.box-driver.st1 .list-star span {
+  margin-left: 2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
 }
 
 .img-location img {
@@ -3322,6 +3363,63 @@ textarea {
 }
 .form-check-lo.check .icon i {
   color: #ffffff;
+}
+
+.bottom-wrapper {
+  position: fixed;
+}
+.bottom-wrapper.full {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.bottom-wrapper.st1 {
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+.bottom-wrapper .bt-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.bottom-wrapper .wrap-box {
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.box-delivery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.box-delivery li {
+  display: flex;
+  gap: 6px;
+}
+.box-delivery li:first-child {
+  border-right: 1px solid #f1f1f1;
+}
+.box-delivery li .icon {
+  font-size: 16px;
+  color: #cfcfcf;
+}
+.box-delivery li .content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 3px;
+}
+.box-delivery li .content h5 {
+  color: #262626;
+}
+
+.m-direction {
+  position: absolute;
+  top: 28%;
+  left: 30%;
 }
 
 .box-profile {

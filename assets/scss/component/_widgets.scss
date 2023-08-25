@@ -712,3 +712,24 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.mapboxgl-ctrl-attrib.mapboxgl-compact,
+a.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+.list-star {
+    display: flex;
+    gap: 2px;
+    .icon-star {
+        color: $yellow;
+        &:nth-last-child(2) {
+            color: $color-icon1;
+        }
+    }
+}
+
