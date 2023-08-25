@@ -200,6 +200,16 @@
     });
   };
 
+  /* preloader
+  ------------------------------------------------------------------------------------- */
+  const preloader = function () {
+    setTimeout(function () {
+      $(".preload").fadeOut("slow", function () {
+        $(this).remove();
+      });
+    }, 150);
+  };
+
   $(function () {
     showPass();
     selectImages();
@@ -214,5 +224,6 @@
     dropDown();
     Suggest();
     backPage();
+    preloader();
   });
 })(jQuery);
