@@ -377,12 +377,22 @@
         right: 14px;
         top: 18px;
         font-size: 20px;
-        color: #343434;
+        color: $primary;
     }
     input {
         padding-right: 42px;
         padding-left: 42px;
         height: 56px;
+    }
+    .t-ip {
+        position: absolute;
+        right: 14px;
+        top: 18px;
+        font-size: 14px;
+        color: $primary;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 }
 
@@ -719,7 +729,8 @@
     width: 100%;
 }
 .mapboxgl-ctrl-attrib.mapboxgl-compact,
-a.mapboxgl-ctrl-logo {
+a.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib-inner {
     display: none !important;
 }
 .list-star {
@@ -731,5 +742,8 @@ a.mapboxgl-ctrl-logo {
             color: $color-icon1;
         }
     }
+    span {
+        color: $t-black;
+        font-weight: 700;
+    }
 }
-

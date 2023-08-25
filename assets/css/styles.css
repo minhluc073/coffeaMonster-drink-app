@@ -1226,6 +1226,11 @@ textarea {
   background-color: #ffffff;
   color: #033f38;
 }
+.tf-btn.white-2 {
+  border: 1px solid transparent;
+  background-color: #f8f8f8;
+  color: #033f38;
+}
 .tf-btn.outline {
   border: 1px solid #ebebeb;
   color: #033f38;
@@ -2129,12 +2134,22 @@ textarea {
   right: 14px;
   top: 18px;
   font-size: 20px;
-  color: #343434;
+  color: #033f38;
 }
 .search-box input {
   padding-right: 42px;
   padding-left: 42px;
   height: 56px;
+}
+.search-box .t-ip {
+  position: absolute;
+  right: 14px;
+  top: 18px;
+  font-size: 14px;
+  color: #033f38;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .box-categories {
@@ -2483,7 +2498,8 @@ textarea {
 }
 
 .mapboxgl-ctrl-attrib.mapboxgl-compact,
-a.mapboxgl-ctrl-logo {
+a.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib-inner {
   display: none !important;
 }
 
@@ -2496,6 +2512,10 @@ a.mapboxgl-ctrl-logo {
 }
 .list-star .icon-star:nth-last-child(2) {
   color: #cfcfcf;
+}
+.list-star span {
+  color: #000;
+  font-weight: 700;
 }
 
 .driver-onboarding .boarding-box .img-box {
@@ -3295,6 +3315,16 @@ a.mapboxgl-ctrl-logo {
   line-height: normal;
   color: #000;
 }
+.box-driver .rate-right {
+  margin-top: -18px;
+}
+.box-driver .rate-right i {
+  color: #ffc700;
+}
+.box-driver .rate-right span {
+  font-weight: 700;
+  color: #000;
+}
 
 .img-location img {
   width: 58px;
@@ -3368,11 +3398,6 @@ a.mapboxgl-ctrl-logo {
 .bottom-wrapper {
   position: fixed;
 }
-.bottom-wrapper.full {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
 .bottom-wrapper.st1 {
   left: 20px;
   right: 20px;
@@ -3388,6 +3413,59 @@ a.mapboxgl-ctrl-logo {
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.bottom-wrapper .wrap-box .grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.bottom-wrapper .wrap-box .grid-2 .tf-btn {
+  height: 46px;
+}
+.bottom-wrapper .wrap-box.bg-primary .box-driver {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bottom-wrapper .wrap-box.bg-primary .box-driver .info h3 a {
+  color: #ffffff;
+  font-weight: 500;
+}
+.bottom-wrapper .wrap-box.bg-primary .box-driver .info .list-star span {
+  color: #ffffff;
+  font-weight: 500;
+}
+.bottom-wrapper .wrap-box.bg-primary .box-driver .icon {
+  background-color: #fff1d0;
+}
+.bottom-wrapper .wrap-box.bg-primary .box-driver .icon i {
+  color: #033f38;
+}
+.bottom-wrapper .wrap-box.bg-primary .order-track-list .icon {
+  background: rgba(255, 255, 255, 0.05);
+}
+.bottom-wrapper .wrap-box.bg-primary .order-track-list .icon i {
+  color: #ffffff;
+}
+.bottom-wrapper .wrap-box.bg-primary .order-track-list .info p {
+  color: #ffffff;
+  opacity: 0.4;
+}
+.bottom-wrapper .wrap-box.bg-primary .order-track-list .info h5 {
+  color: #ffffff;
+  font-weight: 500;
+}
+.bottom-wrapper.full {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.bottom-wrapper.full .box-driver {
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.bottom-wrapper.full .wrap-box {
+  border-radius: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .box-delivery {
@@ -3418,8 +3496,52 @@ a.mapboxgl-ctrl-logo {
 
 .m-direction {
   position: absolute;
-  top: 28%;
+  top: 22%;
+  left: 45%;
+}
+.m-direction.st1 {
+  top: 14%;
   left: 30%;
+}
+
+.order-track-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.order-track-list .icon {
+  background: rgba(3, 63, 56, 0.05);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-track-list .icon i {
+  font-size: 22px;
+  color: #033f38;
+}
+.order-track-list .info p {
+  color: #a1a1a1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 3px;
+}
+.order-track-list .info h5 {
+  color: #262626;
+}
+
+.order-track-box li:first-child {
+  position: relative;
+}
+.order-track-box li:first-child svg {
+  position: absolute;
+  left: 44px;
+  margin-top: 4px;
+  transform: translateX(-23px);
 }
 
 .box-profile {

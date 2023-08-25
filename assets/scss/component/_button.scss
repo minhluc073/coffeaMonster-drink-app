@@ -35,6 +35,11 @@
         //     color: $white;
         // }
     }
+    &.white-2 {
+        border: 1px solid transparent;
+        background-color: $bg-input;
+        color: $primary;
+    }
     &.outline {
         border: 1px solid $line;
         color: $primary;
