@@ -9,6 +9,7 @@
     <link rel="stylesheet"type="text/css" href="assets/css/styles.css"/>
     <!-- Icons -->
     <link rel="stylesheet" href="assets/fonts/font-icons.css">
+    <link rel="manifest" href="./manifest.json" />
     <title>onboarding</title>
 </head>
 
@@ -24,7 +25,7 @@
 
     <div class="app pb-90">  
        
-        <div class="boarding-section">
+    <div class="boarding-section">
                 <div class="swiper boarding-swiper driver-onboarding pt-35 pb-30" >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -73,16 +74,49 @@
         <div class="bottom-fixed bg-white pb">
             <div class="inner">
                 <a href="sign-in.html" class="tf-btn large primary"> Get started</a>              
-                <!-- <a href="#" class="tf-btn large white outline"> Back to shopping</a>               -->
+                <!-- <a href="#" class="tf-btn large white outline"> Back to shopping</a> -->
             </div>
         </div>
 
     </div>
+
+
+     <div class="modal fade action-sheet pwa-modal" id="modalpwa">
+        <div class="modal-dialog bg-white" role="document">
+            <div class="tf-container">
+                <div class="pwa-content">
+                        <div class="top">
+                            <img src="./assets/images/logo/168.png" class="pwa-logo" alt="img">
+                            <h2>
+                                Coffee, Drink, Food App
+                            </h2>
+                        </div>
+                        <p class="mt-20 text-center">  
+                            Install App on your home screen, and access it just like a regular app. It really is that simple!
+                        </p>
+                        <div class="group-btn mt-20">
+                            <a href="#" class="tf-btn primary" id="installapp">Add to Home Screen</a>
+                            <a href="#" class="tf-btn btn-dismiss" data-bs-dismiss="modal" >May be later</a>
+                        </div>
+                </div>
+            </div>
+                
+        </div>
+        
+      </div>
+   
     
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
+
+    <!-- homescreen popup js -->
+    <script type="text/javascript" src="./setting.js"></script>
+
+    <!-- PWA offcanvas popup js -->
+    <script type="text/javascript" src="./loadpwa.js"></script>
+
     <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

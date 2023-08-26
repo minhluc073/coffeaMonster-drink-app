@@ -81,3 +81,7 @@
     line-height: normal;
     @include flex(center, center);
 }
+.btn-close:focus {
+    outline: 0;
+    box-shadow: unset;
+}
