@@ -690,6 +690,7 @@
         }
     }
 }
+
 .form-select {
     width: auto;
     border: 0;
@@ -782,6 +783,66 @@ a.mapboxgl-ctrl-logo,
     }
 }
 
+.location-list-v2 {
+    @include flex(center, space-between);
+    gap: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: $text-black-2;
+
+    a {
+        color: $text;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        i {
+            font-size: 18px;
+        }
+    }
+}
+.location-list-v3 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px;
+    background: $white;
+    box-shadow: $shadow-1;
+    border-radius: 16px;
+    .icon {
+        width: 40px;
+        height: 40px;
+        @include flex(center, center);
+        border-radius: 16px;
+        background-color: rgba(3, 63, 56, 0.05);
+    }
+    h4 {
+        flex-grow: 1;
+    }
+    .icon-right {
+        font-size: 24px;
+        color: $color-icon1;
+    }
+}
+.location-list-v4 {
+    display: flex;
+    gap: 6px;
+    .icon {
+        font-size: 16px;
+        color: $primary;
+    }
+    .content {
+        p {
+            color: $text;
+            margin-top: 6px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
 .preload {
     overflow: hidden;
 }

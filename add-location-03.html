@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet"type="text/css" href="assets/css/styles.css"/>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/fonts/font-icons.css">
+    <title>add location</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="tf-container">
+            <div class="title-header-bar pt-20 st2">
+                <a href="#" class="back-btn"><i class="icon-left"></i></a>    
+            </div>
+        </div>
+    </div>
+    <div class="app">  
+        <div id="map"></div>
+        <div class="m-direction st2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="77" viewBox="0 0 70 77" fill="none">
+                <circle cx="35" cy="35" r="34" fill="#033F38" fill-opacity="0.1"/>
+                <circle cx="35" cy="35" r="34.5" stroke="#033F38" stroke-opacity="0.26"/>
+                <g filter="url(#filter0_d_1_7035)">
+                  <circle cx="35" cy="35" r="10" fill="#033F38"/>
+                  <circle cx="35" cy="35" r="12" stroke="white" stroke-width="4"/>
+                </g>
+                <defs>
+                  <filter id="filter0_d_1_7035" x="1" y="9" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="8"/>
+                    <feGaussianBlur stdDeviation="10"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.0117647 0 0 0 0 0.247059 0 0 0 0 0.219608 0 0 0 0.22 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_7035"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_7035" result="shape"/>
+                  </filter>
+                </defs>
+              </svg>
+        </div>   
+        <div class="bottom-wrapper full">
+            <div class="bt-container">
+                <div class="wrap-box bg-white location">
+                        <h2>Add new location</h2>
+                        <div class="search-box mt-20">
+                            <span class="icon icon-search"></span>
+                            <input type="text" placeholder="Search location" >
+                        </div>
+                        <div class="mt-15 location-list-v3">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <g clip-path="url(#clip0_1_6957)">
+                                      <path d="M18.3329 19.1666H1.66623C1.53965 19.1673 1.41458 19.1391 1.30052 19.0842C1.18645 19.0294 1.08638 18.9492 1.0079 18.8499C0.925676 18.7519 0.867122 18.6363 0.836774 18.512C0.806427 18.3877 0.805101 18.2581 0.832899 18.1332L2.49957 11.4666C2.54519 11.2817 2.65277 11.118 2.80439 11.0028C2.95602 10.8875 3.14254 10.8277 3.3329 10.8332H4.99957V12.4999H3.9829L2.7329 17.4999H17.2662L16.0162 12.4999H14.9996V10.8332H16.6662C16.8566 10.8277 17.0431 10.8875 17.1947 11.0028C17.3464 11.118 17.4539 11.2817 17.4996 11.4666L19.1662 18.1332C19.1974 18.2562 19.2002 18.3847 19.1742 18.5089C19.1482 18.6331 19.0941 18.7498 19.0162 18.8499C18.9352 18.9526 18.8311 19.0348 18.7124 19.0898C18.5937 19.1449 18.4637 19.1712 18.3329 19.1666ZM15.8329 6.66658C15.8327 7.81068 15.496 8.92945 14.8648 9.88366C14.2336 10.8379 13.3357 11.5854 12.2829 12.0332L10.7579 15.3666C10.6916 15.5121 10.5849 15.6354 10.4504 15.7219C10.3159 15.8084 10.1594 15.8544 9.99957 15.8544C9.83969 15.8544 9.68318 15.8084 9.54872 15.7219C9.41426 15.6354 9.30752 15.5121 9.24123 15.3666L7.71623 12.0332C6.74628 11.6207 5.90625 10.953 5.28542 10.1012C4.66459 9.24933 4.28617 8.24521 4.19037 7.19552C4.09458 6.14583 4.28499 5.0898 4.74137 4.13967C5.19775 3.18954 5.90304 2.38082 6.78228 1.79948C7.66152 1.21813 8.68185 0.885881 9.73482 0.838043C10.7878 0.790205 11.834 1.02857 12.7624 1.52779C13.6907 2.02702 14.4664 2.76845 15.0071 3.67328C15.5477 4.57811 15.8331 5.61253 15.8329 6.66658ZM12.4996 6.66658C12.4996 6.17213 12.3529 5.68878 12.0782 5.27766C11.8035 4.86653 11.4131 4.5461 10.9563 4.35688C10.4995 4.16766 9.99679 4.11816 9.51184 4.21462C9.02689 4.31108 8.58143 4.54918 8.2318 4.89882C7.88217 5.24845 7.64407 5.6939 7.5476 6.17886C7.45114 6.66381 7.50065 7.16648 7.68987 7.62329C7.87909 8.08011 8.19952 8.47055 8.61064 8.74526C9.02176 9.01996 9.50511 9.16658 9.99957 9.16658C10.6626 9.16658 11.2985 8.90319 11.7673 8.43435C12.2362 7.96551 12.4996 7.32962 12.4996 6.66658ZM9.99957 5.83325C9.83475 5.83325 9.67363 5.88212 9.53659 5.97369C9.39955 6.06526 9.29274 6.19541 9.22967 6.34768C9.16659 6.49995 9.15009 6.66751 9.18224 6.82916C9.2144 6.99081 9.29377 7.13929 9.41031 7.25584C9.52685 7.37238 9.67534 7.45175 9.83699 7.4839C9.99864 7.51606 10.1662 7.49956 10.3185 7.43648C10.4707 7.37341 10.6009 7.2666 10.6925 7.12956C10.784 6.99252 10.8329 6.8314 10.8329 6.66658C10.8329 6.44557 10.7451 6.23361 10.5888 6.07733C10.4325 5.92105 10.2206 5.83325 9.99957 5.83325Z" fill="#033F38"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_1_6957">
+                                        <rect width="20" height="20" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4><a href="#">Use my curent location</a></h4>
+                            <a href="#" class="icon-right"></a>
+                        </div>
+                        <ul class="mt-30">
+                            <li class="location-list-v4 b-line pb-15">
+                                <span class="icon icon-location"></span>
+                                <div class="content">
+                                    <h4><a href="#">Jerome Bell</a></h4>
+                                    <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                </div>
+                            </li>
+                            <li class="location-list-v4 b-line pt-15 pb-15">
+                                <span class="icon icon-location"></span>
+                                <div class="content">
+                                    <h4><a href="#">Eleanor Pena</a></h4>
+                                    <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                                </div>
+                            </li>
+                            <li class="location-list-v4 pt-15">
+                                <span class="icon icon-location"></span>
+                                <div class="content">
+                                    <h4><a href="#">Marvin McKinney</a></h4>
+                                    <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGhlbWVzZmxhdCIsImEiOiJjbGt3NGxtYncwa2F2M21saHM3M21uM3h2In0.9NbzjykXil1nELxQ1V8rkA';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/light-v11', // style URL
+        center: [-74.405, 40.71], // starting position [lng, lat]
+        zoom: 15 
+        });
+    </script>
+
+</body>
+</html>

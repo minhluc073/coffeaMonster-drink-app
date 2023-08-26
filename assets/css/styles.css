@@ -812,6 +812,14 @@ textarea {
   padding-bottom: 12px;
 }
 
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
 .pt-16 {
   padding-top: 16px !important;
 }
@@ -2547,6 +2555,70 @@ a.mapboxgl-ctrl-logo,
 }
 .location-list .lo-check .form-check-label::after {
   border: 1px solid #e1e1e1;
+}
+
+.location-list-v2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #343434;
+}
+.location-list-v2 a {
+  color: #a1a1a1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.location-list-v2 a i {
+  font-size: 18px;
+}
+
+.location-list-v3 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+}
+.location-list-v3 .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: rgba(3, 63, 56, 0.05);
+}
+.location-list-v3 h4 {
+  flex-grow: 1;
+}
+.location-list-v3 .icon-right {
+  font-size: 24px;
+  color: #cfcfcf;
+}
+
+.location-list-v4 {
+  display: flex;
+  gap: 6px;
+}
+.location-list-v4 .icon {
+  font-size: 16px;
+  color: #033f38;
+}
+.location-list-v4 .content p {
+  color: #a1a1a1;
+  margin-top: 6px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .preload {
