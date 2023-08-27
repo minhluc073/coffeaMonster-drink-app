@@ -15,7 +15,7 @@
     <div class="app home-1">
         <div class="tf-container">
             <div class="inner-headerbar">
-                <span onclick="loadEvent()" class="sidebar"><i class="icon-filter-2"></i></span>
+                <span class="sidebar"><i class="icon-filter-2"></i></span>
                 <h1 class="mt-20">Find and Oder Coffee
                     for you!</h1>
             </div>
@@ -503,32 +503,29 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.easing.js"></script>
-
     <script type="text/javascript" src="assets/js/sidebar.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 
     <script>
-        function loadEvent (e) {
-            const modalNav = $(".menu-mobile-popup");
-            console.log(modalNav,'hhh');
-            if (modalNav.length) {
-                const open = function () {
-                    modalNav.addClass("modal-menu--open");
-                };
-                const close = function () {
-                    modalNav.removeClass("modal-menu--open");
-                };
-                open();
-                // $(".sidebar").on("click", function () {
-                //     open();
-                // });
-                $(".modal-menu__backdrop").on("click", function () {
-                    close();
-                });
-                }
-            } 
+        // function loadEvent (e) {
+        //     const modalNav = $(".menu-mobile-popup");
+        //     console.log(modalNav,'hhh');
+        //     if (modalNav.length) {
+        //         const open = function () {
+        //             modalNav.addClass("modal-menu--open");
+        //         };
+        //         const close = function () {
+        //             modalNav.removeClass("modal-menu--open");
+        //         };
+        //         open();
+        //         $(".sidebar").on("click", function () {
+        //             open();
+        //         });
+        //         $(".modal-menu__backdrop").on("click", function () {
+        //             close();
+        //         });
+        //         }
+        //     } 
     </script>
     
 </body>

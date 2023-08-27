@@ -20,33 +20,10 @@ window.console =
 
 $(document).ready(function () {
   var e =
-    // '<div class="switcher-container">' +
-    // 'div class="modal-menu__backdrop"></div>' +
-    // '<div class="selector-box">' +
-    // '<div class="clearfix"></div>' +
-    // '<div class="sw-odd"><h3>Color:</h3>' +
-    // '<div class="ws-colors">' +
-    // '<a href="#" class="styleswitch" id="color1">' +
-    // "Color1" +
-    // "</a>" +
-    // '<a href="#" class="styleswitch" id="color2">' +
-    // "Color2" +
-    // "</a>" +
-    // '<a href="#" class="styleswitch" id="color3">' +
-    // "Color3" +
-    // "</a>" +
-    // "</div></div>" +
-    // '<div class="sw-even"><h3>Layout:</h3>' +
-    // '<a href="#" class="sw-light">BOX</a>' +
-    // '<a href="#" class="sw-dark">WIDE</a>' +
-    // "</div>" +
-    // '<div class="clearfix"></div>' +
-    // "</div>" +
-    // "</div>";
-
     '<div class="menu-mobile-popup">' +
     '<div class="modal-menu__backdrop"></div> ' +
     '<div class="widget-filter">' +
+    '<img src="assets/images/logo/40.png">' +
     '<div class="header-ct-center menu-moblie">' +
     '<div class="nav-wrap">' +
     '<nav class="main-nav mobile">' +
@@ -58,7 +35,7 @@ $(document).ready(function () {
     '<a href="home-01.html">Home Page 01 </a>' +
     "</li>" +
     '<li class="menu-item menu-item-mobile">' +
-    '<a href="Home-02.html">Home Page 02 </a>' +
+    '<a href="location.html">Home Page 02 </a>' +
     "</li>" +
     '<li class="menu-item menu-item-mobile">' +
     '<a href="home-03.html">Home Page 03 </a>' +
@@ -72,8 +49,7 @@ $(document).ready(function () {
     "</div>" +
     "</div>";
   $("body").append(e);
-  // switchAnimate.loadEvent();
-  // switchColor.loadEvent();
+
   switchAnimate.btnmenu();
 });
 

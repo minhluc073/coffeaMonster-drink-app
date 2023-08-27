@@ -200,6 +200,26 @@
     });
   };
 
+  const clickSideBar = function () {
+    const modalNav = $(".menu-mobile-popup");
+    console.log(modalNav, "hhh");
+    if (modalNav.length) {
+      const open = function () {
+        modalNav.addClass("modal-menu--open");
+      };
+      const close = function () {
+        modalNav.removeClass("modal-menu--open");
+      };
+      // open();
+      $(".sidebar").on("click", function () {
+        open();
+      });
+      $(".modal-menu__backdrop").on("click", function () {
+        close();
+      });
+    }
+  };
+
   /* preloader
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
@@ -224,6 +244,7 @@
     dropDown();
     Suggest();
     backPage();
+    clickSideBar();
     preloader();
   });
 })(jQuery);
