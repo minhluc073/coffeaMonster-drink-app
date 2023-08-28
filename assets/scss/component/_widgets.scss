@@ -902,12 +902,31 @@ a.mapboxgl-ctrl-logo,
 
 .inner-headerbar {
     display: flex;
-    align-items: center;
-    span {
-        width: 50px;
+    gap: 12px;
+    .sidebar {
+        width: 35px;
+        height: 35px;
+        border: 1px solid $primary;
+        flex-shrink: 0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         i {
-            font-size: 20px;
+            font-size: 18px;
+            color: $primary;
         }
+    }
+    &.st1 {
+        .sidebar {
+            border-color: $white;
+            i {
+                color: $white;
+            }
+        }
+    }
+    .header-home {
+        flex: 1;
     }
 }
 .menu-mobile-popup .widget-filter,
@@ -1012,6 +1031,8 @@ a.mapboxgl-ctrl-logo,
         li {
             padding: 20px 0px;
             border-bottom: 1px solid $line-2;
+            font-weight: 500;
+            font-size: 15px;
             .menu-item-mobile {
                 &:last-child {
                     border-bottom: none;
@@ -1042,6 +1063,9 @@ a.mapboxgl-ctrl-logo,
                     transition: all 0.3s ease-out;
                 }
             }
+        }
+        .menu-item-mobile {
+            padding-left: 10px;
         }
     }
 }

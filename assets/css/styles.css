@@ -1133,6 +1133,10 @@ textarea {
   transition: opacity 0.15s linear;
 }
 
+.nav-tabs {
+  border-bottom: 0;
+}
+
 #navtabs-drink1 {
   background: #ffffff;
   display: grid;
@@ -2727,13 +2731,30 @@ a.mapboxgl-ctrl-logo,
 }
 .inner-headerbar {
   display: flex;
+  gap: 12px;
+}
+.inner-headerbar .sidebar {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #033f38;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
-.inner-headerbar span {
-  width: 50px;
+.inner-headerbar .sidebar i {
+  font-size: 18px;
+  color: #033f38;
 }
-.inner-headerbar span i {
-  font-size: 20px;
+.inner-headerbar.st1 .sidebar {
+  border-color: #ffffff;
+}
+.inner-headerbar.st1 .sidebar i {
+  color: #ffffff;
+}
+.inner-headerbar .header-home {
+  flex: 1;
 }
 
 .menu-mobile-popup .widget-filter,
@@ -2840,6 +2861,8 @@ a.mapboxgl-ctrl-logo,
 .widget-filter #menu-primary-menu li {
   padding: 20px 0px;
   border-bottom: 1px solid #f1f1f1;
+  font-weight: 500;
+  font-size: 15px;
 }
 .widget-filter #menu-primary-menu li .menu-item-mobile:last-child {
   border-bottom: none;
@@ -2866,6 +2889,9 @@ a.mapboxgl-ctrl-logo,
   top: 15px;
   transform: rotate(180deg) !important;
   transition: all 0.3s ease-out;
+}
+.widget-filter #menu-primary-menu .menu-item-mobile {
+  padding-left: 10px;
 }
 
 .sub-menu-mobile {
@@ -3082,7 +3108,7 @@ a.mapboxgl-ctrl-logo,
 }
 
 .app h1 {
-  padding-right: 70px;
+  padding-right: 50px;
 }
 .app .header-location p {
   color: #ffffff;

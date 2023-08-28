@@ -9,40 +9,54 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <!-- Icons -->
     <link rel="stylesheet" href="assets/fonts/font-icons.css" />
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/logo-1.png">
+
     <title>home</title>
   </head>
 
   <body>
+
+    <div class="preload preload-container">
+      <div class="preload-logo">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
     <div class="app home-3">
       <div class="tf-container">
-        <div class="header-location pt-20">
-          <p>Delyvery to:</p>
-          <span class="location">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="17"
-              viewBox="0 0 16 17"
-              fill="none"
-            >
-              <path
-                d="M11.7714 11.6045L8.94269 14.4331C8.81898 14.557 8.67209 14.6552 8.5104 14.7222C8.3487 14.7892 8.17539 14.8237 8.00036 14.8237C7.82532 14.8237 7.65201 14.7892 7.49032 14.7222C7.32862 14.6552 7.18173 14.557 7.05802 14.4331L4.22869 11.6045C3.48284 10.8586 2.97491 9.90827 2.76915 8.87371C2.56338 7.83916 2.66902 6.76681 3.07269 5.79229C3.47637 4.81777 4.15995 3.98483 5.03701 3.39881C5.91407 2.81279 6.9452 2.5 8.00002 2.5C9.05485 2.5 10.086 2.81279 10.963 3.39881C11.8401 3.98483 12.5237 4.81777 12.9274 5.79229C13.331 6.76681 13.4367 7.83916 13.2309 8.87371C13.0251 9.90827 12.5172 10.8586 11.7714 11.6045V11.6045Z"
-                stroke="white"
-                stroke-width="1.33333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10 7.8335C10 8.36393 9.78929 8.87264 9.41421 9.24771C9.03914 9.62278 8.53043 9.8335 8 9.8335C7.46957 9.8335 6.96086 9.62278 6.58579 9.24771C6.21071 8.87264 6 8.36393 6 7.8335C6 7.30306 6.21071 6.79436 6.58579 6.41928C6.96086 6.04421 7.46957 5.8335 8 5.8335C8.53043 5.8335 9.03914 6.04421 9.41421 6.41928C9.78929 6.79436 10 7.30306 10 7.8335V7.8335Z"
-                stroke="white"
-                stroke-width="1.33333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            6391 Elgin St. Celina, Delaware 10299
-          </span>
-        </div>
+        <div class="inner-headerbar pt-20 st1">
+          <span class="sidebar"><i class="icon-filter-2"></i></span>
+          <div class="header-location">  
+            <p>Delyvery to:</p>
+            <span class="location">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+              >
+                <path
+                  d="M11.7714 11.6045L8.94269 14.4331C8.81898 14.557 8.67209 14.6552 8.5104 14.7222C8.3487 14.7892 8.17539 14.8237 8.00036 14.8237C7.82532 14.8237 7.65201 14.7892 7.49032 14.7222C7.32862 14.6552 7.18173 14.557 7.05802 14.4331L4.22869 11.6045C3.48284 10.8586 2.97491 9.90827 2.76915 8.87371C2.56338 7.83916 2.66902 6.76681 3.07269 5.79229C3.47637 4.81777 4.15995 3.98483 5.03701 3.39881C5.91407 2.81279 6.9452 2.5 8.00002 2.5C9.05485 2.5 10.086 2.81279 10.963 3.39881C11.8401 3.98483 12.5237 4.81777 12.9274 5.79229C13.331 6.76681 13.4367 7.83916 13.2309 8.87371C13.0251 9.90827 12.5172 10.8586 11.7714 11.6045V11.6045Z"
+                  stroke="white"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 7.8335C10 8.36393 9.78929 8.87264 9.41421 9.24771C9.03914 9.62278 8.53043 9.8335 8 9.8335C7.46957 9.8335 6.96086 9.62278 6.58579 9.24771C6.21071 8.87264 6 8.36393 6 7.8335C6 7.30306 6.21071 6.79436 6.58579 6.41928C6.96086 6.04421 7.46957 5.8335 8 5.8335C8.53043 5.8335 9.03914 6.04421 9.41421 6.41928C9.78929 6.79436 10 7.30306 10 7.8335V7.8335Z"
+                  stroke="white"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              6391 Elgin St. Celina, Delaware 10299
+            </span>
+          </div>
+      </div>
+        
         <div class="search-box mt-20">
           <span class="icon icon-search"></span>
           <input type="text" placeholder="Search your coffee..." />
@@ -51,7 +65,7 @@
           <div class="swiper drink-swiper">
             <div class="swiper-wrapper pt-24 pb-30">
               <div class="swiper-slide ml-1">
-                <a href="#" class="box-categories primary">
+                <a href="nearby.html" class="box-categories primary">
                   <div class="images">
                     <img
                       src="assets/images/food/coffea-sm-1.png"
@@ -62,7 +76,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="box-categories primary">
+                <a href="nearby.html" class="box-categories primary">
                   <div class="images">
                     <img
                       src="assets/images/food/coffea-sm-2.png"
@@ -73,7 +87,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="box-categories primary">
+                <a href="nearby.html" class="box-categories primary">
                   <div class="images">
                     <img
                       src="assets/images/food/coffea-sm-3.png"
@@ -84,7 +98,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" class="box-categories primary">
+                <a href="nearby.html" class="box-categories primary">
                   <div class="images">
                     <img
                       src="assets/images/food/coffea-sm-4.png"
@@ -103,7 +117,7 @@
               <img src="assets/images/food/coffea-lg-3.jpg" alt="img" />
             </div>
             <div class="content-box">
-              <h1><a href="#">Blue Mountain Coffee</a></h1>
+              <h1><a href="product-details-1.html">Blue Mountain Coffee</a></h1>
               <ul class="review">
                 <li>
                   <i class="icon-star"></i>
@@ -114,7 +128,7 @@
               </ul>
               <div class="box-price">
                 <span class="price">$10.48</span>
-                <a href="#" class="btn-add">+</a>
+                <a href="cart.html" class="btn-add">+</a>
               </div>
             </div>
           </div>
@@ -129,7 +143,7 @@
                     <img src="assets/images/food/coffea-lg-1.jpg" alt="img" />
                   </div>
                   <div class="content-box">
-                    <h5><a href="#">Cappuccino</a></h5>
+                    <h5><a href="product-details-1.html">Cappuccino</a></h5>
                     <ul class="review">
                       <li>
                         <i class="icon-star"></i>
@@ -143,7 +157,7 @@
                         <li class="accent">$10.48</li>
                         <li class="del">$12.48</li>
                       </ul>
-                      <a href="#" class="btn-add">+</a>
+                      <a href="cart.html" class="btn-add">+</a>
                     </div>
                   </div>
                 </div>
@@ -154,7 +168,7 @@
                     <img src="assets/images/food/coffea-lg-1.jpg" alt="img" />
                   </div>
                   <div class="content-box">
-                    <h5><a href="#">Cappuccino</a></h5>
+                    <h5><a href="product-details-1.html">Cappuccino</a></h5>
                     <ul class="review">
                       <li>
                         <i class="icon-star"></i>
@@ -168,7 +182,7 @@
                         <li class="accent">$10.48</li>
                         <li class="del">$12.48</li>
                       </ul>
-                      <a href="#" class="btn-add">+</a>
+                      <a href="cart.html" class="btn-add">+</a>
                     </div>
                   </div>
                 </div>
@@ -179,7 +193,7 @@
                     <img src="assets/images/food/coffea-lg-1.jpg" alt="img" />
                   </div>
                   <div class="content-box">
-                    <h5><a href="#">Cappuccino</a></h5>
+                    <h5><a href="product-details-1.html">Cappuccino</a></h5>
                     <ul class="review">
                       <li>
                         <i class="icon-star"></i>
@@ -193,7 +207,7 @@
                         <li class="accent">$10.48</li>
                         <li class="del">$12.48</li>
                       </ul>
-                      <a href="#" class="btn-add">+</a>
+                      <a href="cart.html" class="btn-add">+</a>
                     </div>
                   </div>
                 </div>
@@ -215,7 +229,7 @@
                       <img src="assets/images/food/coffea-lg-2.jpg" alt="img" />
                     </div>
                     <div class="content-box">
-                      <h3><a href="#"> Dalgona Coffee</a></h3>
+                      <h3><a href="product-details-1.html"> Dalgona Coffee</a></h3>
                       <ul class="review">
                         <li>
                           <i class="icon-star"></i>
@@ -226,7 +240,7 @@
                       </ul>
                       <div class="box-price">
                         <span class="price">$10.48</span>
-                        <a href="#" class="btn-add">+</a>
+                        <a href="cart.html" class="btn-add">+</a>
                       </div>
                     </div>
                   </div>
@@ -237,7 +251,7 @@
                       <img src="assets/images/food/coffea-lg-1.jpg" alt="img" />
                     </div>
                     <div class="content-box">
-                      <h3><a href="#"> Cappuccino</a></h3>
+                      <h3><a href="product-details-1.html"> Cappuccino</a></h3>
                       <ul class="review">
                         <li>
                           <i class="icon-star"></i>
@@ -248,7 +262,7 @@
                       </ul>
                       <div class="box-price">
                         <span class="price">$10.48</span>
-                        <a href="#" class="btn-add">+</a>
+                        <a href="cart.html" class="btn-add">+</a>
                       </div>
                     </div>
                   </div>
@@ -265,52 +279,52 @@
           <div class="wrap-grid mt-12">
             <div class="box-collections">
               <div class="images">
-                <a href="#">
+                <a href="product-details-1.html">
                   <img src="assets/images/food/collect-4.jpg" alt="images" />
                 </a>
               </div>
               <div class="content">
                 <h3>
-                  <a href="#">Filter coffee</a>
+                  <a href="product-details-1.html">Filter coffee</a>
                 </h3>
                 <p>32 Product</p>
               </div>
             </div>
             <div class="box-collections">
               <div class="images">
-                <a href="#">
+                <a href="product-details-1.html">
                   <img src="assets/images/food/collect-5.jpg" alt="images" />
                 </a>
               </div>
               <div class="content">
                 <h3>
-                  <a href="#">Filter coffee</a>
+                  <a href="product-details-1.html">Filter coffee</a>
                 </h3>
                 <p>32 Product</p>
               </div>
             </div>
             <div class="box-collections">
               <div class="images">
-                <a href="#">
+                <a href="product-details-1.html">
                   <img src="assets/images/food/collect-6.jpg" alt="images" />
                 </a>
               </div>
               <div class="content">
                 <h3>
-                  <a href="#">White coffee</a>
+                  <a href="product-details-1.html">White coffee</a>
                 </h3>
                 <p>32 Product</p>
               </div>
             </div>
             <div class="box-collections">
               <div class="images">
-                <a href="#">
+                <a href="product-details-1.html">
                   <img src="assets/images/food/collect-7.jpg" alt="images" />
                 </a>
               </div>
               <div class="content">
                 <h3>
-                  <a href="#">Filter coffee</a>
+                  <a href="product-details-1.html">Filter coffee</a>
                 </h3>
                 <p>32 Product</p>
               </div>
@@ -323,20 +337,20 @@
               </div>
               <div class="content">
                 <h3>
-                  <a href="#">Filter coffee</a>
+                  <a href="product-details-1.html">Filter coffee</a>
                 </h3>
                 <p>32 Product</p>
               </div>
             </div>
             <div class="box-collections">
               <div class="images">
-                <a href="#">
+                <a href="product-details-1.html">
                   <img src="assets/images/food/collect-9.jpg" alt="images" />
                 </a>
               </div>
               <div class="content">
                 <h3>
-                  <a href="#">Filter coffee</a>
+                  <a href="product-details-1.html">Filter coffee</a>
                 </h3>
                 <p>32 Product</p>
               </div>
@@ -357,7 +371,7 @@
                               <img src="assets/images/food/coffea-1.jpg" alt="img" />
                             </div>
                             <div class="content-box">
-                              <h5>Ice Chocolate Coffee</h5>
+                              <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                               <ul class="review">
                                 <li>
                                   <i class="icon-star"></i>
@@ -371,7 +385,7 @@
                                   <li class="accent">$10.48</li>
                                   <li class="del">$12.48</li>
                                 </ul>
-                                <a href="#" class="btn-add">+</a>
+                                <a href="cart.html" class="btn-add">+</a>
                               </div>
                             </div>
                           </div>
@@ -382,7 +396,8 @@
                               <img src="assets/images/food/coffea-2.jpg" alt="img" />
                             </div>
                             <div class="content-box">
-                              <h5>Ice Chocolate Coffee</h5>
+                              <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
+                              
                               <ul class="review">
                                 <li>
                                   <i class="icon-star"></i>
@@ -396,7 +411,7 @@
                                   <li class="accent">$10.48</li>
                                   <li class="del">$12.48</li>
                                 </ul>
-                                <a href="#" class="btn-add">+</a>
+                                <a href="cart.html" class="btn-add">+</a>
                               </div>
                             </div>
                           </div>
@@ -427,7 +442,7 @@
                                 <img src="assets/images/food/coffea-1.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html"></a>Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -443,7 +458,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -455,7 +470,7 @@
                                 <img src="assets/images/food/coffea-2.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -471,7 +486,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -483,7 +498,7 @@
                                 <img src="assets/images/food/coffea-3.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -499,7 +514,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -511,7 +526,7 @@
                                 <img src="assets/images/food/coffea-4.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -527,7 +542,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -539,7 +554,7 @@
                                 <img src="assets/images/food/coffea-5.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -555,7 +570,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -570,7 +585,7 @@
                                 <img src="assets/images/food/coffea-1.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -586,7 +601,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -598,7 +613,7 @@
                                 <img src="assets/images/food/coffea-2.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -614,7 +629,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -626,7 +641,7 @@
                                 <img src="assets/images/food/coffea-3.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -642,7 +657,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -654,7 +669,7 @@
                                 <img src="assets/images/food/coffea-4.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -670,7 +685,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -682,7 +697,7 @@
                                 <img src="assets/images/food/coffea-5.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -698,7 +713,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -713,7 +728,7 @@
                                 <img src="assets/images/food/coffea-1.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -729,7 +744,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -741,7 +756,7 @@
                                 <img src="assets/images/food/coffea-2.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -757,7 +772,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -769,7 +784,7 @@
                                 <img src="assets/images/food/coffea-3.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -785,7 +800,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -797,7 +812,7 @@
                                 <img src="assets/images/food/coffea-4.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -813,7 +828,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -825,7 +840,7 @@
                                 <img src="assets/images/food/coffea-5.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -841,7 +856,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -856,7 +871,7 @@
                                 <img src="assets/images/food/coffea-1.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -872,7 +887,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -884,7 +899,7 @@
                                 <img src="assets/images/food/coffea-2.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -900,7 +915,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -912,7 +927,7 @@
                                 <img src="assets/images/food/coffea-3.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -928,7 +943,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -940,7 +955,7 @@
                                 <img src="assets/images/food/coffea-4.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -956,7 +971,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -968,7 +983,7 @@
                                 <img src="assets/images/food/coffea-5.jpg" alt="img">
                             </div>
                             <div class="content-box">
-                                <h5>Ice Chocolate Coffee</h5>
+                                <h5><a href="product-details-1.html">Ice Chocolate Coffee</a> </h5>
                                 <ul class="review">
                                     <li>
                                         <i class="icon-star"></i>
@@ -984,7 +999,7 @@
                                         <li class="accent">$10.48</li>
                                         <li class="del">$12.48</li>
                                     </ul>
-                                    <a href="#" class="btn-add">+</a>
+                                    <a href="cart.html" class="btn-add">+</a>
                                 </div>
                               
                 
@@ -1024,6 +1039,7 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/sidebar.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>

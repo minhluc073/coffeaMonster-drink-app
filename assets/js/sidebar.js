@@ -52,25 +52,31 @@ $(document).ready(function () {
     "</ul>" +
     "</li>" +
     '<li class="menu-item menu-item-has-children-mobile">' +
-    '<a class="item-menu">Filter</a>' +
+    '<a class="item-menu">Filter & Search</a>' +
     '<ul class="sub-menu-mobile">' +
     '<li class="menu-item-mobile">' +
-    '<a href="home-01.html">Home Page 01 </a>' +
+    '<a href="filter-search-01.html">Search 01</a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-02.html">Home Page 02 </a>' +
+    '<a href="filter-search-02.html">Search 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-03.html">Home Page 03 </a>' +
+    '<a href="filter-search-03.html">Search 03 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-04.html">Home Page 04 </a>' +
+    '<a href="search-result.html">Search result 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-05.html">Home Page 05 </a>' +
+    '<a href="search-result-02.html">Search result 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-06.html">Home Page 06 </a>' +
+    '<a href="search-result-03.html">Search result 03 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="search-result-04.html">Search result 04 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="filter.html">Filter </a>' +
     "</li>" +
     "</ul>" +
     "</li>" +
@@ -78,22 +84,34 @@ $(document).ready(function () {
     '<a class="item-menu">Product Detail</a>' +
     '<ul class="sub-menu-mobile">' +
     '<li class="menu-item-mobile">' +
-    '<a href="home-01.html">Home Page 01 </a>' +
+    '<a href="product-details-1.html">Product details 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-02.html">Home Page 02 </a>' +
+    '<a href="product-details-2.html">Product details 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-03.html">Home Page 03 </a>' +
+    '<a href="product-details-3.html">Product details 03 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-04.html">Home Page 04 </a>' +
+    '<a href="product-details-4.html">Product details 04 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-05.html">Home Page 05 </a>' +
+    '<a href="product-details-5.html">Product details 05 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-06.html">Home Page 06 </a>' +
+    '<a href="product-details-6.html">Product details 06 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="product-details-7.html">Product details 07 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="product-details-8.html">Product details 08 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="product-details-9.html">Product details 09 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="product-details-10.html">Product details 10 </a>' +
     "</li>" +
     "</ul>" +
     "</li>" +
@@ -101,22 +119,13 @@ $(document).ready(function () {
     '<a class="item-menu">Favorite</a>' +
     '<ul class="sub-menu-mobile">' +
     '<li class="menu-item-mobile">' +
-    '<a href="home-01.html">Home Page 01 </a>' +
+    '<a href="favorite.html">Favorite 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-02.html">Home Page 02 </a>' +
+    '<a href="favorite-02.html">Favorite 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-03.html">Home Page 03 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="home-04.html">Home Page 04 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="home-05.html">Home Page 05 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="home-06.html">Home Page 06 </a>' +
+    '<a href="favorite-03.html">Favorite 03 </a>' +
     "</li>" +
     "</ul>" +
     "</li>" +
@@ -124,22 +133,10 @@ $(document).ready(function () {
     '<a class="item-menu">Nearby</a>' +
     '<ul class="sub-menu-mobile">' +
     '<li class="menu-item-mobile">' +
-    '<a href="home-01.html">Home Page 01 </a>' +
+    '<a href="nearby.html"> Nearby 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-02.html">Home Page 02 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="home-03.html">Home Page 03 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="home-04.html">Home Page 04 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="home-05.html">Home Page 05 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="home-06.html">Home Page 06 </a>' +
+    '<a href="nearby-02.html">Nearby 02 </a>' +
     "</li>" +
     "</ul>" +
     "</li>" +
@@ -147,22 +144,22 @@ $(document).ready(function () {
     '<a class="item-menu">Profile</a>' +
     '<ul class="sub-menu-mobile">' +
     '<li class="menu-item-mobile">' +
-    '<a href="home-01.html">Home Page 01 </a>' +
+    '<a href="profile.html">Profile 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-02.html">Home Page 02 </a>' +
+    '<a href="profile-02">Profile 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-03.html">Home Page 03 </a>' +
+    '<a href="profile-03.html">Profile 03 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-04.html">Home Page 04 </a>' +
+    '<a href="add-location.html">Location 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-05.html">Home Page 05 </a>' +
+    '<a href="add-location-02.html">Location 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-06.html">Home Page 06 </a>' +
+    '<a href="add-location-03.html">Location 03 </a>' +
     "</li>" +
     "</ul>" +
     "</li>" +
@@ -170,22 +167,34 @@ $(document).ready(function () {
     '<a class="item-menu">Order</a>' +
     '<ul class="sub-menu-mobile">' +
     '<li class="menu-item-mobile">' +
-    '<a href="home-01.html">Home Page 01 </a>' +
+    '<a href="payment.html">Payment 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-02.html">Home Page 02 </a>' +
+    '<a href="payment-method.html">Payment 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-03.html">Home Page 03 </a>' +
+    '<a href="payment-method-2.html">Payment 03 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-04.html">Home Page 04 </a>' +
+    '<a href="rate-coffee.html">Rate 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-05.html">Home Page 05 </a>' +
+    '<a href="rate-coffee-02.html">Rate 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="home-06.html">Home Page 06 </a>' +
+    '<a href="rate-driver.html">Rate 03 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="order-track.html">Order track 01 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="order-track-02.html">Order track 02 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="order-track-03.html">Order track 03 </a>' +
+    "</li>" +
+    '<li class="menu-item-mobile">' +
+    '<a href="order-track-04.html">Order track 04 </a>' +
     "</li>" +
     "</ul>" +
     "</li>" +

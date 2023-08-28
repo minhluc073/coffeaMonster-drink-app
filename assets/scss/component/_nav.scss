@@ -12,7 +12,9 @@
 .fade {
     transition: opacity 0.15s linear;
 }
-
+.nav-tabs {
+    border-bottom: 0;
+}
 #navtabs-drink1 {
     background: $white;
     @include grid(4, 1fr, 0px, 4px);
