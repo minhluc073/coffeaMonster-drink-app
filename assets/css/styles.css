@@ -2824,6 +2824,49 @@ a.mapboxgl-ctrl-logo,
   width: 300px;
   background: #ffffff;
 }
+.widget-filter .sidebar-logo {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #033f38;
+}
+.widget-filter .sidebar-logo img {
+  width: 150px;
+}
+.widget-filter #menu-primary-menu {
+  padding: 0px 20px;
+}
+.widget-filter #menu-primary-menu li {
+  padding: 20px 0px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.widget-filter #menu-primary-menu li .menu-item-mobile:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.widget-filter #menu-primary-menu .menu-item {
+  position: relative;
+}
+.widget-filter #menu-primary-menu .menu-item::after {
+  content: "\e911";
+  font-family: "icomoon";
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: all 0.3s ease-out;
+}
+.widget-filter #menu-primary-menu .menu-item.active::after {
+  top: 15px;
+  transform: rotate(180deg) !important;
+  transition: all 0.3s ease-out;
+}
 
 .sub-menu-mobile {
   display: none;

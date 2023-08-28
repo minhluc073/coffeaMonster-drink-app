@@ -202,7 +202,7 @@
 
   const clickSideBar = function () {
     const modalNav = $(".menu-mobile-popup");
-    console.log(modalNav, "hhh");
+    // console.log(modalNav, "hhh");
     if (modalNav.length) {
       const open = function () {
         modalNav.addClass("modal-menu--open");
