@@ -219,6 +219,15 @@
       });
     }
   };
+  /* preloader
+  ------------------------------------------------------------------------------------- */
+  const preloaderIndex = function () {
+    setTimeout(function () {
+      $(".preloadIndex").fadeOut("slow", function () {
+        $(this).remove();
+      });
+    }, 150);
+  };
 
   /* preloader
   ------------------------------------------------------------------------------------- */
@@ -245,6 +254,7 @@
     Suggest();
     backPage();
     clickSideBar();
+    preloaderIndex();
     preloader();
   });
 })(jQuery);
