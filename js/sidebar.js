@@ -25,7 +25,7 @@ $(document).ready(function () {
     '<div class="widget-filter">' +
     '<div class="header-ct-center menu-moblie">' +
     '<a href="#" class="sidebar-logo">' +
-    '<img src="assets/images/logo/logotext.png">' +
+    '<img src="images/logo/logotext.png">' +
     "</a> " +
     '<ul id="menu-primary-menu" class="menu">' +
     '<li class="menu-item menu-item-has-children-mobile">' +

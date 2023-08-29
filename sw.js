@@ -1,10 +1,5 @@
 var cacheName = "coffeeApp";
-var filesToCache = [
-  "./",
-  "./index.html",
-  "./assets/css/styles.css",
-  "./assets/js/main.js",
-];
+var filesToCache = ["./", "./index.html", "./css/styles.css", "./js/main.js"];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", function (e) {

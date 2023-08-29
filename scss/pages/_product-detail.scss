@@ -1,5 +1,5 @@
 .bg-fullscreen {
-    background-image: url("../../../assets/images/product-detail/bannerfull1.jpg");
+    background-image: url("../../../images/product-detail/bannerfull1.jpg");
     height: 100vh;
     // padding-bottom: 200px;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
     }
 
     &.st1 {
-        background-image: url("../../../assets/images/product-detail/bannerfull2.jpg");
+        background-image: url("../../../images/product-detail/bannerfull2.jpg");
         .tab-product-detail {
             a {
                 color: $text-black-2;

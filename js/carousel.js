@@ -6,6 +6,8 @@ if ($(".boarding-swiper").length > 0) {
     spaceBetween: 0,
     autoplay: true,
     loop: false,
+    observer: true,
+    observeParents: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -18,6 +20,8 @@ if ($(".drink-swiper").length > 0) {
     speed: 1500,
     slidesPerView: "auto",
     spaceBetween: 0,
+    observer: true,
+    observeParents: true,
     loop: true,
   });
 }
@@ -29,6 +33,8 @@ if ($(".recomand-swiper").length > 0) {
     slidesPerView: 1.1,
     spaceBetween: 10,
     centeredSlides: true,
+    observer: true,
+    observeParents: true,
     loop: true,
     navigation: {
       nextEl: ".swiper-btn-next",
@@ -58,6 +64,8 @@ if ($(".drink-swiper-2").length > 0) {
     parallax: true,
     slidesPerView: 1.2,
     spaceBetween: 10,
+    observer: true,
+    observeParents: true,
     loop: true,
 
     breakpoints: {
@@ -79,6 +87,8 @@ if ($(".drink-swiper-3").length > 0) {
     parallax: true,
     slidesPerView: 2,
     spaceBetween: 12,
+    observer: true,
+    observeParents: true,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
