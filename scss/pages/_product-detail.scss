@@ -1,10 +1,10 @@
 .bg-fullscreen {
-    background-image: url("../../images/product-detail/bannerfull1.jpg");
+    // background: url(../../images/product-detail/bannerfull1.jpg);
     height: 100vh;
     // padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
 
     .flex-col-between {
         display: flex;
@@ -14,7 +14,7 @@
     }
 
     &.st1 {
-        background-image: url("../../images/product-detail/bannerfull2.jpg");
+        // background: url(../../images/product-detail/bannerfull2.jpg);
         .tab-product-detail {
             a {
                 color: $text-black-2;

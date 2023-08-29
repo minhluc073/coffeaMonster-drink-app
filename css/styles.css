@@ -2980,7 +2980,6 @@ a.mapboxgl-ctrl-logo,
 }
 
 .account-area {
-  background-image: url(../../images/background/bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3380,20 +3379,16 @@ a.mapboxgl-ctrl-logo,
 }
 
 .bg-fullscreen {
-  background-image: url("../../../images/product-detail/bannerfull1.jpg");
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 .bg-fullscreen .flex-col-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 70vh;
-}
-.bg-fullscreen.st1 {
-  background-image: url("../../../images/product-detail/bannerfull2.jpg");
 }
 .bg-fullscreen.st1 .tab-product-detail a {
   color: #343434;
