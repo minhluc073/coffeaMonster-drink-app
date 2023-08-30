@@ -872,6 +872,10 @@ textarea {
   padding-top: 50px;
 }
 
+.pt-70 {
+  padding-top: 70px;
+}
+
 .pt-90 {
   padding-top: 90px;
 }
@@ -902,6 +906,10 @@ textarea {
 
 .pb-120 {
   padding-bottom: 120px;
+}
+
+.pb-140 {
+  padding-bottom: 140px;
 }
 
 .pb-155 {
@@ -1823,6 +1831,10 @@ textarea {
 .modal .pwa-content .group-btn .btn-dismiss {
   background: #e6ecec;
   color: #033f38;
+}
+.modal#addVoucher .modal-content.center {
+  border-radius: 16px;
+  padding: 20px;
 }
 
 .tf-box-row {
@@ -3714,15 +3726,23 @@ a.mapboxgl-ctrl-logo,
 }
 
 .box-total-order {
-  position: fixed;
   left: 0;
   right: 0;
-  padding: 0 20px;
   bottom: 70px;
-  background: #ffffff;
 }
 .box-total-order.st1 {
   bottom: 0;
+}
+
+.box-payment-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  max-width: 1024px;
+  background: #ffffff;
+  margin: 0 auto;
 }
 
 .box-driver {
