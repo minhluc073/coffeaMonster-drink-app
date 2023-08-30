@@ -24,9 +24,10 @@ $(document).ready(function () {
     '<div class="modal-menu__backdrop"></div> ' +
     '<div class="widget-filter">' +
     '<div class="header-ct-center menu-moblie">' +
-    '<a href="#" class="sidebar-logo">' +
-    '<img src="images/logo/logotext.png">' +
-    "</a> " +
+    '<div class="sidebar-logo">' +
+    '<img src="images/logo/logomenu.png">' +
+    "<h2>Coffee Monster</h2>" +
+    "</div> " +
     '<ul id="menu-primary-menu" class="menu">' +
     '<li class="menu-item menu-item-has-children-mobile">' +
     '<a class="item-menu">Home</a>' +

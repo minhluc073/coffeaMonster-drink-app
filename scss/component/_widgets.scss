@@ -255,6 +255,7 @@
             max-width: 209px;
             min-height: 156px;
             padding: 6px 6px 0px;
+            display: block;
             img {
                 border-radius: 16px;
                 @include wh-full;
@@ -270,6 +271,7 @@
             overflow: hidden;
             width: 140px;
             height: 105px;
+            display: block;
             img {
                 border-radius: 14px;
                 @include wh-full;
@@ -982,8 +984,8 @@ a.mapboxgl-ctrl-logo,
     display: flex;
     gap: 12px;
     .sidebar {
-        width: 35px;
-        height: 35px;
+        width: 34px;
+        height: 34px;
         border: 1px solid $primary;
         flex-shrink: 0;
         border-radius: 50%;
@@ -1015,11 +1017,11 @@ a.mapboxgl-ctrl-logo,
     transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: transform;
     -webkit-overflow-scrolling: touch;
-    -webkit-transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-    -ms-transition: all 0.2s ease 0s;
-    -o-transition: all 0.2s ease 0s;
-    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
 }
@@ -1091,17 +1093,25 @@ a.mapboxgl-ctrl-logo,
     visibility: visible;
 }
 .widget-filter {
-    width: 300px;
+    width: 310px;
     background: $white;
     // padding: 20px;
     .sidebar-logo {
         width: 100%;
-        display: block;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
         padding: 20px;
-        border-bottom: 1px solid $primary;
+        background: $primary;
+        border: 1px solid $primary;
         img {
-            width: 150px;
+            width: 90px;
+        }
+        h2 {
+            color: $white;
+            flex: 1;
+            font-size: 24px;
+            font-weight: 500;
         }
     }
     #menu-primary-menu {
@@ -1144,6 +1154,10 @@ a.mapboxgl-ctrl-logo,
         }
         .menu-item-mobile {
             padding-left: 10px;
+            a {
+                display: block;
+                width: 100%;
+            }
         }
     }
 }

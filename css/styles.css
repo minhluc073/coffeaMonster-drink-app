@@ -1149,7 +1149,7 @@ textarea {
 #navtabs-drink1 .nav-item a {
   background-color: #f8f8f8;
   display: block;
-  padding: 6px 10px;
+  padding: 6px;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -1274,7 +1274,7 @@ textarea {
 }
 .back-btn.primary,
 .btn-close-modal.primary {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
 }
 .back-btn.primary i,
 .btn-close-modal.primary i {
@@ -2071,6 +2071,7 @@ textarea {
   max-width: 209px;
   min-height: 156px;
   padding: 6px 6px 0px;
+  display: block;
 }
 .tf-box-column.lg .img-box img {
   border-radius: 16px;
@@ -2087,6 +2088,7 @@ textarea {
   overflow: hidden;
   width: 140px;
   height: 105px;
+  display: block;
 }
 .tf-box-column.md .img-box img {
   border-radius: 14px;
@@ -2796,8 +2798,8 @@ a.mapboxgl-ctrl-logo,
   gap: 12px;
 }
 .inner-headerbar .sidebar {
-  width: 35px;
-  height: 35px;
+  width: 34px;
+  height: 34px;
   border: 1px solid #033f38;
   flex-shrink: 0;
   border-radius: 50%;
@@ -2827,11 +2829,11 @@ a.mapboxgl-ctrl-logo,
   transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: all 0.2s ease 0s;
-  -moz-transition: all 0.2s ease 0s;
-  -ms-transition: all 0.2s ease 0s;
-  -o-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
@@ -2904,18 +2906,26 @@ a.mapboxgl-ctrl-logo,
 }
 
 .widget-filter {
-  width: 300px;
+  width: 310px;
   background: #ffffff;
 }
 .widget-filter .sidebar-logo {
   width: 100%;
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 20px;
-  border-bottom: 1px solid #033f38;
+  background: #033f38;
+  border: 1px solid #033f38;
 }
 .widget-filter .sidebar-logo img {
-  width: 150px;
+  width: 90px;
+}
+.widget-filter .sidebar-logo h2 {
+  color: #ffffff;
+  flex: 1;
+  font-size: 24px;
+  font-weight: 500;
 }
 .widget-filter #menu-primary-menu {
   padding: 0px 20px;
@@ -2954,6 +2964,10 @@ a.mapboxgl-ctrl-logo,
 }
 .widget-filter #menu-primary-menu .menu-item-mobile {
   padding-left: 10px;
+}
+.widget-filter #menu-primary-menu .menu-item-mobile a {
+  display: block;
+  width: 100%;
 }
 
 .sub-menu-mobile {
