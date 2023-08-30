@@ -148,7 +148,7 @@ $(document).ready(function () {
     '<a href="profile.html">Profile 01 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="profile-02">Profile 02 </a>' +
+    '<a href="profile-02.html">Profile 02 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
     '<a href="profile-03.html">Profile 03 </a>' +

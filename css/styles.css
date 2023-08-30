@@ -2045,6 +2045,7 @@ textarea {
 .tf-box-column.xl .img-box {
   overflow: hidden;
   border-radius: 16px;
+  display: block;
 }
 .tf-box-column.xl .img-box img {
   width: 100%;
@@ -2127,6 +2128,7 @@ textarea {
 }
 .tf-box-column.sm .img-box {
   overflow: hidden;
+  display: block;
   padding: 6px 6px 0px;
 }
 .tf-box-column.sm .img-box img {
@@ -2171,9 +2173,9 @@ textarea {
   display: flex;
   justify-content: center;
   background-color: #033f38;
-  padding-top: 2px;
   color: #fff1d0;
   font-size: 20px;
+  line-height: 29px;
   border-radius: 50%;
 }
 .btn-add:hover, .btn-add:active {
