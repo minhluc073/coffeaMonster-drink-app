@@ -1202,6 +1202,9 @@ textarea {
   line-height: normal;
   color: #033f38;
 }
+.tab-product-detail .nav-item a.active {
+  border: 1px solid #f1f1f1;
+}
 .tab-product-detail.st1 .nav-item a {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -2936,7 +2939,7 @@ a.mapboxgl-ctrl-logo,
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 15px;
   background: #033f38;
   border: 1px solid #033f38;
 }
@@ -2950,10 +2953,10 @@ a.mapboxgl-ctrl-logo,
   font-weight: 500;
 }
 .widget-filter #menu-primary-menu {
-  padding: 0px 20px;
+  padding: 0px 15px;
 }
 .widget-filter #menu-primary-menu li {
-  padding: 20px 0px;
+  padding: 15px 0px;
   border-bottom: 1px solid #f1f1f1;
   font-weight: 500;
   font-size: 15px;

@@ -58,6 +58,9 @@
             border: 1px solid $line-2;
             @include fh-normal;
             color: $primary;
+            &.active {
+                border: 1px solid $line-2;
+            }
         }
     }
     &.st1 {

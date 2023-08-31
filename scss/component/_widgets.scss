@@ -1103,7 +1103,7 @@ a.mapboxgl-ctrl-logo,
         display: flex;
         align-items: center;
         gap: 10px;
-        padding: 20px;
+        padding: 15px;
         background: $primary;
         border: 1px solid $primary;
         img {
@@ -1117,9 +1117,9 @@ a.mapboxgl-ctrl-logo,
         }
     }
     #menu-primary-menu {
-        padding: 0px 20px;
+        padding: 0px 15px;
         li {
-            padding: 20px 0px;
+            padding: 15px 0px;
             border-bottom: 1px solid $line-2;
             font-weight: 500;
             font-size: 15px;
