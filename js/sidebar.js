@@ -154,13 +154,7 @@ $(document).ready(function () {
     '<a href="profile-03.html">Profile 03 </a>' +
     "</li>" +
     '<li class="menu-item-mobile">' +
-    '<a href="add-location.html">Location 01 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="add-location-02.html">Location 02 </a>' +
-    "</li>" +
-    '<li class="menu-item-mobile">' +
-    '<a href="add-location-03.html">Location 03 </a>' +
+    '<a href="location.html">Delivery Location </a>' +
     "</li>" +
     "</ul>" +
     "</li>" +

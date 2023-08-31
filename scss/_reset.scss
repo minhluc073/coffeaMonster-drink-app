@@ -247,6 +247,7 @@ a {
     text-decoration: none;
     outline: none;
     color: $text-black;
+    cursor: pointer;
     @include transition3;
     &:hover,
     &:focus,

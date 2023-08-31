@@ -245,6 +245,7 @@ a {
   text-decoration: none;
   outline: none;
   color: #262626;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -1278,6 +1279,7 @@ textarea {
 
 .back-btn,
 .btn-close-modal {
+  flex-shrink: 0;
   width: 26px;
   height: 26px;
   display: flex;
