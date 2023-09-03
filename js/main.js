@@ -183,13 +183,14 @@
       $(".suggest_value").val(val);
     });
   };
-  /* dropdown menu
-  ------------------------------------------------------------------------------------- */
-  var dropDown = function () {
-    $(".hhh").on("click", function () {
-      console.log("hhhh");
+
+  var activeSuggest = function () {
+    $(".rate-suggest").click(function () {
+      $(".rate-suggest.active").removeClass("active");
+      $(this).addClass("active");
     });
   };
+
   /* back Page
   ------------------------------------------------------------------------------------- */
   var backPage = function () {
@@ -250,10 +251,10 @@
     clearAll();
     clearItem();
     clearCheckbox();
-    dropDown();
     Suggest();
     backPage();
     clickSideBar();
+    activeSuggest();
     preloaderIndex();
     preloader();
   });

@@ -3001,6 +3001,11 @@ a.mapboxgl-ctrl-logo,
   display: none;
 }
 
+.rate-suggest.active {
+  border: 1px solid #033f38;
+  color: #033f38;
+}
+
 .driver-onboarding .boarding-box .img-box {
   max-width: 289px;
   height: 319px;
