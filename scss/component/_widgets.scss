@@ -358,7 +358,7 @@
     background-color: $primary;
     color: #fff1d0;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 27px;
     border-radius: 50%;
     &:hover,
     &:active {
@@ -783,6 +783,26 @@ a.mapboxgl-ctrl-logo,
     .lo-check {
         .form-check-label::after {
             border: 1px solid #e1e1e1;
+        }
+    }
+    .ip-lo {
+        flex: 1;
+        input {
+            padding: 0;
+            background-color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            color: $color-icon1;
+            line-height: normal;
+            &:focus {
+                border: 0;
+            }
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 400;
+                color: $color-icon1;
+            }
         }
     }
 }

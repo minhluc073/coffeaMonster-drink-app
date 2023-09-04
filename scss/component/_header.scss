@@ -11,50 +11,102 @@
     .menu-bar {
         @include flex(center, space-between);
     }
-    .title-header-bar {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+    // .title-header-bar {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 20px;
 
-        .search-box {
+    //     .search-box {
+    //         flex-grow: 1;
+    //     }
+    //     &.st1 {
+    //         gap: 12px;
+    //         justify-content: space-between;
+    //         .inner-title-header {
+    //             display: flex;
+    //             align-items: center;
+    //             gap: 20px;
+    //             flex-grow: 1;
+    //         }
+    //         .icon-box {
+    //             width: 56px;
+    //             height: 56px;
+    //             border-radius: 16px;
+    //             border: 1px solid $line-2;
+    //             @include flex(center, center);
+    //             position: relative;
+    //             i {
+    //                 font-size: 20px;
+    //                 color: $primary;
+    //             }
+    //             svg {
+    //                 position: absolute;
+    //                 top: -2px;
+    //                 right: 0;
+    //             }
+    //         }
+    //         .t-right {
+    //             font-size: 14px;
+    //             font-weight: 500;
+    //             line-height: normal;
+    //             color: $primary;
+    //         }
+    //     }
+    //     &.st2 {
+    //         position: relative;
+    //         z-index: 10;
+    //     }
+    // }
+}
+.title-header-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .search-box {
+        flex-grow: 1;
+    }
+    &.st1 {
+        gap: 12px;
+        justify-content: space-between;
+        .inner-title-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
             flex-grow: 1;
         }
-        &.st1 {
-            gap: 12px;
-            justify-content: space-between;
-            .inner-title-header {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                flex-grow: 1;
-            }
-            .icon-box {
-                width: 56px;
-                height: 56px;
-                border-radius: 16px;
-                border: 1px solid $line-2;
-                @include flex(center, center);
-                position: relative;
-                i {
-                    font-size: 20px;
-                    color: $primary;
-                }
-                svg {
-                    position: absolute;
-                    top: -2px;
-                    right: 0;
-                }
-            }
-            .t-right {
-                font-size: 14px;
-                font-weight: 500;
-                line-height: normal;
+        .icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            border: 1px solid $line-2;
+            @include flex(center, center);
+            position: relative;
+            i {
+                font-size: 20px;
                 color: $primary;
             }
+            svg {
+                position: absolute;
+                top: -2px;
+                right: 0;
+            }
         }
-        &.st2 {
-            position: relative;
-            z-index: 10;
+        .t-right {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            color: $primary;
+        }
+    }
+    &.st2 {
+        position: relative;
+        z-index: 10;
+    }
+    .b-home {
+        i {
+            font-size: 20px;
+            color: $primary;
         }
     }
 }

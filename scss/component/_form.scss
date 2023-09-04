@@ -46,12 +46,6 @@
             font-size: 18px;
             right: 14px;
 
-            .forgot-link {
-                font-size: 14px;
-                font-weight: 700;
-                line-height: normal;
-                color: $primary;
-            }
             .show-pass {
                 margin-top: 3px;
                 i {
@@ -77,6 +71,7 @@
             gap: 8px;
         }
     }
+
     &.custom-select {
         .inner-group-ip {
             position: relative;
@@ -195,7 +190,13 @@
         }
     }
 }
-
+.forgot-link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    color: $primary;
+    display: block;
+}
 .group-ip-password {
     &.pd1 {
         .password-field:valid,

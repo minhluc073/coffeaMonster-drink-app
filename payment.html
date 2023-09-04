@@ -61,7 +61,7 @@
                 <i class="icon-right"></i>
             </a>
 
-            <div class="box-total-order st1 pt-70 pb-140">
+            <div class="box-total-order st1 pt-70">
                 <ul>
                     <li class="list-order">
                         Item total: <span>$10.48</span>
@@ -77,7 +77,7 @@
                     Total: <span>$12.18</span>
                 </p>
 
-                <div class="box-payment-fixed">
+                <div class="">
                     <a href="payment.html" class="tf-btn large outline-dashed mb-15" data-bs-toggle="modal" data-bs-target="#addVoucher"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <g clip-path="url(#clip0_1261_17247)">
@@ -94,7 +94,7 @@
                         </svg>
                         Add Voucher
                     </a>              
-                    <a href="order-track.html" class="tf-btn large primary mb-20">Place order</a>
+                    <a href="scan-success.html" class="tf-btn large primary mb-20">Place order</a>
                 </div>
                               
             </div>
@@ -104,7 +104,10 @@
     <div class="modal fade action-sheet" id="addCardActionSheet">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-           <h2>Choose card</h2>
+           <div class="modal-header">
+                <h2>Choose card</h2>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
            <ul class="mt-20">
                 <li class="mb-15">
                     <a class="list-view-card">
@@ -153,7 +156,10 @@
     <div class="modal fade action-sheet" id="locationActionSheet">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-               <h2>Location</h2>
+               <div class="modal-header">
+                    <h2>Location</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
                <div class="form-check-lo mt-15">
                 <input class="form-check-input check-ip-bg" type="radio" checked name="radioList" id="radioList1">
                 <label class="form-check-label" for="radioList1">
@@ -192,10 +198,7 @@
                     <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
                 </div>
             </div>
-            <div class="mt-30">
-                <a href="add-location.html" class="tf-btn large primary"> Add new location</a>                      
-
-            </div>
+           
             </div>
         </div>
     </div>

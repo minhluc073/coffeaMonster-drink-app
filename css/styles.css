@@ -1086,25 +1086,26 @@ textarea {
   align-items: center;
   justify-content: space-between;
 }
-.header .title-header-bar {
+
+.title-header-bar {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.header .title-header-bar .search-box {
+.title-header-bar .search-box {
   flex-grow: 1;
 }
-.header .title-header-bar.st1 {
+.title-header-bar.st1 {
   gap: 12px;
   justify-content: space-between;
 }
-.header .title-header-bar.st1 .inner-title-header {
+.title-header-bar.st1 .inner-title-header {
   display: flex;
   align-items: center;
   gap: 20px;
   flex-grow: 1;
 }
-.header .title-header-bar.st1 .icon-box {
+.title-header-bar.st1 .icon-box {
   width: 56px;
   height: 56px;
   border-radius: 16px;
@@ -1114,24 +1115,28 @@ textarea {
   justify-content: center;
   position: relative;
 }
-.header .title-header-bar.st1 .icon-box i {
+.title-header-bar.st1 .icon-box i {
   font-size: 20px;
   color: #033f38;
 }
-.header .title-header-bar.st1 .icon-box svg {
+.title-header-bar.st1 .icon-box svg {
   position: absolute;
   top: -2px;
   right: 0;
 }
-.header .title-header-bar.st1 .t-right {
+.title-header-bar.st1 .t-right {
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   color: #033f38;
 }
-.header .title-header-bar.st2 {
+.title-header-bar.st2 {
   position: relative;
   z-index: 10;
+}
+.title-header-bar .b-home i {
+  font-size: 20px;
+  color: #033f38;
 }
 
 .tab-content > .tab-pane {
@@ -1421,12 +1426,6 @@ textarea {
   font-size: 18px;
   right: 14px;
 }
-.group-input.group-ip-password .box-auth-show .forgot-link {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  color: #033f38;
-}
 .group-input.group-ip-password .box-auth-show .show-pass {
   margin-top: 3px;
 }
@@ -1552,6 +1551,14 @@ textarea {
   right: 14px;
 }
 .group-input.group-ip-2 .required-field:valid ~ .show {
+  display: block;
+}
+
+.forgot-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  color: #033f38;
   display: block;
 }
 
@@ -1840,6 +1847,10 @@ textarea {
 .modal#addVoucher .modal-content.center {
   border-radius: 16px;
   padding: 20px;
+}
+.modal .modal-header {
+  padding: 0;
+  border: none;
 }
 
 .tf-box-row {
@@ -2200,7 +2211,7 @@ textarea {
   background-color: #033f38;
   color: #fff1d0;
   font-size: 20px;
-  line-height: 29px;
+  line-height: 27px;
   border-radius: 50%;
 }
 .btn-add:hover, .btn-add:active {
@@ -2635,6 +2646,26 @@ a.mapboxgl-ctrl-logo,
 }
 .location-list .lo-check .form-check-label::after {
   border: 1px solid #e1e1e1;
+}
+.location-list .ip-lo {
+  flex: 1;
+}
+.location-list .ip-lo input {
+  padding: 0;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #cfcfcf;
+  line-height: normal;
+}
+.location-list .ip-lo input:focus {
+  border: 0;
+}
+.location-list .ip-lo input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cfcfcf;
 }
 
 .location-list-v2 {
