@@ -242,6 +242,7 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -876,12 +877,24 @@ textarea {
   padding-top: 50px;
 }
 
+.pt-60 {
+  padding-top: 60px;
+}
+
 .pt-70 {
   padding-top: 70px;
 }
 
+.pt-80 {
+  padding-top: 80px;
+}
+
 .pt-90 {
   padding-top: 90px;
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 .pt-120 {
@@ -954,6 +967,14 @@ textarea {
 
 .justify-center {
   justify-content: center !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .relative {
@@ -1089,13 +1110,15 @@ textarea {
   position: fixed;
 }
 
-.sticky-top {
-  position: -webkit-sticky;
-  position: sticky;
+.fixed-top {
+  position: fixed;
   top: 0;
   z-index: 1020;
-  margin: 0 -20px;
+  max-width: 1024px;
+  margin: 0 auto;
   padding: 20px;
+  left: 0;
+  right: 0;
 }
 
 .header.absolute {
@@ -1116,7 +1139,8 @@ textarea {
 .title-header-bar {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
+  justify-content: space-between;
 }
 .title-header-bar .search-box {
   flex-grow: 1;
@@ -1128,12 +1152,12 @@ textarea {
 .title-header-bar.st1 .inner-title-header {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   flex-grow: 1;
 }
 .title-header-bar.st1 .icon-box {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border-radius: 16px;
   border: 1px solid #f1f1f1;
   display: flex;
@@ -1352,6 +1376,37 @@ textarea {
 .btn-close:focus {
   outline: 0;
   box-shadow: unset;
+}
+
+.btn-sidebar,
+.btn-st2 {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #033f38;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-sidebar i,
+.btn-st2 i {
+  font-size: 18px;
+  color: #033f38;
+}
+.btn-sidebar.primary,
+.btn-st2.primary {
+  border-color: #ffffff;
+}
+.btn-sidebar.primary i,
+.btn-st2.primary i {
+  color: #ffffff;
+}
+
+.group-icon-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .noUi-horizontal {
@@ -1775,6 +1830,10 @@ textarea {
 
 .result-swiper .swiper-slide {
   margin-left: 8px;
+}
+.result-swiper .swiper-slide-active .suggest-item-sw {
+  border-color: #033f38;
+  color: #033f38;
 }
 
 .cate-swiper .swiper-slide {
@@ -2919,26 +2978,6 @@ a.mapboxgl-ctrl-logo,
   display: flex;
   gap: 12px;
   justify-content: space-between;
-}
-.inner-headerbar .sidebar {
-  width: 34px;
-  height: 34px;
-  border: 1px solid #033f38;
-  flex-shrink: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.inner-headerbar .sidebar i {
-  font-size: 18px;
-  color: #033f38;
-}
-.inner-headerbar.st1 .sidebar {
-  border-color: #ffffff;
-}
-.inner-headerbar.st1 .sidebar i {
-  color: #ffffff;
 }
 .inner-headerbar .header-home {
   flex: 1;

@@ -193,7 +193,7 @@
   /* fixed body popup
   ------------------------------------------------------------------------------------- */
   var fixedBody = function () {
-    $(".sidebar").on("click", function () {
+    $(".btn-sidebar").on("click", function () {
       $("body").addClass("fixed-body");
     });
     $(".clear-fixed").on("click", function () {
@@ -221,7 +221,7 @@
         modalNav.removeClass("modal-menu--open");
       };
       // open();
-      $(".sidebar").on("click", function () {
+      $(".btn-sidebar, .btn-st2").on("click", function () {
         open();
       });
       $(".modal-menu__backdrop").on("click", function () {
@@ -246,7 +246,7 @@
       $(".preload").fadeOut("slow", function () {
         $(this).remove();
       });
-    }, 150);
+    }, 100);
   };
 
   $(function () {

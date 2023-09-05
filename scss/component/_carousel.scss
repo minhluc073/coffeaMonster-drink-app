@@ -70,6 +70,12 @@
     .swiper-slide {
         margin-left: 8px;
     }
+    .swiper-slide-active {
+        .suggest-item-sw {
+            border-color: $primary;
+            color: $primary;
+        }
+    }
 }
 .cate-swiper {
     .swiper-slide {

@@ -87,3 +87,29 @@
     outline: 0;
     box-shadow: unset;
 }
+.btn-sidebar,
+.btn-st2 {
+    width: 34px;
+    height: 34px;
+    border: 1px solid $primary;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        font-size: 18px;
+        color: $primary;
+    }
+    &.primary {
+        border-color: $white;
+        i {
+            color: $white;
+        }
+    }
+}
+.group-icon-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

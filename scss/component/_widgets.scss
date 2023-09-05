@@ -1007,28 +1007,7 @@ a.mapboxgl-ctrl-logo,
     display: flex;
     gap: 12px;
     justify-content: space-between;
-    .sidebar {
-        width: 34px;
-        height: 34px;
-        border: 1px solid $primary;
-        flex-shrink: 0;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        i {
-            font-size: 18px;
-            color: $primary;
-        }
-    }
-    &.st1 {
-        .sidebar {
-            border-color: $white;
-            i {
-                color: $white;
-            }
-        }
-    }
+    
     .header-home {
         flex: 1;
     }
