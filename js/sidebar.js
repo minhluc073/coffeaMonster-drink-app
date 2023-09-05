@@ -21,7 +21,7 @@ window.console =
 $(document).ready(function () {
   var e =
     '<div class="menu-mobile-popup">' +
-    '<div class="modal-menu__backdrop"></div> ' +
+    '<div class="modal-menu__backdrop clear-fixed"></div> ' +
     '<div class="widget-filter">' +
     '<div class="header-ct-center menu-moblie">' +
     '<div class="sidebar-logo">' +

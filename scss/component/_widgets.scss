@@ -574,6 +574,7 @@
         width: 30px;
         height: 30px;
         border-left: 1px solid rgba(255, 255, 255, 0.2);
+        color: $white;
         @include flex(center, flex-end);
         i {
             font-size: 20px;
@@ -1005,6 +1006,7 @@ a.mapboxgl-ctrl-logo,
 .inner-headerbar {
     display: flex;
     gap: 12px;
+    justify-content: space-between;
     .sidebar {
         width: 34px;
         height: 34px;
@@ -1115,7 +1117,7 @@ a.mapboxgl-ctrl-logo,
     visibility: visible;
 }
 .widget-filter {
-    width: 310px;
+    width: 290px;
     background: $white;
     // padding: 20px;
     .sidebar-logo {
@@ -1127,7 +1129,7 @@ a.mapboxgl-ctrl-logo,
         background: $primary;
         border: 1px solid $primary;
         img {
-            width: 90px;
+            width: 80px;
         }
         h2 {
             color: $white;

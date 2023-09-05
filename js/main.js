@@ -190,7 +190,16 @@
       $(this).addClass("active");
     });
   };
-
+  /* fixed body popup
+  ------------------------------------------------------------------------------------- */
+  var fixedBody = function () {
+    $(".sidebar").on("click", function () {
+      $("body").addClass("fixed-body");
+    });
+    $(".clear-fixed").on("click", function () {
+      $("body").removeClass("fixed-body");
+    });
+  };
   /* back Page
   ------------------------------------------------------------------------------------- */
   var backPage = function () {
@@ -255,6 +264,7 @@
     backPage();
     clickSideBar();
     activeSuggest();
+    fixedBody();
     preloaderIndex();
     preloader();
   });

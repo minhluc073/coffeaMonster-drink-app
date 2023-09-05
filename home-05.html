@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="right" data-bs-toggle="modal" data-bs-target="#addCardActionSheet2">
-                        <a href="#" class="icon-menu-2"></a>
+                        <a href="#" class="icon-filter-2"></a>
     
                     </div>
                 </div>
@@ -60,7 +60,7 @@
             <div class="section mt-20">
                 <div class="title-bar">
                     <h2>Find</h2>
-                    <a href="search-result.html" class="back-btn"><i class="icon-right"></i></a>
+                    <a href="nearby.html" class="btn-arr"><i class="icon-right"></i></a>
                 </div>
                 <ul id="navtabs-drink1" class="mt-12">
                     <li class="nav-item">
@@ -398,14 +398,14 @@
 
     <div class="modal fade action-sheet" id="addCardActionSheet2">
         <div class="modal-dialog" role="document">
-            <div class="modal-content app">
+            <div class="modal-content app filter-content">
                 <div class="title-bar st1">
                     <h2>Filter</h2>
                     <a href="#" class="clear-checkbox btn-reset">Reset</a>
                 </div>
                 <h4 class="mt-20">Category</h4>
                 <div class="wrap-swiper">
-                    <div class="swiper drink-swiper">
+                    <div class="swiper cate-swiper">
                         <div class="swiper-wrapper pt-12 pb-30">
                             <div class="swiper-slide ml-1">
                                 <a href="nearby.html" class="box-categories">
@@ -446,51 +446,69 @@
                 <div class="grid-2-cb">
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb1" checked>
-                        <label class="form-check-label cus-checkbox" for="cb1"></label>
-                        <span>Top rated</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb1">
+                            <span>Top rated</span>
+
+                        </label>
                     </div>
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb2">
-                        <label class="form-check-label cus-checkbox" for="cb2"></label>
-                        <span>Newly listed</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb2">
+                            <span>Newly listed</span>
+
+                        </label>
                     </div>
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb3">
-                        <label class="form-check-label cus-checkbox" for="cb3"></label>
-                        <span>Lowest first</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb3">
+                            <span>Lowest first</span>
+
+                        </label>
                     </div>
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb4">
-                        <label class="form-check-label cus-checkbox" for="cb4"></label>
-                        <span>Higest first</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb4">
+                            <span>Higest first</span>
+
+                        </label>
                     </div>
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb5" checked>
-                        <label class="form-check-label cus-checkbox" for="cb5"></label>
-                        <span>Nearest first</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb5">
+                            <span>Nearest first</span>
+
+                        </label>
                     </div>
                 </div>
                 <h4 class="mb-12 mt-30">Filter</h4>
                 <div class="grid-2-cb">
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb6">
-                        <label class="form-check-label cus-checkbox" for="cb6"></label>
-                        <span>Recomended</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb6">
+                            <span>Recomended</span>
+
+                        </label>
                     </div>
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb7" checked>
-                        <label class="form-check-label cus-checkbox" for="cb7"></label>
-                        <span>Fastest delivery</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb7">
+                            <span>Fastest delivery</span>
+
+                        </label>
                     </div>
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb8">
-                        <label class="form-check-label cus-checkbox" for="cb8"></label>
-                        <span>Credit cards</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb8">
+                            <span>Credit cards</span>
+
+                        </label>
                     </div>
                     <div class="group-checkbox">
                         <input class="form-check-input" type="checkbox" id="cb9">
-                        <label class="form-check-label cus-checkbox" for="cb9"></label>
-                        <span>Additional filters</span>
+                        <label class="form-check-label cus-checkbox cb-filter" for="cb9">
+                            <span>Additional filters</span>
+
+                        </label>
                     </div>
                     
                 </div>
@@ -528,7 +546,7 @@
                 <a href="search-result.html" class="tf-btn large primary">Apply</a> 
             </div>
         </div>
-       </div> 
+    </div> 
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>

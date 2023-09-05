@@ -1,9 +1,12 @@
 .tab-content > .tab-pane {
     display: none;
+    // transition: all 0.2s;
+    // transform: translateX(1rem);
 }
 
 .tab-content > .active {
     display: block;
+    // transform: translateX(0rem);
 }
 
 .fade:not(.show) {

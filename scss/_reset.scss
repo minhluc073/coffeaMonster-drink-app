@@ -1,5 +1,8 @@
 html {
     scrollbar-width: none;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -916,6 +919,16 @@ textarea {
             top: -1px;
         }
     }
+    &.cb-filter {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 28px;
+            line-height: 20px;
+        }
+    }
 }
 .form-check-input[type="radio"] {
     border-radius: 50%;
@@ -934,4 +947,15 @@ textarea {
 }
 .b-line {
     border-bottom: 1px solid $line-2;
+}
+.fixed-body {
+    position: fixed;
+}
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    margin: 0 -20px;
+    padding: 20px;
 }
