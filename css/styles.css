@@ -1188,6 +1188,9 @@ textarea {
   font-size: 20px;
   color: #033f38;
 }
+.title-header-bar h1 {
+  flex-grow: 1;
+}
 
 .tab-content > .tab-pane {
   display: none;
@@ -3781,7 +3784,7 @@ a.mapboxgl-ctrl-logo,
   border-radius: 16px;
 }
 .scan-section .b-success {
-  padding: 120px 45px 55px;
+  padding: 60px 45px 55px;
 }
 .scan-section .title-success {
   padding: 0px 40px;
