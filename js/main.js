@@ -1,5 +1,20 @@
 /*
  * show pass
+ * image select
+ * otp input
+ * check radio
+ * range slider
+ * btnQuantity
+ * press heart
+ * Clear all
+ * Clear Item History
+ * Clear Checkbox
+ * Suggestions
+ * active Suggestions
+ * fixed body popup
+ * back Page
+ * click sidebar
+ * preloader
  */
 (function ($) {
   "use strict";
@@ -81,7 +96,7 @@
         });
     }
   };
-  /* check
+  /* check radio
   ------------------------------------------------------------------------------------- */
   var checkRadio = function () {
     $(".check-ip-bg:checked").parent().addClass("check");
@@ -183,7 +198,8 @@
       $(".suggest_value").val(val);
     });
   };
-
+  /* active Suggestions
+  ------------------------------------------------------------------------------------- */
   var activeSuggest = function () {
     $(".rate-suggest").click(function () {
       $(".rate-suggest.active").removeClass("active");
@@ -209,10 +225,10 @@
       window.history.go(-1);
     });
   };
-
+  /* click sidebar
+  ------------------------------------------------------------------------------------- */
   const clickSideBar = function () {
     const modalNav = $(".menu-mobile-popup");
-    // console.log(modalNav, "hhh");
     if (modalNav.length) {
       const open = function () {
         modalNav.addClass("modal-menu--open");
@@ -229,7 +245,8 @@
       });
     }
   };
-
+  /* clear Text
+  ------------------------------------------------------------------------------------- */
   const clearText = function () {
     $(".icon-close").on("click", function () {
       $(".ip-field").val("");
@@ -245,7 +262,7 @@
     }, 150);
   };
 
-  /* preloader
+  /* preloader 2
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
     setTimeout(function () {
