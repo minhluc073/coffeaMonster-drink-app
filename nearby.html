@@ -16,7 +16,7 @@
     <title>Nearby</title>
 </head>
 
-<body>
+<body class="appNearby">
           <!-- preloade -->
           <div class="preload preload-container">
             <div class="preload-logo">
@@ -39,8 +39,9 @@
         </div>
         <div class="tf-container pt-80">
             <div class="search-box">
-                <span class="icon icon-location"></span>
-                <input type="text" value="1901 Thornridge Cir. Shiloh, Hawaii 81063" >
+                <span class="icon icon-location" data-bs-toggle="modal" data-bs-target="#locationActionSheet"></span>
+                <input type="text"required value="1901 Thornridge Cir. Shiloh, Hawaii 81063" class="ip-field">
+                <i class="icon-close"></i>
             </div>
             <ul class="nav nav-tabs mt-15 grid-3" id="navtabs-drink1" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -582,7 +583,7 @@
     
     <div class="menubar-footer footer-fixed">
         <ul class="inner">
-            <li><a href="home-01.html"><span class="icon-home"></span> Home</a></li>
+            <li><a href="index.html"><span class="icon-home"></span> Home</a></li>
             <li class="active"><a href="nearby.html"><span class="icon-discovery"></span> Nearby</a></li>
             <li><a href="cart.html"><span class="icon-buy"></span> Cart</a></li>
             <li><a href="favorite.html"><span class="icon-heart"></span> Favorite</a></li>
@@ -590,6 +591,55 @@
         </ul>
     </div>
 
+    <div class="modal fade" id="locationActionSheet">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content center">
+               <div class="modal-header">
+                    <h2>Location</h2>
+                    <span data-bs-dismiss="modal">Select</span>
+                </div>
+               <div class="form-check-lo mt-15">
+                <input class="form-check-input check-ip-bg" type="radio" checked name="radioList" id="radioList1">
+                <label class="form-check-label" for="radioList1">
+                </label>
+                <div class="icon">
+                    <i class="icon-location"></i>
+                </div>
+                <div class="content-send">
+                    <h4>Jerome Bell </h4>
+                    <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                </div>
+            </div>
+
+            <div class="form-check-lo mt-15">
+                <input class="form-check-input check-ip-bg" type="radio" name="radioList" id="radioList2">
+                <label class="form-check-label" for="radioList2">
+                </label>
+                <div class="icon">
+                    <i class="icon-location"></i>
+                </div>
+                <div class="content-send">
+                    <h4>Eleanor Pena </h4>
+                    <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                </div>
+            </div>
+
+            <div class="form-check-lo mt-15">
+                <input class="form-check-input check-ip-bg" type="radio" name="radioList" id="radioList3">
+                <label class="form-check-label" for="radioList3">
+                </label>
+                <div class="icon">
+                    <i class="icon-location"></i>
+                </div>
+                <div class="content-send">
+                    <h4>Marvin McKinney </h4>
+                    <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </div>
     
 
 

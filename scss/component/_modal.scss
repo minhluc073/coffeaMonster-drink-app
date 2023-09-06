@@ -108,12 +108,10 @@
             }
         }
     }
-    &#addVoucher {
-        .modal-content {
-            &.center {
-                border-radius: 16px;
-                padding: 20px;
-            }
+    .modal-content {
+        &.center {
+            border-radius: 16px;
+            padding: 20px;
         }
     }
     .modal-header {

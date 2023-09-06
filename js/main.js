@@ -229,6 +229,12 @@
       });
     }
   };
+
+  const clearText = function () {
+    $(".icon-close").on("click", function () {
+      $(".ip-field").val("");
+    });
+  };
   /* preloader
   ------------------------------------------------------------------------------------- */
   const preloaderIndex = function () {
@@ -262,6 +268,7 @@
     clearCheckbox();
     Suggest();
     backPage();
+    clearText();
     clickSideBar();
     activeSuggest();
     fixedBody();

@@ -376,6 +376,11 @@
         font-size: 20px;
         color: $color-icon1;
     }
+    .icon-location {
+        left: 0;
+        top: 0;
+        padding: 18px 10px 18px 14px;
+    }
     .icon-filter-2 {
         position: absolute;
         right: 14px;
@@ -391,15 +396,36 @@
     .t-ip {
         position: absolute;
         right: 14px;
-        top: 18px;
+        top: 19px;
         font-size: 14px;
         color: $primary;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
     }
+    &.search-location {
+        input {
+            padding-right: 55px;
+            &::placeholder {
+                color: $text-black;
+            }
+        }
+    }
+    input:valid ~ .icon-close {
+        display: block;
+    }
+    .icon-close {
+        display: none;
+        position: absolute;
+        top: 18px;
+        font-size: 18px;
+        right: 14px;
+        color: $color-icon1;
+    }
 }
-
+// .ip-field:valid ~ .icon-close {
+//     display: block;
+// }
 .box-categories {
     @include flex(center, center);
     padding: 10px;
@@ -1007,7 +1033,7 @@ a.mapboxgl-ctrl-logo,
     display: flex;
     gap: 12px;
     justify-content: space-between;
-    
+
     .header-home {
         flex: 1;
     }
@@ -1172,4 +1198,47 @@ a.mapboxgl-ctrl-logo,
         border: 1px solid $primary;
         color: $primary;
     }
+}
+.appHome .current-home-1 a,
+.appHome2 .current-home-2 a,
+.appHome3 .current-home-3 a,
+.appHome4 .current-home-4 a,
+.appHome5 .current-home-5 a,
+.appHome6 .current-home-6 a,
+.appSearch .current-search a,
+.appSearch2 .current-search2 a,
+.appSearch3 .current-search3 a,
+.appSearchResult .current-searchResult a,
+.appSearchResult2 .current-searchResult2 a,
+.appSearchResult3 .current-searchResult3 a,
+.appSearchResult4 .current-searchResult4 a,
+.appFilter .current-filter a,
+.appDetails .current-details a,
+.appDetails2 .current-details2 a,
+.appDetails3 .current-details3 a,
+.appDetails4 .current-details4 a,
+.appDetails5 .current-details5 a,
+.appDetails6 .current-details6 a,
+.appDetails7 .current-details7 a,
+.appDetails8 .current-details8 a,
+.appDetails9 .current-details9 a,
+.appDetails10 .current-details10 a,
+.appFavorite .current-favorite a,
+.appFavorite2 .current-favorite2 a,
+.appFavorite3 .current-favorite3 a,
+.appNearby .current-nearby a,
+.appNearby2 .current-nearby2 a,
+.appProfile .current-profile a,
+.appProfile2 .current-profile2 a,
+.appProfile3 .current-profile3 a,
+.appDelivery .current-delivery a,
+.appPayment .current-payment a,
+.appPayment2 .current-payment2 a,
+.appPayment3 .current-payment3 a,
+.appRate .current-rate a,
+.appTrack .current-track a,
+.appTrack2 .current-track2 a,
+.appTrack3 .current-track3 a,
+.appTrack4 .current-track4 a {
+    color: $primary;
 }

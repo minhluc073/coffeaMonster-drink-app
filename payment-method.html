@@ -17,7 +17,7 @@
     <title>Payment Method</title>
 </head>
 
-<body>
+<body class="appPayment2">
          <!-- preloade -->
          <div class="preload preload-container">
             <div class="preload-logo">
@@ -26,14 +26,19 @@
           </div>
         <!-- /preload -->
     <div class="header">
-        <div class="tf-container">
-            <div class="title-header-bar pt-20">
-                <a href="#" class="back-btn"><i class="icon-left"></i></a>
-                <h1>Payment methods</h1>
-            </div>
+        <div class="title-header-bar fixed-top bg-white">
+            <a href="#" class="back-btn"><i class="icon-left"></i></a>
+            <h1>Payment methods</h1>
+            <span class="btn-sidebar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7H21" stroke="#033f38" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M3 12H21" stroke="#033f38" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M3 17H21" stroke="#033f38" stroke-width="1.5" stroke-linecap="round"></path>
+                </svg>
+            </span>
         </div>
     </div>
-    <div class="mt-23 pb-160">  
+    <div class="pt-80 pb-160">  
         <div class="payment-section mb-30">
             <div class="tf-container">
                 <div class="bg-payment">
@@ -54,7 +59,7 @@
 
     <div class="menubar-footer footer-fixed">
         <ul class="inner">
-            <li><a href="home-01.html"><span class="icon-home"></span> Home</a></li>
+            <li><a href="index.html"><span class="icon-home"></span> Home</a></li>
             <li><a href="nearby.html"><span class="icon-discovery"></span> Nearby</a></li>
             <li><a href="cart.html"><span class="icon-buy"></span> Cart</a></li>
             <li><a href="favorite.html"><span class="icon-heart"></span> Favorite</a></li>
@@ -132,7 +137,7 @@
                         <label class="form-check-label cus-checkbox" for="checkSize1"></label>
                         <span>Set default payment</span>
                     </div>
-                    <a href="cart.html" class="tf-btn primary large">Add cart</a>
+                    <a href="scan-card.html" class="tf-btn primary large">Add cart</a>
                     <a href="scan-card.html" class="tf-btn large outline mt-15">Scan Card</a>
 
                </form>
@@ -145,6 +150,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>
