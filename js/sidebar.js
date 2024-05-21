@@ -114,6 +114,9 @@ $(document).ready(function () {
     '<li class="menu-item-mobile current-details10">' +
     '<a href="product-details-10.html">Product details 10 </a>' +
     "</li>" +
+    '<li class="menu-item-mobile current-details11">' +
+    '<a href="product-details-11.html">Product details 11 </a>' +
+    "</li>" +
     "</ul>" +
     "</li>" +
     '<li class="menu-item menu-item-has-children-mobile">' +

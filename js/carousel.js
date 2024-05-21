@@ -116,3 +116,48 @@ if ($(".cate-swiper").length > 0) {
     observeParents: true,
   });
 }
+
+// carousel single
+
+
+
+if ($(".thumbs-sw-pagi").length > 0) {
+  var preview = $(".thumbs-sw-pagi").data("preview");
+  var spacing = $(".thumbs-sw-pagi").data("space");
+  var pagithumbs = new Swiper(".thumbs-sw-pagi", {
+    spaceBetween: spacing,
+    slidesPerView: preview,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+}
+
+
+
+if ($(".sw-single").length > 0){
+  var play = $(".sw-single").data("auto-play");
+  var spacing = $(".sw-single").data("space");
+  var swiperSingle = new Swiper(".sw-single", {
+    spaceBetween: spacing,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    autoplay: play,
+    speed: 500,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
+    thumbs: {
+      swiper: pagithumbs,
+    },
+    navigation: {
+      clickable: true,
+      nextEl: ".nav-prev-single",
+      prevEl: ".nav-next-single",
+    },
+  });
+}
+
